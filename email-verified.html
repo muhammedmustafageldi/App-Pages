@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-posta Doğrulandı - Swanky Software</title>
+    <meta name="description" content="E-posta adresiniz başarıyla doğrulandı. Artık uygulamaya giriş yapabilirsiniz.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="other_icons/swanky_logo.png">
+    <link rel="apple-touch-icon" href="other_icons/swanky_logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1>E-posta Doğrulandı!</h1>
+            <p>Hesabınız başarıyla aktifleştirildi</p>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="content-card verification-card">
+            <div class="verification-content">
+                <div class="verification-icon">
+                    <div class="checkmark-circle">
+                        <div class="checkmark"></div>
+                    </div>
+                </div>
+
+                <h2>Hoş Geldiniz!</h2>
+                <p class="verification-message">
+                    E-posta adresiniz başarıyla doğrulandı. Artık uygulamaya giriş yapabilir ve tüm özelliklerden
+                    faydalanabilirsiniz.
+                </p>
+
+
+
+                <div class="help-section">
+                    <h3>Yardıma mı İhtiyacınız Var?</h3>
+                    <p>Giriş yaparken sorun yaşıyorsanız bizimle iletişime geçin:</p>
+                    <a href="mailto:swankysoftware@gmail.com?subject=Giriş Sorunu" class="contact-button">
+                        📧 Destek Ekibiyle İletişime Geç
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Muhammed Mustafa Geldi | Swanky Software | Türkiye</p>
+        <p><a href="index.html">← Ana Sayfaya Dön</a></p>
+    </footer>
+
+    <style>
+        /* Email Verification Specific Styles */
+
+        .verification-card {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .verification-content {
+            padding: 1rem 0;
+        }
+
+        .verification-icon {
+            margin: 1rem 0;
+        }
+
+        .checkmark-circle {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: var(--primary-color);
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: scaleIn 0.6s ease-out 0.2s both;
+        }
+
+        .checkmark {
+            width: 24px;
+            height: 12px;
+            border: 3px solid white;
+            border-top: none;
+            border-right: none;
+            transform: rotate(-45deg);
+            animation: drawCheckmark 0.4s ease-out 0.6s both;
+        }
+
+        .verification-message {
+            font-size: 1.125rem;
+            margin: 1.5rem 0;
+            color: var(--text-secondary);
+        }
+
+
+
+        .help-section {
+            margin: 2rem 0 1rem;
+            padding: 2rem;
+            background: rgba(233, 118, 43, 0.05);
+            border-radius: var(--radius-lg);
+            border: 1px solid rgba(233, 118, 43, 0.15);
+        }
+
+        .help-section h3 {
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+
+        .help-section p {
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background: var(--secondary-color);
+            color: white;
+            border-radius: var(--radius-md);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .contact-button:hover {
+            background: #d16a24;
+            transform: translateY(-1px);
+            text-decoration: none;
+            color: white;
+        }
+
+        /* Animations */
+        @keyframes bounceIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.3);
+            }
+
+            50% {
+                opacity: 1;
+                transform: scale(1.05);
+            }
+
+            70% {
+                transform: scale(0.9);
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes scaleIn {
+            0% {
+                opacity: 0;
+                transform: scale(0);
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes drawCheckmark {
+            0% {
+                opacity: 0;
+                transform: rotate(-45deg) scale(0);
+            }
+
+            100% {
+                opacity: 1;
+                transform: rotate(-45deg) scale(1);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .checkmark-circle {
+                width: 60px;
+                height: 60px;
+            }
+
+            .checkmark {
+                width: 18px;
+                height: 9px;
+            }
+
+            .help-section {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</body>
+
+</html>
