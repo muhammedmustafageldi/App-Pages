@@ -1,0 +1,105 @@
+/* Home Page Specific Styles */
+
+/* App Cards */
+.apps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.app-card {
+    background: var(--bg-card);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.app-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-xl);
+    text-decoration: none;
+    color: inherit;
+}
+
+.app-icon {
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.app-icon span {
+    position: relative;
+    z-index: 2;
+}
+
+.app-card h3 {
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+.app-card p {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+.app-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.875rem;
+    color: var(--text-light);
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(65, 100, 74, 0.1);
+    gap: 1rem;
+}
+
+.privacy-link {
+    color: var(--primary-color);
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.privacy-link:hover {
+    color: var(--primary-dark);
+}
+
+.app-card {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.app-card:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.app-card:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .apps-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
