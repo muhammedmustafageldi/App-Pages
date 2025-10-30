@@ -197,7 +197,7 @@ code {
 }
 
 .content-card {
-    animation: fadeInUp 0.6s ease-out;
+    animation: fadeInUp 0.6s ease-out both;
 }
 
 /* Responsive */
