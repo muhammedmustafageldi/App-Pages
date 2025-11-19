@@ -1,150 +1,164 @@
-# 💈 SALONGO - Gizlilik Politikası
+# SalonGo Gizlilik Politikası
 
-**Son Güncelleme:** 30 Ocak 2025
-
----
-
-## 1. Giriş
-
-SALONGO, kuaför, berber, güzellik salonları için müşteri yönetimi, randevu takibi ve işlem kayıtlarını kolaylaştıran bir mobil uygulamadır.
-
-### 📱 Uygulama Bilgileri
-
-- **Geliştirici:** Muhammed Mustafa Geldi
-- **İletişim:** swankysoftware@gmail.com
-- **Konum:** Türkiye
+**Son Güncelleme:** 20 Kasım 2025  
+**Geliştirici:** Muhammed Mustafa Geldi  
+**İletişim:** swankysoftware@gmail.com
 
 ---
 
-## 2. Hangi Verileri Topluyoruz?
+## 1. Uygulama Hakkında
 
-### 2.1 Hesap Bilgileriniz
+SalonGo, kuaför ve berber salonları için tasarlanmış bir müşteri yönetimi uygulamasıdır. Müşteri kayıtları, randevu takibi ve işlem geçmişi gibi salon işlemlerinizi kolaylaştırır.
 
+---
+
+## 2. Topladığımız Veriler
+
+### 2.1 Hesap Bilgileri
 - Kullanıcı adı
+- Email adresi
 - Şifre (şifreli olarak saklanır)
 - Salon adı
-- Telefon numarası
+- Abonelik durumu (Ücretsiz/Premium)
 
-### 2.2 Müşteri Bilgileri
+### 2.2 Salon Verileri (Cihazınızda Saklanır)
+- Müşteri bilgileri (ad, telefon, doğum tarihi, notlar)
+- Randevu kayıtları
+- İşlem geçmişi (gelir/gider)
+- Çalışan bilgileri
+- Ayarlarınız
 
-Salonunuzda kaydettiğiniz müşteri bilgileri:
-
-- Ad soyad
-- Telefon numarası
-- Doğum tarihi (opsiyonel)
-- Cinsiyet (opsiyonel)
-- Notlar (opsiyonel)
-- VIP durumu
-
-### 2.3 İşlem Bilgileri
-
-- Yapılan hizmet (kesim, boya, sakal vb.)
-- Ücret
-- Tarih
-- Açıklama (opsiyonel)
-
-### 2.4 Randevu Bilgileri
-
-- Randevu tarihi ve saati
-- Hizmet açıklaması
-- Müşteri bilgisi
-- Çalışan bilgisi
-- Notlar (opsiyonel)
-
-### 2.5 Çalışan Bilgileri
-
-- Çalışan isimleri
+### 2.3 Ödeme Bilgileri
+- Google Play abonelik bilgileri
+- **Not:** Kredi kartı bilgileriniz Google Play tarafından işlenir, biz görmeyiz
 
 ---
 
-## 3. Verileri Nasıl Kullanıyoruz?
-
-### ✅ Kullanım Amaçları
-
-- Müşteri kayıtlarını yönetmek
-- Randevu oluşturmak ve takip etmek
-- İşlem geçmişi ve gelir takibi yapmak
-- Müşterilere SMS göndermek (sizin isteğinizle)
-- Müşterileri aramak (sizin isteğinizle)
-- Doğum günü kutlama mesajları göndermek (sizin isteğinizle)
-- Verilerinizi yedeklemek
-
-### ❌ Asla Yapmadıklarımız
-
-- Reklam göstermek
-- Verilerinizi satmak
-- Üçüncü taraflara vermek
-- Kullanıcı davranışı takibi yapmak
-
----
-
-## 4. Veriler Nerede Saklanıyor?
+## 3. Verilerin Saklanması
 
 ### 📱 Cihazınızda (Yerel)
+Müşteri kayıtları, randevular ve işlemler **sadece cihazınızda** saklanır. İnternet olmadan da çalışır.
 
-Tüm müşteri, işlem, randevu ve çalışan bilgileri **cihazınızda** saklanır. Bu veriler sadece sizin kontrolünüzdedir.
+### ☁️ Bulutta (Supabase)
+- Hesap bilgileriniz
+- Email doğrulama kodları (geçici - 3 dakika)
+- Şifre sıfırlama kodları (geçici - 3 dakika)
+- Abonelik durumu
+- Bulut yedekleme
 
-### ☁️ Bulutta (Yedekleme)
-
-- **Hesap bilgileriniz** (kullanıcı adı, salon adı, lisans bilgileri) güvenli sunucularda saklanır
-- **Yedekleme:** İsterseniz veritabanınızı buluta yedekleyebilirsiniz
-- **Konum:** Veriler Avrupa sunucularında saklanır
-- **Güvenlik:** Tüm veriler şifreli olarak iletilir ve saklanır
+**Sunucu Konumu:** Avrupa  
+**Güvenlik:** Tüm veriler HTTPS ile şifrelenir
 
 ---
 
-## 5. Veri Güvenliği
+## 4. Verileri Nasıl Kullanıyoruz?
 
-### 🔒 Güvenlik Önlemlerimiz
+✅ **Yapıyoruz:**
+- Müşteri kayıtlarınızı yönetiyoruz
+- Randevu hatırlatmaları gönderiyoruz
+- Email doğrulama yapıyoruz
+- Şifre sıfırlama desteği sağlıyoruz
+- Premium abonelik yönetimi yapıyoruz
+- Bulut yedekleme hizmeti sunuyoruz
 
-- Tüm veri iletişimi HTTPS ile şifrelenir
-- Şifreler güvenli şekilde saklanır
-- Aynı anda sadece bir cihazdan giriş yapılabilir
-- Şifre değişikliğinde tüm cihazlardan otomatik çıkış
-- Şifre sıfırlama için saatte maksimum 5 deneme hakkı
+❌ **Yapmıyoruz:**
+- Reklam göstermiyoruz
+- Verilerinizi satmıyoruz
+- Üçüncü taraflara vermiyoruz
+- Kullanıcı takibi yapmıyoruz
+- Analitik veri toplamıyoruz
+
+---
+
+## 5. İzinler
+
+### 📧 Email
+- **Kullanım:** Hesap doğrulama ve şifre sıfırlama
+- **Limit:** Günde maksimum 5 email
+
+### 📱 SMS Gönderme
+- **Kullanım:** Müşterilerinize mesaj göndermek için
+- **Kontrol:** Sadece siz "Gönder" butonuna bastığınızda
+- **Maliyet:** Operatörünüzün SMS ücretleri geçerlidir
+
+### 📞 Arama
+- **Kullanım:** Müşterilerinizi aramak için
+- **Kontrol:** Sadece siz "Ara" butonuna bastığınızda
+
+### 💳 Faturalandırma
+- **Kullanım:** Premium abonelik ödemeleri için
+- **İşleyici:** Google Play
+
+**Not:** Uygulama otomatik SMS göndermez veya arama yapmaz. Her işlem sizin kontrolünüzdedir.
 
 ---
 
 ## 6. Üçüncü Taraf Servisler
 
-### Supabase (Backend Hizmeti)
-
-- **Kullanım:** Hesap yönetimi ve bulut yedekleme
+### Supabase (Backend)
+- **Kullanım:** Hesap yönetimi, email gönderimi, bulut yedekleme
 - **Konum:** Avrupa sunucuları
-- **Gizlilik:** [Supabase Privacy Policy](https://supabase.com/privacy)
+- **Gizlilik:** [supabase.com/privacy](https://supabase.com/privacy)
 
-### ❌ Kullanmadıklarımız
+### Google Play Billing
+- **Kullanım:** Premium abonelik ödemeleri
+- **Gizlilik:** [policies.google.com/privacy](https://policies.google.com/privacy)
 
+### Resend (Email Servisi)
+- **Kullanım:** Doğrulama ve şifre sıfırlama emailleri
+- **Gizlilik:** [resend.com/legal/privacy-policy](https://resend.com/legal/privacy-policy)
+
+❌ **Kullanmadıklarımız:**
 - Google Analytics
-- Firebase
+- Firebase Analytics
+- Facebook SDK
 - Reklam ağları
-- Sosyal medya entegrasyonları
-- Analitik araçları
+- Crash reporting araçları
 
 ---
 
-## 7. Veri Paylaşımı
+## 7. Güvenlik
 
-Verilerinizi **asla** üçüncü taraflarla paylaşmıyoruz. Sadece aşağıdaki durumlarda paylaşım yapılabilir:
-
-- Yasal zorunluluk (mahkeme kararı)
-- Güvenlik ihlali tespiti
-
----
-
-## 8. Haklarınız
-
-### 👤 Neler Yapabilirsiniz?
-
-- ✅ Verilerinizi görüntüleyebilirsiniz
-- ✅ Verilerinizi düzeltebilirsiniz
-- ✅ Verilerinizi silebilirsiniz
-- ✅ Verilerinizi dışa aktarabilirsiniz (yerel yedekleme)
-- ✅ Hesabınızı tamamen silebilirsiniz
+### 🔒 Güvenlik Önlemlerimiz
+- HTTPS ile şifreli veri iletimi
+- Bcrypt ile şifre hash'leme
+- Email doğrulama sistemi
+- Tek cihaz politikası
+- 6 haneli doğrulama kodları (3 dakika geçerli)
+- 3 yanlış deneme sonrası 1 saat bekleme
+- Günlük 5 email limiti (spam önleme)
 
 ---
 
-## 9. Hesap ve Veri Silme
+## 8. Premium Abonelik
+
+### 💳 Ödeme
+- Tüm ödemeler Google Play üzerinden yapılır
+- Kredi kartı bilgilerinizi görmeyiz
+- İstediğiniz zaman iptal edebilirsiniz
+
+### 📊 Abonelik Türleri
+- **Ücretsiz:** Temel özellikler
+- **Aylık Premium:** Tüm özellikler
+- **Yıllık Premium:** Tüm özellikler (indirimli)
+
+---
+
+## 9. Haklarınız (KVKK & GDPR)
+
+✅ **Sahip Olduğunuz Haklar:**
+- Verilerinizi görme
+- Verilerinizi düzeltme
+- Verilerinizi silme
+- İtiraz etme
+
+📧 **Haklarınızı Kullanmak İçin:**  
+Email: swankysoftware@gmail.com  
+Yanıt Süresi: 30 gün
+
+---
+
+## 10. Hesap ve Veri Silme
 
 ### 🗑️ Hesabınızı Nasıl Silersiniz?
 
@@ -154,7 +168,6 @@ Hesabınızı silmek için bizimle e-posta ile iletişime geçin:
 **Konu:** SALONGO - Hesap Silme Talebi  
 **İçerik:**
 - Kullanıcı adınız
-- Kayıtlı telefon numaranız (son 4 hane)
 - Salon adınız
 - "Hesabımın ve tüm verilerimin silinmesini talep ediyorum" ifadesi
 
@@ -175,109 +188,46 @@ Hesap silme işlemi sonrasında **tüm verileriniz kalıcı olarak silinir:**
 
 ---
 
-## 10. Çocukların Gizliliği
+## 11. Çocukların Gizliliği
 
-SALONGO, **18 yaş altı** kullanıcılar için tasarlanmamıştır. 18 yaş altı kullanıcılardan bilerek veri toplamıyoruz.
-
----
-
-## 11. Veri Saklama Süreleri
-
-- **Aktif hesaplar:** Hesabınızı silene kadar saklanır
-- **Silinen hesaplar:** 7 iş günü içinde kalıcı olarak silinir
-- **Bulut yedekleri:** Yeni yedek oluşturulduğunda eski yedek silinir
+SalonGo **18 yaş altı kullanıcılar için değildir**. Bilerek 18 yaş altından veri toplamıyoruz.
 
 ---
 
-## 12. Uluslararası Veri Transferi
+## 12. Değişiklikler
 
-Verileriniz Avrupa Birliği sunucularında saklanır ve GDPR standartlarına uygun şekilde korunur.
-
----
-
-## 13. Çerezler
-
-SALONGO **çerez kullanmaz**. Uygulama, native Android uygulamasıdır ve web çerezleri kullanmaz.
+Gizlilik politikasını güncelleyebiliriz. Önemli değişikliklerde politikaya göz atmanız gerekir.
 
 ---
 
-## 14. Veri İhlali Bildirimi
+## 13. İletişim
 
-Olası bir güvenlik ihlali durumunda:
-
-- Etkilenen kullanıcılar **72 saat içinde** bilgilendirilir
-- Uygulama içi duyuru yapılır
-- E-posta ile bildirim gönderilir
-- Gerekli güvenlik önlemleri alınır
+**Email:** swankysoftware@gmail.com  
+**Geliştirici:** Muhammed Mustafa Geldi  
+**Konum:** Türkiye
 
 ---
 
-## 15. Politika Değişiklikleri
+## 14. Özet
 
-Bu gizlilik politikası güncellendiğinde:
+### ✅ Yapıyoruz
+- Verilerinizi güvenle saklıyoruz
+- Şifreleme kullanıyoruz
+- Şeffaf oluyoruz
+- KVKK ve GDPR'a uyuyoruz
 
-- Uygulama içinde bildirim yapılır
-- E-posta ile bilgilendirilirsiniz
-- Bu sayfada "Son Güncelleme" tarihi değiştirilir
-
-Uygulamayı kullanmaya devam ederek güncel politikayı kabul etmiş sayılırsınız.
-
----
-
-## 16. İletişim
-
-### 📧 Sorularınız için
-
-**E-posta:** swankysoftware@gmail.com  
-**Konu:** SALONGO - Gizlilik Politikası  
-**Yanıt Süresi:** 24-48 saat
-
-**Talep Türleri:**
-- Hesap silme
-- Veri kopyası
-- Veri düzeltme
-- Gizlilik soruları
-- Güvenlik bildirimi
+### ❌ Yapmıyoruz
+- Reklam göstermiyoruz
+- Veri satmıyoruz
+- Takip etmiyoruz
+- Spam göndermiyoruz
 
 ---
 
-## 17. Yasal Uyumluluk
+**Son Güncelleme:** 20 Kasım 2024  
+**Versiyon:** 1.0  
+**Dil:** Türkçe
 
-SALONGO, aşağıdaki yasal düzenlemelere uygun olarak geliştirilmiştir:
-
-- **KVKK** (Türkiye - Kişisel Verilerin Korunması Kanunu)
-- **GDPR** (Avrupa Birliği - Genel Veri Koruma Tüzüğü)
-- **CCPA** (ABD - California Tüketici Gizliliği Yasası)
-
----
-
-## 18. Özel Durumlar
-
-### Lisans Yönetimi
-
-- **Deneme Süresi:** 14 gün ücretsiz
-- **Ücretli Lisans:** Yıllık, aylık, belirli süre abonelik seçenekleri
-
-### Tek Cihaz Politikası
-
-- Aynı anda sadece bir cihazdan giriş yapılabilir
-- Yeni cihazdan giriş yapıldığında eski oturum sonlanır
-- Güvenlik amacıyla uygulanan bir önlemdir
-
----
-
-## 19. Taahhütlerimiz
-
-### ✅ Size Söz Veriyoruz
-
-- Verilerinizi asla satmayız
-- Reklam göstermeyiz
-- Gereksiz veri toplamayız
-- Şeffaf ve dürüst oluruz
-- Güvenliğinizi ön planda tutarız
-
----
-
-**Bu Gizlilik Politikası, 30 Ocak 2025 tarihinde yürürlüğe girmiştir.**
+**Bu Gizlilik Politikası, 20 Kasım 2025 tarihinde yürürlüğe girmiştir.**
 
 **SALONGO'yu kullandığınız için teşekkür ederiz! 💈✨**
