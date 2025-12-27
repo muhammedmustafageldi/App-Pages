@@ -1,61 +1,43 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-posta Doğrulandı - Swanky Software</title>
-    <meta name="description" content="E-posta adresiniz başarıyla doğrulandı. Artık uygulamaya giriş yapabilirsiniz.">
+    <title>E-posta Doğrulandı</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/email-verified.css">
-    <link rel="icon" type="image/png" href="other_icons/swanky_logo.png">
-    <link rel="apple-touch-icon" href="other_icons/swanky_logo.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header class="header">
-        <div class="header-content">
-            <h1>E-posta Doğrulandı!</h1>
-            <p>Hesabınız başarıyla aktifleştirildi</p>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="brand-logo">
+                <img src="other_icons/swanky_logo.png?v=3" alt="Logo" width="32">
+                Swanky Software
+            </a>
         </div>
     </header>
 
-    <main class="main">
-        <div class="content-card verification-card">
-            <div class="verification-content">
-                <div class="verification-icon">
-                    <div class="checkmark-circle">
-                        <div class="checkmark"></div>
-                    </div>
-                </div>
-
-                <h2>Hoş Geldiniz!</h2>
-                <p class="verification-message">
-                    E-posta adresiniz başarıyla doğrulandı. Artık uygulamaya giriş yapabilir ve tüm özelliklerden faydalanabilirsiniz.
-                </p>
-
-                <div class="help-section">
-                    <h3>Yardıma mı İhtiyacınız Var?</h3>
-                    <p>Giriş yaparken sorun yaşıyorsanız bizimle iletişime geçin:</p>
-                    <a href="mailto:swankysoftware@gmail.com?subject=Giriş Sorunu" class="contact-button">
-                        📧 Destek Ekibiyle İletişime Geç
-                    </a>
-                </div>
+    <main class="page-wrapper container">
+        <div class="verified-card">
+            <div class="check-animation-circle">
+                <span class="check-icon">✓</span>
             </div>
+
+            <h1 class="verified-title">Tamamdır!</h1>
+            <p class="verified-text">E-posta adresiniz başarıyla doğrulandı. Hesabınız artık tamamen aktif ve güvenli.
+            </p>
+
+            <a href="https://play.google.com/store/apps/details?id=com.swanky.salongo" class="btn btn-primary"
+                style="width: 100%;">
+                Uygulamaya Dön
+            </a>
         </div>
     </main>
 
-    <footer class="footer"></footer>    
- 
-   <script>
-        window.pageConfig = {
-            title: 'E-posta Doğrulandı - Swanky Software',
-            description: 'E-posta adresiniz başarıyla doğrulandı. Artık uygulamaya giriş yapabilirsiniz.',
-            headerTitle: 'E-posta Doğrulandı!',
-            headerSubtitle: 'Hesabınız başarıyla aktifleştirildi'
-        };
-    </script>
     <script src="js/common.js"></script>
 </body>
+
 </html>

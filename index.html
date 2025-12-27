@@ -4,151 +4,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Swanky Software - Gizlilik Politikaları</title>
-    <meta name="description"
-        content="Swanky Software mobil uygulamalarının gizlilik politikalarına buradan ulaşabilirsiniz.">
+    <title>Swanky Software - Dijital Çözümler</title>
+
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="icon" type="image/png" sizes="32x32" href="other_icons/swanky_logo.png?v=3">
-    <link rel="icon" type="image/png" sizes="16x16" href="other_icons/swanky_logo.png?v=3">
-    <link rel="apple-touch-icon" sizes="180x180" href="other_icons/swanky_logo.png?v=3">
-    <link rel="shortcut icon" href="other_icons/swanky_logo.png?v=3">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header class="header">
-        <div class="header-content">
-            <h1>Swanky Software</h1>
-            <p>Mobil Uygulamalarımızın Gizlilik Politikaları</p>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="brand-logo">
+                <img src="other_icons/swanky_logo.png?v=3" alt="Logo" width="36" height="36">
+                Swanky Software
+            </a>
+            <nav class="header-nav"></nav>
         </div>
     </header>
 
-    <main class="main">
-        <div class="content-card">
-            <h2>Uygulamalarımız</h2>
-            <p>Geliştirdiğimiz mobil uygulamaların gizlilik politikalarına aşağıdaki linklerden ulaşabilirsiniz. Tüm
-                uygulamalarımız kullanıcı gizliliğini en üst düzeyde koruma prensibiyle geliştirilmiştir.</p>
+    <main>
+        <section class="hero-section container">
+            <h1 class="hero-title">
+                Hayatı Kolaylaştıran<br>
+                <div class="typewriter-container">
+                    <span id="typewriter" class="typewriter-text"></span>
+                </div>
+            </h1>
+            <p class="hero-subtitle">
+                Teknoloji ve estetiği bir araya getiriyoruz. Güvenli, hızlı ve kullanıcı dostu uygulamalarımızla
+                tanışın.
+            </p>
+        </section>
 
+        <section class="container" id="apps">
             <div class="apps-grid">
+
+                <!-- Wordify -->
                 <a href="wordify-privacy-policy.html" class="app-card">
-                    <div class="app-icon"
-                        style="background-image: url('app_logo/wordify_logo.png'); background-size: cover; background-position: center;">
-                        <span style="display: none;">📚</span>
+                    <div class="app-header">
+                        <div class="app-icon" style="background-image: url('app_logo/wordify_logo.png');"></div>
+                        <div class="app-title-group">
+                            <h3>Wordify</h3>
+                            <span class="app-category">Eğitim & Dil</span>
+                        </div>
                     </div>
-                    <h3>Wordify</h3>
-                    <p>İngilizce kelime öğrenmeye yardımcı olan interaktif mobil uygulama. Kişiselleştirilmiş öğrenme
-                        deneyimi sunar.</p>
+                    <p class="app-desc">
+                        İngilizce kelime öğrenmeyi eğlenceli hale getiren interaktif mobil uygulama.
+                        Kişiselleştirilmiş testler ve akıllı tekrar sistemi ile kelime hazinenizi geliştirin.
+                    </p>
+
                     <div class="app-meta">
-                        <span>Son Güncelleme: 24 Temmuz 2025</span>
-                        <span class="privacy-link">
-                            Gizlilik Politikası →
-                        </span>
+                        <div class="meta-badge">
+                            <svg viewBox="0 0 24 24">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                            </svg>
+                            24 Tem 2025
+                        </div>
+                        <div class="meta-badge">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                            </svg>
+                            v1.0
+                        </div>
+                    </div>
+
+                    <div class="app-actions">
+                        <span class="btn-card">Politika</span>
                     </div>
                 </a>
 
+                <!-- Quitify -->
                 <a href="quitify-privacy-policy.html" class="app-card">
-                    <div class="app-icon"
-                        style="background-image: url('app_logo/quitify_logo.png'); background-size: cover; background-position: center;">
-                        <span style="display: none;">🚭</span>
+                    <div class="app-header">
+                        <div class="app-icon" style="background-image: url('app_logo/quitify_logo.png');"></div>
+                        <div class="app-title-group">
+                            <h3>Quitify</h3>
+                            <span class="app-category">Sağlık & Finans</span>
+                        </div>
                     </div>
-                    <h3>Quitify</h3>
-                    <p>Sigara bırakma yolculuğunuzda size yardımcı olan motivasyon ve takip uygulaması. İlerlemenizi
-                        izleyin ve hedeflerinize ulaşın.</p>
+                    <p class="app-desc">
+                        Sigarayı bırakma yolculuğunuzda size eşlik eden sadık dostunuz.
+                        Sağlık iyileşmelerinizi takip edin, tasarruf ettiğiniz parayı görün ve motive olun.
+                    </p>
+
                     <div class="app-meta">
-                        <span>Son Güncelleme: 24 Temmuz 2025</span>
-                        <span class="privacy-link">
-                            Gizlilik Politikası →
-                        </span>
+                        <div class="meta-badge">
+                            <svg viewBox="0 0 24 24">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                            </svg>
+                            24 Tem 2025
+                        </div>
+                        <div class="meta-badge">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                            </svg>
+                            v1.0
+                        </div>
+                    </div>
+
+                    <div class="app-actions">
+                        <span class="btn-card">Politika</span>
                     </div>
                 </a>
 
-                <div class="app-card app-card-static">
-                    <div class="app-icon"
-                        style="background-image: url('app_logo/salongo_logo.png'); background-size: cover; background-position: center;">
-                        <span style="display: none;">💈</span>
+                <!-- SalonGo -->
+                <div class="app-card">
+                    <div class="app-header">
+                        <div class="app-icon" style="background-image: url('app_logo/salongo_logo.png');"></div>
+                        <div class="app-title-group">
+                            <h3>SalonGo</h3>
+                            <span class="app-category">İşletme Yönetimi</span>
+                        </div>
                     </div>
-                    <h3>SalonGo</h3>
-                    <p>İşletmeler için tasarlanmış kapsamlı bir yönetim uygulaması. Müşteri kayıtları, randevu takibi, kasa yönetimi ve işlem geçmişi gibi tüm operasyonları kolaylaştırır.</p>
+                    <p class="app-desc">
+                        Güzellik salonları ve kuaförler için hepsi bir arada yönetim platformu.
+                        Randevu takibi, kasa yönetimi ve müşteri ilişkileri artık çok daha kolay.
+                    </p>
+
                     <div class="app-meta">
-                        <span>Son Güncelleme: 27 Aralık 2025</span>
+                        <div class="meta-badge">
+                            <svg viewBox="0 0 24 24">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                            </svg>
+                            27 Ara 2025
+                        </div>
+                        <div class="meta-badge">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                            </svg>
+                            v1.1
+                        </div>
                     </div>
-                    <div class="app-links">
-                        <a href="salongo-privacy-policy.html" class="app-link">
-                            <span class="link-icon">🔒</span>
-                            Gizlilik Politikası
-                        </a>
-                        <a href="salongo-terms-of-service.html" class="app-link">
-                            <span class="link-icon">📋</span>
-                            Kullanıcı Sözleşmesi
-                        </a>
+
+                    <div class="app-actions">
+                        <a href="salongo-privacy-policy.html" class="btn-card">Politika</a>
+                        <a href="salongo-terms-of-service.html" class="btn-card primary">Sözleşme</a>
                     </div>
                 </div>
 
-                <!-- Gelecekteki uygulamalar için hazır template -->
-                <!-- 
-                <a href="#" class="app-card">
-                    <div class="app-icon">🎯</div>
-                    <h3>Yeni Uygulama</h3>
-                    <p>Açıklama buraya gelecek...</p>
-                    <div class="app-meta">
-                        <span>Yakında</span>
-                        <span class="privacy-link">
-                            Gizlilik Politikası →
-                        </span>
-                    </div>
-                </a>
-                -->
             </div>
-        </div>
-
-        <div class="content-card">
-            <h2>Gizlilik Taahhüdümüz</h2>
-            <div class="highlight-box">
-                <h3>🔒 Güvenlik Önceliğimiz</h3>
-                <p>Tüm uygulamalarımızda kullanıcı verilerinin güvenliği en önemli önceliğimizdir. Modern şifreleme
-                    teknikleri ve güvenlik protokolleri kullanarak verilerinizi koruyoruz.</p>
-            </div>
-
-            <div class="highlight-box">
-                <h3>🌍 Yasal Uyumluluk</h3>
-                <p>Uygulamalarımız KVKK (Türkiye), GDPR (Avrupa Birliği) ve CCPA (ABD) gibi uluslararası veri koruma
-                    düzenlemelerine tam uyum sağlar.</p>
-            </div>
-
-            <div class="highlight-box">
-                <h3>👤 Kullanıcı Hakları</h3>
-                <p>Verilerinize erişim, düzeltme ve silme haklarınızı kolayca kullanabilirsiniz. Talepleriniz 30 gün
-                    içinde değerlendirilir.</p>
-            </div>
-        </div>
-
-        <div class="content-card">
-            <h2>İletişim</h2>
-            <p>Gizlilik politikalarımız hakkında sorularınız varsa bizimle iletişime geçebilirsiniz:</p>
-            <ul>
-                <li><strong>E-posta:</strong> <a href="mailto:swankysoftware@gmail.com">swankysoftware@gmail.com</a>
-                </li>
-                <li><strong>Geliştirici:</strong> Muhammed Mustafa Geldi</li>
-                <li><strong>Konum:</strong> Türkiye</li>
-            </ul>
-            <p>E-posta gönderirken konu başlığında hangi uygulama hakkında soru sorduğunuzu belirtmeyi unutmayın.</p>
-        </div>
+        </section>
     </main>
 
-    <footer class="footer"></footer>
-    
-    <script>
-        window.pageConfig = {
-            title: 'Swanky Software - Gizlilik Politikaları',
-            description: 'Swanky Software mobil uygulamalarının gizlilik politikalarına buradan ulaşabilirsiniz.',
-            headerTitle: 'Swanky Software',
-            headerSubtitle: 'Mobil Uygulamalarımızın Gizlilik Politikaları'
-        };
-    </script>
+    <footer class="site-footer"
+        style="text-align:center; padding: 2rem; border-top: 1px solid var(--border-color); color: var(--text-tertiary);">
+        <p>© 2025 Swanky Software</p>
+    </footer>
+
     <script src="js/common.js"></script>
+    <script>
+        // Use Typewriter Effect
+        const words = ["Mobil Çözümler", "Yenilikçi Tasarımlar", "Güvenli Altyapı"];
+        const el = document.getElementById('typewriter');
+        let wordIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+
+        function type() {
+            const currentWord = words[wordIndex];
+
+            if (isDeleting) {
+                el.textContent = currentWord.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                el.textContent = currentWord.substring(0, charIndex + 1);
+                charIndex++;
+            }
+
+            let typeSpeed = isDeleting ? 50 : 100;
+
+            if (!isDeleting && charIndex === currentWord.length) {
+                isDeleting = true;
+                typeSpeed = 2000; // Wait before deleting
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                wordIndex = (wordIndex + 1) % words.length;
+                typeSpeed = 500; // Wait before typing new word
+            }
+
+            setTimeout(type, typeSpeed);
+        }
+
+        document.addEventListener('DOMContentLoaded', type);
+    </script>
 </body>
 
 </html>

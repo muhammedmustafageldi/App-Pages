@@ -1,156 +1,205 @@
-/* Home Page Specific Styles */
+/* Home Page Styles */
 
-/* App Cards */
+/* Hero */
+.hero-section {
+    text-align: center;
+    padding: 6rem 0 4rem;
+}
+
+.hero-title {
+    font-size: 4rem;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+
+/* Typewriter Animation new style */
+.typewriter-container {
+    display: inline-block;
+    min-width: 300px;
+    text-align: left;
+    height: 1.2em;
+    /* Reserve height */
+}
+
+.typewriter-text {
+    background: linear-gradient(120deg, var(--primary-color), #FF9800);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-right: 4px solid var(--primary-color);
+    padding-right: 8px;
+    animation: blinkCursor 0.8s step-end infinite;
+    white-space: nowrap;
+}
+
+@keyframes blinkCursor {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: var(--primary-color)
+    }
+}
+
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    color: var(--text-tertiary);
+    max-width: 600px;
+    margin: 0 auto 3rem;
+}
+
+/* Apps Grid */
 .apps-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     gap: 2rem;
-    margin-top: 2rem;
+    padding-bottom: 4rem;
 }
 
 .app-card {
-    background: var(--bg-card);
-    border-radius: var(--radius-lg);
-    padding: 2rem;
-    box-shadow: var(--shadow-md);
+    background: var(--bg-surface);
+    border-radius: var(--radius-xl);
+    padding: 2.5rem;
     border: 1px solid var(--border-color);
-    transition: all 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    display: flex;
+    flex-direction: column;
     text-decoration: none;
-    color: inherit;
-    display: block;
+    /* No underline */
+    color: var(--text-primary);
 }
 
 .app-card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-xl);
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-color);
+}
+
+/* Ensure no text underline on hover for any child */
+.app-card:hover h3,
+.app-card:hover p,
+.app-card:hover span {
     text-decoration: none;
-    color: inherit;
+}
+
+.app-header {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    margin-bottom: 1.5rem;
 }
 
 .app-icon {
     width: 64px;
     height: 64px;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    border-radius: var(--radius-lg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-    color: white;
-    margin-bottom: 1rem;
-    position: relative;
-    overflow: hidden;
+    background-size: cover;
+    border-radius: var(--radius-md);
+    background-color: var(--bg-alt);
 }
 
-.app-icon span {
-    position: relative;
-    z-index: 2;
+.app-header h3 {
+    font-size: 1.5rem;
+    margin: 0;
 }
 
-.app-card h3 {
-    color: var(--text-primary);
-    margin-bottom: 0.5rem;
-    margin-top: 0;
-}
-
-.app-card p {
+.app-desc {
     color: var(--text-secondary);
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    flex-grow: 1;
 }
 
-.app-meta {
+/* Buttons inside Card */
+.app-actions {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 0.875rem;
-    color: var(--text-light);
-    margin-top: 1.5rem;
-    padding-top: 1rem;
-    border-top: 1px solid rgba(65, 100, 74, 0.1);
     gap: 1rem;
+    margin-top: auto;
 }
 
-.privacy-link {
-    color: var(--primary-color);
-    font-weight: 500;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.25rem;
-    white-space: nowrap;
-    flex-shrink: 0;
+.btn-card {
+    flex: 1;
+    text-align: center;
+    padding: 0.75rem;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+    background: var(--bg-alt);
+    color: var(--text-primary);
 }
 
-.privacy-link:hover {
-    color: var(--primary-dark);
+.btn-card:hover {
+    background: var(--primary-color);
+    color: black;
+    /* Contrast */
 }
 
-/* Animation removed to prevent flickering */
+/* Primary Action Button Style for Cards */
+.btn-card.primary {
+    background: var(--secondary-color);
+    /* Black */
+    color: white;
+}
 
-/* Responsive */
-@media (max-width: 768px) {
-    .apps-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
+.btn-card.primary:hover {
+    background: var(--primary-color);
+    color: black;
+}
+
+@media(max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
     }
 }
 
-
-/* Static App Card (for multiple links) */
-.app-card-static {
-    background: var(--bg-card);
-    border-radius: var(--radius-lg);
-    padding: 2rem;
-    box-shadow: var(--shadow-md);
-    border: 1px solid var(--border-color);
-    display: block;
-}
-
-.app-card-static h3 {
-    color: var(--text-primary);
-    margin-bottom: 0.5rem;
-    margin-top: 0;
-}
-
-.app-card-static p {
-    color: var(--text-secondary);
-    margin-bottom: 1rem;
-}
-
-.app-card-static .app-meta {
-    justify-content: flex-start;
-    border-bottom: 1px solid rgba(65, 100, 74, 0.1);
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
-}
-
-/* App Links Container */
-.app-links {
+/* Home Card Categories */
+.app-title-group {
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
+    align-items: flex-start;
 }
 
-.app-link {
+.app-category {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: black;
+    font-weight: 700;
+    margin-top: 0.25rem;
+    background: var(--primary-color);
+    padding: 4px 10px;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+/* Apps Meta Data Design */
+.app-meta {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     gap: 0.75rem;
-    padding: 0.875rem 1rem;
-    background: rgba(65, 100, 74, 0.05);
-    border-radius: var(--radius-md);
-    text-decoration: none;
-    color: var(--text-primary);
+    margin-bottom: 2rem;
+    font-size: 0.85rem;
+    color: var(--text-tertiary);
+}
+
+.meta-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--bg-body);
+    padding: 0.4rem 0.8rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-color);
     font-weight: 500;
-    transition: all 0.2s ease;
-    border: 1px solid transparent;
+    color: var(--text-secondary);
 }
 
-.app-link:hover {
-    background: rgba(65, 100, 74, 0.1);
-    border-color: var(--primary-color);
-    color: var(--primary-color);
-    transform: translateX(4px);
-}
-
-.app-link .link-icon {
-    font-size: 1.1rem;
+.meta-badge svg {
+    width: 14px;
+    height: 14px;
+    stroke: currentColor;
+    stroke-width: 2;
+    fill: none;
 }
