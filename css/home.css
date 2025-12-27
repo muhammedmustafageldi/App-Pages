@@ -93,3 +93,64 @@
         gap: 1.5rem;
     }
 }
+
+
+/* Static App Card (for multiple links) */
+.app-card-static {
+    background: var(--bg-card);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border-color);
+    display: block;
+}
+
+.app-card-static h3 {
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+.app-card-static p {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+.app-card-static .app-meta {
+    justify-content: flex-start;
+    border-bottom: 1px solid rgba(65, 100, 74, 0.1);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* App Links Container */
+.app-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.app-link {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.875rem 1rem;
+    background: rgba(65, 100, 74, 0.05);
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    color: var(--text-primary);
+    font-weight: 500;
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+}
+
+.app-link:hover {
+    background: rgba(65, 100, 74, 0.1);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    transform: translateX(4px);
+}
+
+.app-link .link-icon {
+    font-size: 1.1rem;
+}
