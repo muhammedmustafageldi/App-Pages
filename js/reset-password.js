@@ -4,7 +4,8 @@ const supabase = window.supabase.createClient(
     window.SUPABASE_CONFIG.anonKey
 )
 
-function togglePassword(inputId) {
+// Global function for onclick
+window.togglePassword = function(inputId) {
     const input = document.getElementById(inputId);
     const button = input.nextElementSibling;
 
@@ -19,6 +20,8 @@ function togglePassword(inputId) {
 
 function checkPasswordStrength(password) {
     const strengthElement = document.getElementById('passwordStrength');
+    if (!strengthElement) return;
+    
     let strength = 0;
     let message = '';
 
