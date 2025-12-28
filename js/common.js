@@ -199,7 +199,7 @@ function initializeTOC() {
 
 function createMobileToggle(sidebar) {
     const wrapper = document.querySelector('.policy-layout');
-    
+
     // Check if toggle already exists (to prevent dupes)
     if (document.querySelector('.mobile-toc-toggle')) return;
 
@@ -216,54 +216,66 @@ function createMobileToggle(sidebar) {
 }
 
 function setupScrollSpy(tocLinks) {
-    const observerOptions = {
-        root: null,
-        rootMargin: '0px 0px -60% 0px', // Trigger when element is in top 40% of page
-        threshold: 0
-    };
+    // 1. Get all heading elements from the tocLinks
+    const headings = tocLinks.map(item => item.target);
+    const sidebar = document.querySelector('.toc-sidebar');
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                // Remove active from all
-                tocLinks.forEach(item => item.link.classList.remove('active'));
+    // Throttling flag
+    let ticking = false;
 
-                // Add active to current
-                const activeLink = tocLinks.find(item => item.target === entry.target);
-                if (activeLink) {
-                    activeLink.link.classList.add('active');
+    function onScroll() {
+        if (!ticking) {
+            window.requestAnimationFrame(() => {
+                updateActiveLink();
+                ticking = false;
+            });
+            ticking = true;
+        }
+    }
 
-                    // SCROLL SIDEBAR to keep active link in view
-                    const sidebar = document.querySelector('.toc-sidebar');
+    function updateActiveLink() {
+        const scrollPosition = window.scrollY + 120; // Offset for fixed header + breathing room
+
+        let currentActiveTarget = null;
+
+        // 1. Check if we are at the bottom of the page
+        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 50) {
+            currentActiveTarget = headings[headings.length - 1];
+        } else {
+            // 2. Standard check: Find the last header that is above the scroll line
+            // We loop through all. The last one that satisfies (top < scrollPosition) is the winner.
+            headings.forEach(heading => {
+                if (heading.offsetTop <= scrollPosition) {
+                    currentActiveTarget = heading;
+                }
+            });
+        }
+
+        // 3. Update DOM
+        tocLinks.forEach(item => {
+            if (item.target === currentActiveTarget) {
+                if (!item.link.classList.contains('active')) {
+                    item.link.classList.add('active');
+
+                    // Auto-scroll sidebar
                     if (sidebar) {
-                        const linkTop = activeLink.link.offsetTop;
+                        const linkTop = item.link.offsetTop;
                         const sidebarHeight = sidebar.clientHeight;
-                        const scrollPos = sidebar.scrollTop;
-                        
-                        // Simple center logic
-                        if (linkTop < scrollPos || linkTop > (scrollPos + sidebarHeight)) {
-                           sidebar.scrollTop = linkTop - (sidebarHeight / 2) - 50;
+                        const sidebarScroll = sidebar.scrollTop;
+
+                        // Keep current item in the middle 50% of sidebar if possible
+                        if (linkTop < sidebarScroll + 50 || linkTop > sidebarScroll + sidebarHeight - 50) {
+                            sidebar.scrollTop = linkTop - (sidebarHeight / 2) + 20;
                         }
                     }
                 }
+            } else {
+                item.link.classList.remove('active');
             }
         });
-    }, observerOptions);
+    }
 
-    tocLinks.forEach(item => observer.observe(item.target));
-    
-    // Special Handler: If user hits bottom of page, highlight the LAST item
-    window.addEventListener('scroll', () => {
-        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 50) {
-             // We are at bottom
-             tocLinks.forEach(item => item.link.classList.remove('active'));
-             const lastItem = tocLinks[tocLinks.length - 1];
-             if (lastItem) {
-                 lastItem.link.classList.add('active');
-                 // Also scroll sidebar to bottom
-                 const sidebar = document.querySelector('.toc-sidebar');
-                 if (sidebar) sidebar.scrollTop = sidebar.scrollHeight;
-             }
-        }
-    });
+    window.addEventListener('scroll', onScroll);
+    // Initial check
+    updateActiveLink();
 }

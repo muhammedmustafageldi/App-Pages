@@ -159,8 +159,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             // Show success message
-            document.querySelector('.reset-form').style.display = 'none';
-            document.querySelector('.help-section').style.display = 'none';
+            document.getElementById('resetForm').style.display = 'none';
             successMessage.style.display = 'block';
 
             // Clear the URL hash for security
@@ -213,8 +212,7 @@ window.addEventListener('load', function () {
 
         document.getElementById('errorMessage').style.display = 'block';
         document.getElementById('errorText').textContent = errorMessage;
-        document.querySelector('.reset-form').style.display = 'none';
-        document.querySelector('.help-section').style.display = 'none';
+        document.getElementById('resetForm').style.display = 'none';
         return;
     }
 
@@ -222,7 +220,6 @@ window.addEventListener('load', function () {
     if (!accessToken) {
         document.getElementById('errorMessage').style.display = 'block';
         document.getElementById('errorText').textContent = 'Geçersiz şifre sıfırlama bağlantısı. Lütfen yeni bir şifre sıfırlama talebinde bulunun.';
-        document.querySelector('.reset-form').style.display = 'none';
-        document.querySelector('.help-section').style.display = 'none';
+        document.getElementById('resetForm').style.display = 'none';
     }
 });

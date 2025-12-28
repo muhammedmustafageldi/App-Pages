@@ -45,7 +45,7 @@
 
                 <h1>SalonGo Kullanıcı Sözleşmesi</h1>
                 <p style="color: var(--text-tertiary); margin-bottom: 2rem;">
-                    <strong>Son Güncelleme:</strong> 27 Aralık 2025 | <strong>Versiyon:</strong> 1.0
+                    <strong>Son Güncelleme:</strong> 28 Aralık 2025 | <strong>Versiyon:</strong> 1.1
                 </p>
 
                 <h2>1. Taraflar ve Kapsam</h2>
@@ -100,9 +100,11 @@
                     <ul>
                         <li>Maksimum 10 müşteri kaydı</li>
                         <li>Maksimum 1 çalışan kaydı</li>
-                        <li>5 gün sonrasına randevu oluşturma</li>
+                        <li>Maksimum 5 gün sonrasına randevu oluşturma</li>
                         <li>Yerel yedekleme</li>
                         <li>Temel özellikler</li>
+                        <li>Otomatik mesaj ve sadakat sistemi kapalı</li>
+                        <li>Bulut yedekleme kapalı</li>
                     </ul>
                 </div>
 
@@ -111,8 +113,9 @@
                     <ul>
                         <li>Sınırsız müşteri ve çalışan kaydı</li>
                         <li>Sınırsız ileri tarihli randevu</li>
-                        <li>Otomatik mesaj ve sadakat sistemi</li>
-                        <li>Otomatik bulut yedekleme</li>
+                        <li>Otomatik mesaj sistemi</li>
+                        <li>Sadakat sistemi</li>
+                        <li>Otomatik bulut yedekleme (her gece 00:00)</li>
                         <li>Tüm özellikler</li>
                     </ul>
                 </div>
@@ -182,7 +185,13 @@
 
                 <h3>4.3 Veri Sorumluluğu</h3>
                 <p>Uygulamaya girdiğiniz tüm verilerden (müşteri bilgileri, işlem kayıtları vb.) tamamen siz
-                    sorumlusunuz. Bu verileri yasalara uygun olarak işlemek sizin yükümlülüğünüzdedir.</p>
+                    sorumlusunuz. Bu verilerin:</p>
+                <ul>
+                    <li>Doğru ve güncel olmasını</li>
+                    <li>Yasal yollarla elde edilmiş olmasını</li>
+                    <li>İlgili kişilerin rızasıyla işlenmesini</li>
+                </ul>
+                <p>sağlamak sizin yükümlülüğünüzdedir.</p>
 
                 <h3>4.4 KVKK Uyumu</h3>
                 <p>Müşterilerinizin kişisel verilerini işlerken 6698 sayılı Kişisel Verilerin Korunması Kanunu'na (KVKK)
@@ -209,8 +218,17 @@
                 </ul>
 
                 <h3>5.3 Fiyat Değişiklikleri</h3>
-                <p>Fiyat değişiklikleri önceden bildirilir. Yeni fiyatı kabul etmezseniz aboneliğinizi iptal
-                    edebilirsiniz.</p>
+                <ul>
+                    <li>Fiyat değişiklikleri önceden bildirilir</li>
+                    <li>Mevcut abonelikler dönem sonuna kadar eski fiyattan devam eder</li>
+                    <li>Yeni fiyatı kabul etmezseniz aboneliğinizi iptal edebilirsiniz</li>
+                </ul>
+
+                <h3>5.4 Abonelik Transferi</h3>
+                <ul>
+                    <li>Premium abonelik hesaplar arası transfer edilebilir</li>
+                    <li>Eski hesap otomatik olarak ücretsiz plana düşer</li>
+                </ul>
 
                 <h2>6. Veri Yedekleme</h2>
 
@@ -218,7 +236,8 @@
                 <ul>
                     <li>Tüm kullanıcılar yerel yedekleme özelliğini kullanabilir</li>
                     <li>Yerel yedeklemeler cihazınızda saklanır</li>
-                    <li>Cihaz kaybı durumunda yerel yedeklemeler kaybolabilir</li>
+                    <li>Yerel yedeklemelerin güvenliği ve korunması tamamen sizin sorumluluğunuzdadır</li>
+                    <li>Cihaz kaybı, çalınması veya arızası durumunda yerel yedeklemeler kaybolabilir</li>
                 </ul>
 
                 <h3>6.2 Bulut Yedekleme (Premium)</h3>
@@ -230,57 +249,269 @@
                         <li>Her gece otomatik yedekleme (00:00)</li>
                         <li>Avrupa'da bulunan güvenli sunucularda (Supabase) saklama</li>
                         <li>HTTPS ile şifreli veri transferi</li>
+                        <li>Tek yedek politikası (her yeni yedek öncekinin üzerine yazılır)</li>
+                    </ul>
+
+                    <h4>Yedeklenen Veriler:</h4>
+                    <ul>
+                        <li>Müşteri kayıtları</li>
+                        <li>Randevu kayıtları</li>
+                        <li>İşlem geçmişi (gelir/gider)</li>
+                        <li>Çalışan bilgileri</li>
+                        <li>Uygulama ayarları</li>
                     </ul>
                 </div>
 
-                <h3>6.3 Sorumluluk Reddi</h3>
-                <p>Teknik arızalar, siber saldırılar veya üçüncü taraf hizmet kesintileri nedeniyle oluşabilecek veri
-                    kayıplarından Geliştirici sorumlu tutulamaz. Ek yedekleme önlemleri almanız önerilir.</p>
+                <h3>6.3 Bulut Yedekleme Sorumluluk Reddi</h3>
+                <p><strong>Geliştirici aşağıdaki durumlardan sorumlu tutulamaz:</strong></p>
+                <ul>
+                    <li>Supabase veya diğer üçüncü taraf hizmet sağlayıcılarının kesintileri nedeniyle yedekleme yapılamaması</li>
+                    <li>İnternet bağlantısı sorunları nedeniyle yedekleme başarısızlıkları</li>
+                    <li>Sunucu bakım çalışmaları sırasında geçici erişim kesintileri</li>
+                    <li>Öngörülemeyen teknik arızalar nedeniyle veri kaybı</li>
+                    <li>Siber saldırılar sonucu oluşabilecek veri ihlalleri</li>
+                    <li>Kullanıcının Premium aboneliğini iptal etmesi sonucu bulut yedeklerine erişim kaybı</li>
+                </ul>
+
+                <p><strong>Kullanıcı Sorumlulukları:</strong></p>
+                <ul>
+                    <li>Kritik verileriniz için ek yedekleme önlemleri almanız önerilir</li>
+                    <li>Düzenli olarak yerel yedekleme yapmanız tavsiye edilir</li>
+                    <li>Yedekleme durumunu periyodik olarak kontrol etmeniz beklenir</li>
+                    <li>İnternet bağlantınızın yedekleme saatlerinde aktif olmasını sağlamalısınız</li>
+                </ul>
+
+                <h3>6.4 Yedekleme Verilerinin Silinmesi</h3>
+                <ul>
+                    <li>Hesap silme talebinde bulunduğunuzda bulut yedeklemeleriniz de kalıcı olarak silinir</li>
+                    <li>Premium aboneliğinizi iptal ettiğinizde mevcut bulut yedeğiniz korunur ancak yeni yedekleme yapılmaz</li>
+                    <li>Hesabınız askıya alındığında veya kapatıldığında bulut yedeklerinize erişiminiz sona erer</li>
+                </ul>
+
+                <h3>6.5 Veri Bütünlüğü</h3>
+                <ul>
+                    <li>Yedekleme ve geri yükleme işlemlerinde veri bütünlüğü için makul çaba gösterilmektedir</li>
+                    <li>Ancak %100 veri bütünlüğü garanti edilmemektedir</li>
+                    <li>Geri yükleme işlemi sonrası verilerinizi kontrol etmeniz önerilir</li>
+                </ul>
 
                 <div class="section-divider"></div>
 
-                <h2>7. Fikri Mülkiyet</h2>
-                <p>SalonGo uygulaması, tasarımı ve kodları Muhammed Mustafa Geldi'ye aittir. Size yalnızca kullanım için
-                    sınırlı bir lisans verilmektedir.</p>
+                <h2>7. Fikri Mülkiyet Hakları</h2>
+
+                <h3>7.1 Uygulama Hakları</h3>
+                <p>SalonGo uygulaması, tasarımı, logosu, kaynak kodu, grafikleri ve tüm içeriği Muhammed Mustafa Geldi'nin münhasır mülkiyetindedir ve Türkiye Cumhuriyeti ile uluslararası fikri mülkiyet yasaları ile korunmaktadır.</p>
+
+                <h3>7.2 Lisans</h3>
+                <p>Size, bu Sözleşme şartlarına uygun olarak Uygulamayı kişisel ve ticari amaçlarla (salon işletmeniz için) kullanmanız için sınırlı, münhasır olmayan, devredilemez bir lisans verilmektedir.</p>
+
+                <h3>7.3 Kısıtlamalar</h3>
+                <p>Bu lisans aşağıdaki hakları içermez:</p>
+                <ul>
+                    <li>Uygulamayı kopyalamak, değiştirmek veya türev eserler oluşturmak</li>
+                    <li>Uygulamayı satmak, kiralamak veya alt lisans vermek</li>
+                    <li>Uygulamanın kaynak koduna erişmek veya tersine mühendislik yapmak</li>
+                    <li>SalonGo markasını izinsiz kullanmak</li>
+                </ul>
+
+                <h3>7.4 Kullanıcı İçeriği</h3>
+                <p>Uygulamaya girdiğiniz veriler (müşteri bilgileri, işlem kayıtları vb.) size aittir. Ancak bu verileri işlemek ve hizmet sunmak için bize gerekli teknik izinleri vermiş olursunuz.</p>
 
                 <h2>8. Gizlilik</h2>
-                <p>Kişisel verilerinizin işlenmesi hakkında detaylı bilgi için <a
-                        href="salongo-privacy-policy.html">Gizlilik Politikamızı ↗</a> inceleyiniz.</p>
+                <p>Kişisel verilerinizin işlenmesi hakkında detaylı bilgi için <a href="salongo-privacy-policy.html" style="color: var(--primary-color); font-weight: 500;">Gizlilik Politikamızı ↗</a> inceleyiniz. Gizlilik Politikası bu Sözleşme'nin ayrılmaz bir parçasıdır.</p>
 
                 <h2>9. Sorumluluk Sınırlaması</h2>
-                <p>Uygulama "OLDUĞU GİBİ" sunulmaktadır. Geliştirici, uygulamanın kullanımından doğabilecek dolaylı veya
-                    dolaysız zararlardan sorumlu tutulamaz.</p>
 
-                <h2>10. Fesih</h2>
-                <p>Kullanıcılar hesaplarını istedikleri zaman silebilirler. Geliştirici, kuralların ihlali durumunda
-                    hesapları askıya alma veya kapatma hakkını saklı tutar.</p>
+                <h3>9.1 Hizmet Garantisi</h3>
+                <p>Uygulama "OLDUĞU GİBİ" ve "MEVCUT OLDUĞU ŞEKİLDE" sunulmaktadır. Aşağıdaki konularda açık veya zımni hiçbir garanti verilmemektedir:</p>
+                <ul>
+                    <li>Kesintisiz veya hatasız çalışma</li>
+                    <li>Belirli bir amaca uygunluk</li>
+                    <li>Ticari elverişlilik</li>
+                    <li>Güvenlik ihlallerinin olmaması</li>
+                </ul>
 
-                <h2>11. İletişim</h2>
+                <h3>9.2 Sorumluluk Reddi</h3>
+                <p>Geliştirici, aşağıdaki durumlardan kaynaklanan zararlardan sorumlu tutulamaz:</p>
+
+                <h4>Teknik Sorunlar:</h4>
+                <ul>
+                    <li>Sunucu kesintileri veya bakım çalışmaları</li>
+                    <li>İnternet bağlantı sorunları</li>
+                    <li>Cihaz uyumsuzlukları</li>
+                    <li>Üçüncü taraf hizmet kesintileri (Google Play, Supabase vb.)</li>
+                </ul>
+
+                <h4>Veri Kayıpları:</h4>
+                <ul>
+                    <li>Kullanıcı hatası nedeniyle veri kaybı</li>
+                    <li>Cihaz arızası veya kaybı nedeniyle veri kaybı</li>
+                    <li>Yedekleme yapılmaması nedeniyle veri kaybı</li>
+                    <li>Siber saldırılar nedeniyle veri kaybı</li>
+                </ul>
+
+                <h4>Kullanım Sonuçları:</h4>
+                <ul>
+                    <li>Yanlış veri girişi nedeniyle oluşan sorunlar</li>
+                    <li>İş kararlarınızın sonuçları</li>
+                    <li>Müşterilerinizle yaşanan anlaşmazlıklar</li>
+                    <li>Gelir kaybı veya kar kaybı</li>
+                </ul>
+
+                <h3>9.3 Maksimum Sorumluluk</h3>
+                <p>Herhangi bir durumda, Geliştiricinin toplam sorumluluğu, son 12 ayda ödediğiniz abonelik ücretini aşmayacaktır.</p>
+
+                <h3>9.4 Zorunlu Yasal Haklar</h3>
+                <p>Bu sınırlamalar, yürürlükteki yasaların izin verdiği azami ölçüde geçerlidir. Tüketici olarak sahip olduğunuz yasal haklar saklıdır.</p>
+
+                <div class="section-divider"></div>
+
+                <h2>10. Tazminat</h2>
+                <p>Aşağıdaki durumlardan kaynaklanan her türlü talep, dava, zarar, yükümlülük ve masrafa karşı Geliştiriciyi tazmin etmeyi ve zararsız tutmayı kabul edersiniz:</p>
+                <ul>
+                    <li>Bu Sözleşme'yi ihlal etmeniz</li>
+                    <li>Uygulamayı yasadışı kullanmanız</li>
+                    <li>Üçüncü tarafların haklarını ihlal etmeniz</li>
+                    <li>Müşterilerinizin verilerini hukuka aykırı işlemeniz</li>
+                </ul>
+
+                <h2>11. Hesap Askıya Alma ve Fesih</h2>
+
+                <h3>11.1 Kullanıcı Tarafından Fesih</h3>
+                <ul>
+                    <li>Hesabınızı istediğiniz zaman silebilirsiniz</li>
+                    <li>Hesap silme talebi için: <a href="mailto:swankysoftware@gmail.com">swankysoftware@gmail.com</a></li>
+                    <li>İşlem süresi: 7 iş günü</li>
+                    <li>Silinen veriler geri getirilemez</li>
+                </ul>
+
+                <h3>11.2 Geliştirici Tarafından Askıya Alma</h3>
+                <p>Aşağıdaki durumlarda hesabınız önceden bildirim yapılmaksızın askıya alınabilir:</p>
+                <ul>
+                    <li>Bu Sözleşme'nin ihlali</li>
+                    <li>Yasadışı faaliyet şüphesi</li>
+                    <li>Güvenlik tehdidi oluşturma</li>
+                    <li>Ödeme sorunları (Premium kullanıcılar için)</li>
+                </ul>
+
+                <h3>11.3 Geliştirici Tarafından Fesih</h3>
+                <p>Ciddi ihlallerde hesabınız kalıcı olarak kapatılabilir. Bu durumda:</p>
+                <ul>
+                    <li>Tüm verileriniz silinir</li>
+                    <li>Premium aboneliğiniz iptal edilir (iade yapılmaz)</li>
+                    <li>Yeni hesap açmanız engellenebilir</li>
+                </ul>
+
+                <h3>11.4 Fesih Sonrası</h3>
+                <p>Sözleşme'nin feshi halinde:</p>
+                <ul>
+                    <li>Fikri mülkiyet hakları, sorumluluk sınırlaması ve tazminat hükümleri yürürlükte kalmaya devam eder</li>
+                    <li>Ödenmemiş borçlar muaccel hale gelir</li>
+                </ul>
+
+                <div class="section-divider"></div>
+
+                <h2>12. Değişiklikler</h2>
+
+                <h3>12.1 Sözleşme Değişiklikleri</h3>
+                <p>Bu Sözleşme'yi herhangi bir zamanda değiştirme hakkını saklı tutarız.</p>
+
+                <h3>12.2 Bildirim</h3>
+                <ul>
+                    <li>Önemli değişiklikler uygulama içi bildirim ile duyurulur</li>
+                    <li>Değişiklikler, yayınlandıktan 30 gün sonra yürürlüğe girer</li>
+                    <li>Acil güvenlik güncellemeleri derhal yürürlüğe girebilir</li>
+                </ul>
+
+                <h3>12.3 Kabul</h3>
+                <p>Değişiklikler yürürlüğe girdikten sonra Uygulamayı kullanmaya devam etmeniz, yeni şartları kabul ettiğiniz anlamına gelir.</p>
+
+                <h2>13. Uyuşmazlık Çözümü</h2>
+
+                <h3>13.1 Uygulanacak Hukuk</h3>
+                <p>Bu Sözleşme, Türkiye Cumhuriyeti yasalarına tabidir.</p>
+
+                <h3>13.2 Yetkili Mahkeme</h3>
+                <p>Bu Sözleşme'den doğan uyuşmazlıklarda Türkiye Cumhuriyeti mahkemeleri yetkilidir.</p>
+
+                <h3>13.3 Dostane Çözüm</h3>
+                <p>Herhangi bir uyuşmazlık durumunda, öncelikle dostane çözüm yolları aranacaktır. Şikayetlerinizi <a href="mailto:swankysoftware@gmail.com">swankysoftware@gmail.com</a> adresine iletebilirsiniz.</p>
+
+                <h3>13.4 Tüketici Hakları</h3>
+                <p>6502 sayılı Tüketicinin Korunması Hakkında Kanun kapsamındaki haklarınız saklıdır.</p>
+
+                <h2>14. Mücbir Sebepler</h2>
+                <p>Aşağıdaki durumlar nedeniyle hizmet kesintisi yaşanması halinde Geliştirici sorumlu tutulamaz:</p>
+                <ul>
+                    <li>Doğal afetler (deprem, sel, yangın vb.)</li>
+                    <li>Savaş, terör, sivil kargaşa</li>
+                    <li>Pandemi veya salgın hastalık</li>
+                    <li>Hükümet kararları veya yasal düzenlemeler</li>
+                    <li>Siber saldırılar</li>
+                    <li>Üçüncü taraf hizmet sağlayıcıların kesintileri</li>
+                    <li>Elektrik veya internet altyapı sorunları</li>
+                </ul>
+
+                <h2>15. Genel Hükümler</h2>
+
+                <h3>15.1 Bütünlük</h3>
+                <p>Bu Sözleşme ve Gizlilik Politikası, taraflar arasındaki anlaşmanın tamamını oluşturur.</p>
+
+                <h3>15.2 Bölünebilirlik</h3>
+                <p>Bu Sözleşme'nin herhangi bir hükmünün geçersiz bulunması, diğer hükümlerin geçerliliğini etkilemez.</p>
+
+                <h3>15.3 Feragat</h3>
+                <p>Herhangi bir hakkın kullanılmaması, o haktan feragat edildiği anlamına gelmez.</p>
+
+                <h3>15.4 Devir</h3>
+                <p>Bu Sözleşme'den doğan haklarınızı üçüncü taraflara devredemezsiniz.</p>
+
+                <h3>15.5 Dil</h3>
+                <p>Bu Sözleşme'nin orijinal dili Türkçe'dir.</p>
+
+                <h2>16. İletişim</h2>
                 <div class="highlight-box">
                     <h3>📧 İletişim Bilgileri</h3>
-                    <p><strong>Email:</strong> <a
-                            href="mailto:swankysoftware@gmail.com">swankysoftware@gmail.com</a><br>
-                        <strong>Konum:</strong> Türkiye<br>
-                        <strong>Yanıt Süresi:</strong> 7 iş günü
-                    </p>
+                    <p><strong>Email:</strong> <a href="mailto:swankysoftware@gmail.com">swankysoftware@gmail.com</a><br>
+                    <strong>Geliştirici:</strong> Muhammed Mustafa Geldi<br>
+                    <strong>Konum:</strong> Türkiye<br>
+                    <strong>Yanıt Süresi:</strong> 7 iş günü</p>
                 </div>
 
                 <div class="section-divider"></div>
 
-                <h2>12. Özet</h2>
+                <h2>17. Özet</h2>
                 <div class="highlight-box">
                     <h3>✅ Haklarınız</h3>
                     <ul>
-                        <li>Verilerinize erişme ve silme</li>
-                        <li>Aboneliği iptal etme</li>
+                        <li>Uygulamayı salon işletmeniz için kullanma</li>
+                        <li>Verilerinize erişme ve silme talep etme</li>
+                        <li>Aboneliğinizi istediğiniz zaman iptal etme</li>
+                        <li>Şikayet ve öneride bulunma</li>
                     </ul>
 
                     <h3>✅ Yükümlülükleriniz</h3>
                     <ul>
                         <li>Doğru bilgi vermek</li>
+                        <li>Hesap güvenliğini sağlamak</li>
                         <li>Yasalara uygun kullanmak</li>
+                        <li>Müşteri verilerini korumak</li>
+                    </ul>
+
+                    <h3>❌ Yasak Olanlar</h3>
+                    <ul>
+                        <li>Uygulamayı kötüye kullanmak</li>
+                        <li>Güvenlik önlemlerini atlatmak</li>
+                        <li>Başkalarının haklarını ihlal etmek</li>
+                        <li>Sahte bilgi girmek</li>
                     </ul>
                 </div>
+
+                <p style="margin-top: 2rem; text-align: center; font-style: italic;">
+                    <strong>Bu Kullanıcı Sözleşmesi, 28 Aralık 2025 tarihinde yürürlüğe girmiştir.</strong><br>
+                    <strong>Versiyon: 1.1 | Dil: Türkçe</strong><br><br>
+                    <strong>SalonGo'yu kullandığınız için teşekkür ederiz! ✨</strong>
+                </p>
 
             </article>
         </div>
