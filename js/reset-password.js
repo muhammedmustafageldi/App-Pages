@@ -1,11 +1,10 @@
 // Supabase client initialization
 const supabase = window.supabase.createClient(
-    window.SUPABASE_CONFIG.url, 
+    window.SUPABASE_CONFIG.url,
     window.SUPABASE_CONFIG.anonKey
 )
 
-// Global function for onclick
-window.togglePassword = function(inputId) {
+function togglePassword(inputId) {
     const input = document.getElementById(inputId);
     const button = input.nextElementSibling;
 
@@ -20,8 +19,6 @@ window.togglePassword = function(inputId) {
 
 function checkPasswordStrength(password) {
     const strengthElement = document.getElementById('passwordStrength');
-    if (!strengthElement) return;
-    
     let strength = 0;
     let message = '';
 
@@ -70,6 +67,7 @@ function checkPasswordMatch() {
         return false;
     }
 }
+
 
 function updateSubmitButton() {
     const password = document.getElementById('password').value;
@@ -127,7 +125,6 @@ document.addEventListener('DOMContentLoaded', function() {
             });
 
             if (verifyError) {
-                // Handle different types of verification errors
                 let userFriendlyMessage = 'Şifre sıfırlama bağlantısı geçersiz.';
                 
                 if (verifyError.message.includes('expired') || verifyError.message.includes('invalid')) {
@@ -147,7 +144,6 @@ document.addEventListener('DOMContentLoaded', function() {
             });
 
             if (updateError) {
-                // Handle password update errors
                 let userFriendlyMessage = 'Şifre güncellenirken bir sorun yaşandı.';
                 
                 if (updateError.message.includes('weak_password')) {
@@ -162,7 +158,8 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             // Show success message
-            document.getElementById('resetForm').style.display = 'none';
+            document.querySelector('.reset-form').style.display = 'none';
+            document.querySelector('.help-section').style.display = 'none';
             successMessage.style.display = 'block';
 
             // Clear the URL hash for security
@@ -193,7 +190,6 @@ window.addEventListener('pageshow', function(event) {
 
 // Check if we have the necessary tokens on page load
 window.addEventListener('load', function () {
-    // Try to get parameters from both hash and search
     const hashParams = new URLSearchParams(window.location.hash.substring(1));
     const searchParams = new URLSearchParams(window.location.search);
 
@@ -215,7 +211,8 @@ window.addEventListener('load', function () {
 
         document.getElementById('errorMessage').style.display = 'block';
         document.getElementById('errorText').textContent = errorMessage;
-        document.getElementById('resetForm').style.display = 'none';
+        document.querySelector('.reset-form').style.display = 'none';
+        document.querySelector('.help-section').style.display = 'none';
         return;
     }
 
@@ -223,6 +220,7 @@ window.addEventListener('load', function () {
     if (!accessToken) {
         document.getElementById('errorMessage').style.display = 'block';
         document.getElementById('errorText').textContent = 'Geçersiz şifre sıfırlama bağlantısı. Lütfen yeni bir şifre sıfırlama talebinde bulunun.';
-        document.getElementById('resetForm').style.display = 'none';
+        document.querySelector('.reset-form').style.display = 'none';
+        document.querySelector('.help-section').style.display = 'none';
     }
 });
