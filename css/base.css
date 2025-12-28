@@ -290,10 +290,20 @@ a:hover {
     border: 1px solid #FFE0B2;
 }
 
+/* Dark Mode Fixes for Highlight Box */
+[data-theme="dark"] .highlight-box {
+    background: rgba(255, 255, 255, 0.03);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
 .highlight-box h3 {
     margin-top: 0;
     color: #F57C00;
     /* Deep Orange */
+}
+
+[data-theme="dark"] .highlight-box h3 {
+    color: var(--primary-color);
 }
 
 /* Back Link */
