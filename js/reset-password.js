@@ -1,10 +1,8 @@
-// Supabase client initialization
-const supabase = window.supabase.createClient(
-    window.SUPABASE_CONFIG.url,
-    window.SUPABASE_CONFIG.anonKey
-)
+// Supabase client initialization - will be set after DOM loads
+let supabaseClient = null;
 
-function togglePassword(inputId) {
+// Toggle password visibility - must be global for onclick handlers
+window.togglePassword = function(inputId) {
     const input = document.getElementById(inputId);
     const button = input.nextElementSibling;
 
@@ -85,6 +83,14 @@ function updateSubmitButton() {
 
 // Event listeners
 document.addEventListener('DOMContentLoaded', function() {
+    // Initialize Supabase client after page loads
+    if (window.supabase && window.SUPABASE_CONFIG) {
+        supabaseClient = window.supabase.createClient(
+            window.SUPABASE_CONFIG.url,
+            window.SUPABASE_CONFIG.anonKey
+        );
+    }
+
     document.getElementById('password').addEventListener('input', updateSubmitButton);
     document.getElementById('confirmPassword').addEventListener('input', updateSubmitButton);
 
@@ -119,7 +125,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const password = document.getElementById('password').value;
 
             // Verify the password reset token
-            const { data: verifyData, error: verifyError } = await supabase.auth.verifyOtp({
+            const { data: verifyData, error: verifyError } = await supabaseClient.auth.verifyOtp({
                 token_hash: accessToken,
                 type: 'recovery'
             });
@@ -139,7 +145,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             // Update the user's password
-            const { data: updateData, error: updateError } = await supabase.auth.updateUser({
+            const { data: updateData, error: updateError } = await supabaseClient.auth.updateUser({
                 password: password
             });
 
@@ -158,8 +164,8 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             // Show success message
-            document.querySelector('.reset-form').style.display = 'none';
-            document.querySelector('.help-section').style.display = 'none';
+            document.getElementById('resetForm').style.display = 'none';
+            document.getElementById('helpSection').style.display = 'none';
             successMessage.style.display = 'block';
 
             // Clear the URL hash for security
@@ -211,8 +217,6 @@ window.addEventListener('load', function () {
 
         document.getElementById('errorMessage').style.display = 'block';
         document.getElementById('errorText').textContent = errorMessage;
-        document.querySelector('.reset-form').style.display = 'none';
-        document.querySelector('.help-section').style.display = 'none';
         return;
     }
 
@@ -220,7 +224,10 @@ window.addEventListener('load', function () {
     if (!accessToken) {
         document.getElementById('errorMessage').style.display = 'block';
         document.getElementById('errorText').textContent = 'Geçersiz şifre sıfırlama bağlantısı. Lütfen yeni bir şifre sıfırlama talebinde bulunun.';
-        document.querySelector('.reset-form').style.display = 'none';
-        document.querySelector('.help-section').style.display = 'none';
+        return;
     }
+
+    // Token is valid - show the form and help section
+    document.getElementById('resetForm').style.display = 'block';
+    document.getElementById('helpSection').style.display = 'block';
 });
