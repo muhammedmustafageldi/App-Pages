@@ -1,10 +1,16 @@
 // Supabase client initialization
-const supabase = window.supabase.createClient(
-    window.SUPABASE_CONFIG.url,
-    window.SUPABASE_CONFIG.anonKey
-)
+let supabase;
+try {
+    supabase = window.supabase.createClient(
+        window.SUPABASE_CONFIG.url,
+        window.SUPABASE_CONFIG.anonKey
+    );
+} catch (e) {
+    console.error('Supabase initialization error:', e);
+}
 
-function togglePassword(inputId) {
+// Global functions for onclick handlers
+window.togglePassword = function(inputId) {
     const input = document.getElementById(inputId);
     const button = input.nextElementSibling;
 
@@ -15,7 +21,7 @@ function togglePassword(inputId) {
         input.type = 'password';
         button.textContent = '👁️';
     }
-}
+};
 
 function checkPasswordStrength(password) {
     const strengthElement = document.getElementById('passwordStrength');
@@ -85,11 +91,34 @@ function updateSubmitButton() {
 
 // Event listeners
 document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('password').addEventListener('input', updateSubmitButton);
-    document.getElementById('confirmPassword').addEventListener('input', updateSubmitButton);
+    const passwordInput = document.getElementById('password');
+    const confirmPasswordInput = document.getElementById('confirmPassword');
+    
+    if (passwordInput) {
+        passwordInput.addEventListener('input', updateSubmitButton);
+    }
+    if (confirmPasswordInput) {
+        confirmPasswordInput.addEventListener('input', updateSubmitButton);
+    }
+
+    // Toggle password buttons
+    document.querySelectorAll('.toggle-password').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            const input = this.previousElementSibling;
+            if (input.type === 'password') {
+                input.type = 'text';
+                this.textContent = '🙈';
+            } else {
+                input.type = 'password';
+                this.textContent = '👁️';
+            }
+        });
+    });
 
     // Form submission
-    document.getElementById('resetForm').addEventListener('submit', async function (e) {
+    const resetForm = document.getElementById('resetForm');
+    if (resetForm) {
+        resetForm.addEventListener('submit', async function (e) {
         e.preventDefault();
 
         const submitButton = document.getElementById('submitButton');
@@ -179,6 +208,7 @@ document.addEventListener('DOMContentLoaded', function() {
             submitButton.disabled = false;
         }
     });
+    }
 });
 
 // Prevent back button after successful reset
