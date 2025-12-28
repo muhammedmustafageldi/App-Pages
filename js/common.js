@@ -160,7 +160,7 @@ function initializeTOC() {
             // Smooth scroll with offset for fixed header
             const targetElement = document.getElementById(heading.id);
             if (targetElement) {
-                const headerOffset = 85;
+                const headerOffset = 100; // Increased offset
                 const elementPosition = targetElement.getBoundingClientRect().top;
                 const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
@@ -199,7 +199,7 @@ function initializeTOC() {
 
 function createMobileToggle(sidebar) {
     const wrapper = document.querySelector('.policy-layout');
-
+    
     // Check if toggle already exists (to prevent dupes)
     if (document.querySelector('.mobile-toc-toggle')) return;
 
@@ -218,7 +218,7 @@ function createMobileToggle(sidebar) {
 function setupScrollSpy(tocLinks) {
     const observerOptions = {
         root: null,
-        rootMargin: '-10% 0px -80% 0px', // Trigger when near top
+        rootMargin: '0px 0px -60% 0px', // Trigger when element is in top 40% of page
         threshold: 0
     };
 
@@ -233,15 +233,37 @@ function setupScrollSpy(tocLinks) {
                 if (activeLink) {
                     activeLink.link.classList.add('active');
 
-                    // Scroll TOC to keep active link in view
-                    activeLink.link.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'nearest'
-                    });
+                    // SCROLL SIDEBAR to keep active link in view
+                    const sidebar = document.querySelector('.toc-sidebar');
+                    if (sidebar) {
+                        const linkTop = activeLink.link.offsetTop;
+                        const sidebarHeight = sidebar.clientHeight;
+                        const scrollPos = sidebar.scrollTop;
+                        
+                        // Simple center logic
+                        if (linkTop < scrollPos || linkTop > (scrollPos + sidebarHeight)) {
+                           sidebar.scrollTop = linkTop - (sidebarHeight / 2) - 50;
+                        }
+                    }
                 }
             }
         });
     }, observerOptions);
 
     tocLinks.forEach(item => observer.observe(item.target));
+    
+    // Special Handler: If user hits bottom of page, highlight the LAST item
+    window.addEventListener('scroll', () => {
+        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 50) {
+             // We are at bottom
+             tocLinks.forEach(item => item.link.classList.remove('active'));
+             const lastItem = tocLinks[tocLinks.length - 1];
+             if (lastItem) {
+                 lastItem.link.classList.add('active');
+                 // Also scroll sidebar to bottom
+                 const sidebar = document.querySelector('.toc-sidebar');
+                 if (sidebar) sidebar.scrollTop = sidebar.scrollHeight;
+             }
+        }
+    });
 }
