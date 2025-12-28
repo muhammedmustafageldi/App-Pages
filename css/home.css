@@ -152,6 +152,14 @@
     .hero-title {
         font-size: 2.5rem;
     }
+    
+    .hero-subtitle {
+        padding: 0 1.5rem;
+    }
+    
+    .typewriter-text {
+        font-size: 0.85em;
+    }
 }
 
 /* Home Card Categories */
