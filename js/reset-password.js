@@ -101,9 +101,6 @@ document.addEventListener('DOMContentLoaded', function() {
         const submitButton = document.getElementById('submitButton');
         const buttonText = submitButton.querySelector('.button-text');
         const buttonLoading = submitButton.querySelector('.button-loading');
-        const successMessage = document.getElementById('successMessage');
-        const errorMessage = document.getElementById('errorMessage');
-        const errorText = document.getElementById('errorText');
 
         // Show loading state
         buttonText.style.display = 'none';
@@ -166,7 +163,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Show success message
             document.getElementById('resetForm').style.display = 'none';
             document.getElementById('helpSection').style.display = 'none';
-            successMessage.style.display = 'block';
+            updatePageStatus('✅', 'Şifre Başarıyla Güncellendi!', 'Artık yeni şifrenizle uygulamaya giriş yapabilirsiniz.', false, true);
 
             // Clear the URL hash for security
             window.history.replaceState(null, null, window.location.pathname);
@@ -176,13 +173,9 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('confirmPassword').value = '';
 
         } catch (error) {
-            errorText.textContent = error.message || 'Şifre güncellenirken beklenmeyen bir sorun yaşandı. Lütfen tekrar deneyin.';
-            errorMessage.style.display = 'block';
-
-            // Reset button state
-            buttonText.style.display = 'inline';
-            buttonLoading.style.display = 'none';
-            submitButton.disabled = false;
+            updatePageStatus('❌', 'Bir Hata Oluştu', error.message || 'Şifre güncellenirken beklenmeyen bir sorun yaşandı. Lütfen tekrar deneyin.', true, false);
+            document.getElementById('resetForm').style.display = 'none';
+            document.getElementById('helpSection').style.display = 'none';
         }
     });
 });
@@ -193,6 +186,18 @@ window.addEventListener('pageshow', function(event) {
         window.location.reload();
     }
 });
+
+// Helper function to update page status
+function updatePageStatus(icon, title, desc, isError = false, isSuccess = false) {
+    document.getElementById('statusIcon').textContent = icon;
+    document.getElementById('pageTitle').textContent = title;
+    document.getElementById('pageDesc').textContent = desc;
+    
+    const iconCircle = document.getElementById('statusIcon');
+    iconCircle.classList.remove('status-error', 'status-success');
+    if (isError) iconCircle.classList.add('status-error');
+    if (isSuccess) iconCircle.classList.add('status-success');
+}
 
 // Check if we have the necessary tokens on page load
 window.addEventListener('load', function () {
@@ -215,15 +220,13 @@ window.addEventListener('load', function () {
             }
         }
 
-        document.getElementById('errorMessage').style.display = 'block';
-        document.getElementById('errorText').textContent = errorMessage;
+        updatePageStatus('❌', 'Bir Hata Oluştu', errorMessage, true, false);
         return;
     }
 
     // Check if this is a password recovery request
     if (!accessToken) {
-        document.getElementById('errorMessage').style.display = 'block';
-        document.getElementById('errorText').textContent = 'Geçersiz şifre sıfırlama bağlantısı. Lütfen yeni bir şifre sıfırlama talebinde bulunun.';
+        updatePageStatus('❌', 'Geçersiz Bağlantı', 'Geçersiz şifre sıfırlama bağlantısı. Lütfen yeni bir şifre sıfırlama talebinde bulunun.', true, false);
         return;
     }
 
