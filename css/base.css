@@ -459,3 +459,28 @@ a:hover {
         padding: 1.5rem;
     }
 }
+
+
+/* Permissions Table */
+.permissions-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    font-size: 0.95rem;
+}
+
+.permissions-table th,
+.permissions-table td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.permissions-table th {
+    background: var(--bg-alt);
+    font-weight: 600;
+}
+
+.permissions-table tr:hover {
+    background: var(--bg-alt);
+}

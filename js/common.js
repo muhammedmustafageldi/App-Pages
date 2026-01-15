@@ -18,6 +18,30 @@ document.addEventListener('DOMContentLoaded', () => {
     if (document.querySelector('.policy-layout')) {
         initializeTOC();
     }
+    
+    // 4. Listen for language changes to update TOC and headings
+    window.addEventListener('langChanged', () => {
+        // Update TOC header
+        const tocHeader = document.querySelector('.toc-header');
+        if (tocHeader && window.i18n) {
+            tocHeader.textContent = window.i18n.t('toc.title');
+        }
+        // Update mobile toggle
+        const mobileToggle = document.querySelector('.mobile-toc-toggle');
+        if (mobileToggle && window.i18n) {
+            mobileToggle.textContent = window.i18n.t('toc.title');
+        }
+        // Update TOC links to match translated headings
+        setTimeout(() => {
+            document.querySelectorAll('.toc-link').forEach(link => {
+                const targetId = link.dataset.target;
+                const heading = document.getElementById(targetId);
+                if (heading) {
+                    link.textContent = heading.textContent;
+                }
+            });
+        }, 200);
+    });
 });
 
 function initializePage() {
@@ -55,17 +79,18 @@ function initializeDarkMode() {
         if (!nav) {
             nav = document.createElement('nav');
             nav.className = 'header-nav';
-            nav.style.display = 'flex';
-            nav.style.alignItems = 'center';
-            nav.style.gap = '1.5rem';
             headerInner.appendChild(nav);
         }
+        nav.style.display = 'flex';
+        nav.style.alignItems = 'center';
+        nav.style.gap = '1rem';
 
         // Add Contact Link (if not exists)
         if (!nav.querySelector('a[href^="mailto"]')) {
             const contactLink = document.createElement('a');
             contactLink.href = 'mailto:swankysoftware@gmail.com';
             contactLink.textContent = 'İletişim';
+            contactLink.setAttribute('data-i18n', 'nav.contact');
             contactLink.style.fontSize = '0.95rem';
             contactLink.style.fontWeight = '500';
             contactLink.style.color = 'var(--text-secondary)';
@@ -76,11 +101,38 @@ function initializeDarkMode() {
             nav.appendChild(contactLink);
         }
 
-        // Add Toggle Button (if not exists)
+        // Add Language Toggle Button (if not exists)
+        if (!nav.querySelector('#langToggle')) {
+            const langBtn = document.createElement('button');
+            langBtn.id = 'langToggle';
+            langBtn.className = 'lang-toggle';
+            langBtn.textContent = '🇬🇧';
+            langBtn.title = 'Switch to English';
+            langBtn.style.background = 'transparent';
+            langBtn.style.border = '1px solid var(--border-color)';
+            langBtn.style.padding = '0.4rem 0.6rem';
+            langBtn.style.borderRadius = 'var(--radius-md)';
+            langBtn.style.cursor = 'pointer';
+            langBtn.style.fontSize = '1.1rem';
+            langBtn.style.transition = 'all 0.2s';
+
+            langBtn.onmouseover = () => langBtn.style.borderColor = 'var(--primary-color)';
+            langBtn.onmouseout = () => langBtn.style.borderColor = 'var(--border-color)';
+
+            langBtn.addEventListener('click', () => {
+                if (window.i18n) {
+                    window.i18n.toggle();
+                }
+            });
+
+            nav.appendChild(langBtn);
+        }
+
+        // Add Theme Toggle Button (if not exists)
         if (!nav.querySelector('.theme-toggle')) {
             const btn = document.createElement('button');
             btn.className = 'theme-toggle';
-            btn.innerHTML = '🌓'; // Icon
+            btn.innerHTML = '🌓';
             btn.title = 'Karanlık Modu Aç/Kapat';
             btn.style.background = 'transparent';
             btn.style.border = '1px solid var(--border-color)';
@@ -89,7 +141,6 @@ function initializeDarkMode() {
             btn.style.cursor = 'pointer';
             btn.style.fontSize = '1.1rem';
             btn.style.color = 'var(--text-primary)';
-            btn.style.marginLeft = '0.5rem';
             btn.style.transition = 'all 0.2s';
 
             btn.onmouseover = () => btn.style.borderColor = 'var(--primary-color)';
@@ -125,7 +176,13 @@ function initializeTOC() {
 
     const tocHeader = document.createElement('span');
     tocHeader.className = 'toc-header';
-    tocHeader.textContent = 'İçindekiler';
+    tocHeader.setAttribute('data-i18n', 'toc.title');
+    // Set initial text based on current language
+    if (window.i18n && window.i18n.translations && window.i18n.translations.toc) {
+        tocHeader.textContent = window.i18n.t('toc.title');
+    } else {
+        tocHeader.textContent = 'İçindekiler';
+    }
     tocNav.appendChild(tocHeader);
 
     const tocList = document.createElement('div');
@@ -205,7 +262,13 @@ function createMobileToggle(sidebar) {
 
     const toggleBtn = document.createElement('div');
     toggleBtn.className = 'mobile-toc-toggle';
-    toggleBtn.textContent = 'İçindekiler';
+    toggleBtn.setAttribute('data-i18n', 'toc.title');
+    // Set initial text based on current language
+    if (window.i18n && window.i18n.translations && window.i18n.translations.toc) {
+        toggleBtn.textContent = window.i18n.t('toc.title');
+    } else {
+        toggleBtn.textContent = 'İçindekiler';
+    }
 
     toggleBtn.addEventListener('click', () => {
         sidebar.classList.toggle('active');

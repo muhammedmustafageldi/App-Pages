@@ -1,0 +1,65 @@
+{
+  "site": {
+    "title": "Swanky Software - Digital Solutions",
+    "footer": "© 2025 Swanky Software"
+  },
+  "nav": {
+    "contact": "Contact"
+  },
+  "toc": {
+    "title": "Table of Contents"
+  },
+  "hero": {
+    "title": "Life-Simplifying",
+    "subtitle": "We combine technology and aesthetics. Meet our secure, fast, and user-friendly applications.",
+    "words": ["Mobile Solutions", "Innovative Designs", "Secure Infrastructure"]
+  },
+  "apps": {
+    "policy": "Policy",
+    "terms": "Terms",
+    "wordify": {
+      "category": "Education & Language",
+      "desc": "An interactive mobile app that makes learning English vocabulary fun. Improve your vocabulary with personalized tests and smart repetition system.",
+      "date": "Jul 24, 2025"
+    },
+    "quitify": {
+      "category": "Health & Finance",
+      "desc": "Your faithful companion on your journey to quit smoking. Track your health improvements, see the money you save, and stay motivated.",
+      "date": "Jul 24, 2025"
+    },
+    "salongo": {
+      "category": "Business Management",
+      "desc": "All-in-one management platform for beauty salons and hairdressers. Appointment tracking, cash management, and customer relations made easy.",
+      "date": "Dec 28, 2025"
+    },
+    "stocky": {
+      "category": "Inventory Management",
+      "desc": "Comprehensive inventory and stock tracking solution for your business. Product, customer, supplier management and detailed transaction records in one app.",
+      "date": "Jan 16, 2026"
+    }
+  },
+  "features": {
+    "title": "Our Privacy Commitment",
+    "security": {
+      "title": "Security is Our Priority",
+      "desc": "User data security is our top priority in all our applications. We protect your data using modern encryption techniques and security protocols."
+    },
+    "compliance": {
+      "title": "Legal Compliance",
+      "desc": "Our applications fully comply with international data protection regulations such as KVKK (Turkey), GDPR (European Union), and CCPA (USA)."
+    },
+    "rights": {
+      "title": "User Rights",
+      "desc": "You can easily exercise your rights to access, rectify, and delete your data. Your requests are carefully evaluated within 30 days."
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "desc": "Do you have questions about our privacy policies or applications? You can contact us directly.",
+    "button": "✉️ Send Email",
+    "developer": "Developer:",
+    "location": "Location:",
+    "locationValue": "Turkey",
+    "note": "Please mention the relevant application in the subject line."
+  }
+}

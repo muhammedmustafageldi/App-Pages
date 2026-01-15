@@ -28,12 +28,12 @@
     <main>
         <section class="hero-section container">
             <h1 class="hero-title">
-                Hayatı Kolaylaştıran<br>
+                <span data-i18n="hero.title">Hayatı Kolaylaştıran</span><br>
                 <div class="typewriter-container">
                     <span id="typewriter" class="typewriter-text"></span>
                 </div>
             </h1>
-            <p class="hero-subtitle">
+            <p class="hero-subtitle" data-i18n="hero.subtitle">
                 Teknoloji ve estetiği bir araya getiriyoruz. Güvenli, hızlı ve kullanıcı dostu uygulamalarımızla
                 tanışın.
             </p>
@@ -48,10 +48,10 @@
                         <div class="app-icon" style="background-image: url('app_logo/wordify_logo.png');"></div>
                         <div class="app-title-group">
                             <h3>Wordify</h3>
-                            <span class="app-category">Eğitim & Dil</span>
+                            <span class="app-category" data-i18n="apps.wordify.category">Eğitim & Dil</span>
                         </div>
                     </div>
-                    <p class="app-desc">
+                    <p class="app-desc" data-i18n="apps.wordify.desc">
                         İngilizce kelime öğrenmeyi eğlenceli hale getiren interaktif mobil uygulama.
                         Kişiselleştirilmiş testler ve akıllı tekrar sistemi ile kelime hazinenizi geliştirin.
                     </p>
@@ -64,7 +64,7 @@
                                 <line x1="8" y1="2" x2="8" y2="6"></line>
                                 <line x1="3" y1="10" x2="21" y2="10"></line>
                             </svg>
-                            24 Tem 2025
+                            <span data-i18n="apps.wordify.date">24 Tem 2025</span>
                         </div>
                         <div class="meta-badge">
                             <svg viewBox="0 0 24 24">
@@ -75,7 +75,7 @@
                     </div>
 
                     <div class="app-actions">
-                        <span class="btn-card">Politika</span>
+                        <span class="btn-card" data-i18n="apps.policy">Politika</span>
                     </div>
                 </a>
 
@@ -85,10 +85,10 @@
                         <div class="app-icon" style="background-image: url('app_logo/quitify_logo.png');"></div>
                         <div class="app-title-group">
                             <h3>Quitify</h3>
-                            <span class="app-category">Sağlık & Finans</span>
+                            <span class="app-category" data-i18n="apps.quitify.category">Sağlık & Finans</span>
                         </div>
                     </div>
-                    <p class="app-desc">
+                    <p class="app-desc" data-i18n="apps.quitify.desc">
                         Sigarayı bırakma yolculuğunuzda size eşlik eden sadık dostunuz.
                         Sağlık iyileşmelerinizi takip edin, tasarruf ettiğiniz parayı görün ve motive olun.
                     </p>
@@ -101,7 +101,7 @@
                                 <line x1="8" y1="2" x2="8" y2="6"></line>
                                 <line x1="3" y1="10" x2="21" y2="10"></line>
                             </svg>
-                            24 Tem 2025
+                            <span data-i18n="apps.quitify.date">24 Tem 2025</span>
                         </div>
                         <div class="meta-badge">
                             <svg viewBox="0 0 24 24">
@@ -112,7 +112,7 @@
                     </div>
 
                     <div class="app-actions">
-                        <span class="btn-card">Politika</span>
+                        <span class="btn-card" data-i18n="apps.policy">Politika</span>
                     </div>
                 </a>
 
@@ -122,10 +122,10 @@
                         <div class="app-icon" style="background-image: url('app_logo/salongo_logo.png');"></div>
                         <div class="app-title-group">
                             <h3>SalonGo</h3>
-                            <span class="app-category">İşletme Yönetimi</span>
+                            <span class="app-category" data-i18n="apps.salongo.category">İşletme Yönetimi</span>
                         </div>
                     </div>
-                    <p class="app-desc">
+                    <p class="app-desc" data-i18n="apps.salongo.desc">
                         Güzellik salonları ve kuaförler için hepsi bir arada yönetim platformu.
                         Randevu takibi, kasa yönetimi ve müşteri ilişkileri artık çok daha kolay.
                     </p>
@@ -138,7 +138,7 @@
                                 <line x1="8" y1="2" x2="8" y2="6"></line>
                                 <line x1="3" y1="10" x2="21" y2="10"></line>
                             </svg>
-                            28 Ara 2025
+                            <span data-i18n="apps.salongo.date">28 Ara 2025</span>
                         </div>
                         <div class="meta-badge">
                             <svg viewBox="0 0 24 24">
@@ -149,36 +149,72 @@
                     </div>
 
                     <div class="app-actions">
-                        <a href="salongo-privacy-policy.html" class="btn-card">Politika</a>
-                        <a href="salongo-terms-of-service.html" class="btn-card primary">Sözleşme</a>
+                        <a href="salongo-privacy-policy.html" class="btn-card" data-i18n="apps.policy">Politika</a>
+                        <a href="salongo-terms-of-service.html" class="btn-card primary" data-i18n="apps.terms">Sözleşme</a>
                     </div>
                 </div>
+
+                <!-- Stocky -->
+                <a href="stocky-privacy-policy.html" class="app-card">
+                    <div class="app-header">
+                        <div class="app-icon" style="background-image: url('app_logo/stocky_logo.png');"></div>
+                        <div class="app-title-group">
+                            <h3>Stocky</h3>
+                            <span class="app-category" data-i18n="apps.stocky.category">Stok Yönetimi</span>
+                        </div>
+                    </div>
+                    <p class="app-desc" data-i18n="apps.stocky.desc">
+                        İşletmeniz için kapsamlı envanter ve stok takip çözümü. Ürün, müşteri, tedarikçi yönetimi ve detaylı işlem kayıtları tek uygulamada.
+                    </p>
+
+                    <div class="app-meta">
+                        <div class="meta-badge">
+                            <svg viewBox="0 0 24 24">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                            </svg>
+                            <span data-i18n="apps.stocky.date">16 Oca 2026</span>
+                        </div>
+                        <div class="meta-badge">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                            </svg>
+                            v1.0
+                        </div>
+                    </div>
+
+                    <div class="app-actions">
+                        <span class="btn-card" data-i18n="apps.policy">Politika</span>
+                    </div>
+                </a>
 
             </div>
         </section>
 
         <!-- Privacy Commitment Section -->
         <section class="features-section container">
-            <h2 class="section-title">Gizlilik Taahhüdümüz</h2>
+            <h2 class="section-title" data-i18n="features.title">Gizlilik Taahhüdümüz</h2>
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">🔒</div>
-                    <h3>Güvenlik Önceliğimiz</h3>
-                    <p>Tüm uygulamalarımızda kullanıcı verilerinin güvenliği en önemli önceliğimizdir. Modern şifreleme
+                    <h3 data-i18n="features.security.title">Güvenlik Önceliğimiz</h3>
+                    <p data-i18n="features.security.desc">Tüm uygulamalarımızda kullanıcı verilerinin güvenliği en önemli önceliğimizdir. Modern şifreleme
                         teknikleri ve güvenlik protokolleri kullanarak verilerinizi koruyoruz.</p>
                 </div>
 
                 <div class="feature-card">
                     <div class="feature-icon">🌍</div>
-                    <h3>Yasal Uyumluluk</h3>
-                    <p>Uygulamalarımız KVKK (Türkiye), GDPR (Avrupa Birliği) ve CCPA (ABD) gibi uluslararası veri koruma
+                    <h3 data-i18n="features.compliance.title">Yasal Uyumluluk</h3>
+                    <p data-i18n="features.compliance.desc">Uygulamalarımız KVKK (Türkiye), GDPR (Avrupa Birliği) ve CCPA (ABD) gibi uluslararası veri koruma
                         düzenlemelerine tam uyum sağlar.</p>
                 </div>
 
                 <div class="feature-card">
                     <div class="feature-icon">👤</div>
-                    <h3>Kullanıcı Hakları</h3>
-                    <p>Verilerinize erişim, düzeltme ve silme haklarınızı kolayca kullanabilirsiniz. Talepleriniz 30 gün
+                    <h3 data-i18n="features.rights.title">Kullanıcı Hakları</h3>
+                    <p data-i18n="features.rights.desc">Verilerinize erişim, düzeltme ve silme haklarınızı kolayca kullanabilirsiniz. Talepleriniz 30 gün
                         içinde titizlikle değerlendirilir.</p>
                 </div>
             </div>
@@ -187,19 +223,19 @@
         <!-- Contact Section -->
         <section class="contact-section container">
             <div class="contact-box">
-                <h2>Bize Ulaşın</h2>
-                <p>Gizlilik politikalarımız veya uygulamalarımız hakkında sorularınız mı var? Bizimle doğrudan iletişime
+                <h2 data-i18n="contact.title">Bize Ulaşın</h2>
+                <p data-i18n="contact.desc">Gizlilik politikalarımız veya uygulamalarımız hakkında sorularınız mı var? Bizimle doğrudan iletişime
                     geçebilirsiniz.</p>
 
                 <a href="mailto:swankysoftware@gmail.com" class="btn btn-primary"
-                    style="font-size: 1.1rem; padding: 1rem 2rem;">
+                    style="font-size: 1.1rem; padding: 1rem 2rem;" data-i18n="contact.button">
                     ✉️ E-posta Gönderin
                 </a>
 
                 <div class="contact-details">
-                    <span><strong>Geliştirici:</strong> Muhammed Mustafa Geldi</span>
-                    <span><strong>Konum:</strong> Türkiye</span>
-                    <span><small style="color:var(--text-tertiary)">Konu başlığında ilgili uygulamayı belirtmeyi
+                    <span><strong data-i18n="contact.developer">Geliştirici:</strong> Muhammed Mustafa Geldi</span>
+                    <span><strong data-i18n="contact.location">Konum:</strong> <span data-i18n="contact.locationValue">Türkiye</span></span>
+                    <span><small style="color:var(--text-tertiary)" data-i18n="contact.note">Konu başlığında ilgili uygulamayı belirtmeyi
                             unutmayınız.</small></span>
                 </div>
             </div>
@@ -208,13 +244,14 @@
 
     <footer class="site-footer"
         style="text-align:center; padding: 2rem; border-top: 1px solid var(--border-color); color: var(--text-tertiary);">
-        <p>© 2025 Swanky Software</p>
+        <p data-i18n="site.footer">© 2025 Swanky Software</p>
     </footer>
 
+    <script src="js/i18n.js"></script>
     <script src="js/common.js"></script>
     <script>
-        // Use Typewriter Effect
-        const words = ["Mobil Çözümler", "Yenilikçi Tasarımlar", "Güvenli Altyapı"];
+        // Typewriter Effect with i18n support
+        let words = ["Mobil Çözümler", "Yenilikçi Tasarımlar", "Güvenli Altyapı"];
         const el = document.getElementById('typewriter');
         let wordIndex = 0;
         let charIndex = 0;
@@ -235,17 +272,34 @@
 
             if (!isDeleting && charIndex === currentWord.length) {
                 isDeleting = true;
-                typeSpeed = 2000; // Wait before deleting
+                typeSpeed = 2000;
             } else if (isDeleting && charIndex === 0) {
                 isDeleting = false;
                 wordIndex = (wordIndex + 1) % words.length;
-                typeSpeed = 500; // Wait before typing new word
+                typeSpeed = 500;
             }
 
             setTimeout(type, typeSpeed);
         }
 
-        document.addEventListener('DOMContentLoaded', type);
+        // Update words when language changes
+        window.addEventListener('langChanged', (e) => {
+            words = i18n.t('hero.words');
+            // Reset typewriter
+            wordIndex = 0;
+            charIndex = 0;
+            isDeleting = false;
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Wait for i18n to load, then start typewriter
+            setTimeout(() => {
+                if (window.i18n && i18n.translations.hero) {
+                    words = i18n.t('hero.words');
+                }
+                type();
+            }, 100);
+        });
     </script>
 </body>
 

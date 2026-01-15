@@ -1,0 +1,65 @@
+{
+  "site": {
+    "title": "Swanky Software - Dijital Çözümler",
+    "footer": "© 2025 Swanky Software"
+  },
+  "nav": {
+    "contact": "İletişim"
+  },
+  "toc": {
+    "title": "İçindekiler"
+  },
+  "hero": {
+    "title": "Hayatı Kolaylaştıran",
+    "subtitle": "Teknoloji ve estetiği bir araya getiriyoruz. Güvenli, hızlı ve kullanıcı dostu uygulamalarımızla tanışın.",
+    "words": ["Mobil Çözümler", "Yenilikçi Tasarımlar", "Güvenli Altyapı"]
+  },
+  "apps": {
+    "policy": "Politika",
+    "terms": "Sözleşme",
+    "wordify": {
+      "category": "Eğitim & Dil",
+      "desc": "İngilizce kelime öğrenmeyi eğlenceli hale getiren interaktif mobil uygulama. Kişiselleştirilmiş testler ve akıllı tekrar sistemi ile kelime hazinenizi geliştirin.",
+      "date": "24 Tem 2025"
+    },
+    "quitify": {
+      "category": "Sağlık & Finans",
+      "desc": "Sigarayı bırakma yolculuğunuzda size eşlik eden sadık dostunuz. Sağlık iyileşmelerinizi takip edin, tasarruf ettiğiniz parayı görün ve motive olun.",
+      "date": "24 Tem 2025"
+    },
+    "salongo": {
+      "category": "İşletme Yönetimi",
+      "desc": "Güzellik salonları ve kuaförler için hepsi bir arada yönetim platformu. Randevu takibi, kasa yönetimi ve müşteri ilişkileri artık çok daha kolay.",
+      "date": "28 Ara 2025"
+    },
+    "stocky": {
+      "category": "Stok Yönetimi",
+      "desc": "İşletmeniz için kapsamlı envanter ve stok takip çözümü. Ürün, müşteri, tedarikçi yönetimi ve detaylı işlem kayıtları tek uygulamada.",
+      "date": "16 Oca 2026"
+    }
+  },
+  "features": {
+    "title": "Gizlilik Taahhüdümüz",
+    "security": {
+      "title": "Güvenlik Önceliğimiz",
+      "desc": "Tüm uygulamalarımızda kullanıcı verilerinin güvenliği en önemli önceliğimizdir. Modern şifreleme teknikleri ve güvenlik protokolleri kullanarak verilerinizi koruyoruz."
+    },
+    "compliance": {
+      "title": "Yasal Uyumluluk",
+      "desc": "Uygulamalarımız KVKK (Türkiye), GDPR (Avrupa Birliği) ve CCPA (ABD) gibi uluslararası veri koruma düzenlemelerine tam uyum sağlar."
+    },
+    "rights": {
+      "title": "Kullanıcı Hakları",
+      "desc": "Verilerinize erişim, düzeltme ve silme haklarınızı kolayca kullanabilirsiniz. Talepleriniz 30 gün içinde titizlikle değerlendirilir."
+    }
+  },
+  "contact": {
+    "title": "Bize Ulaşın",
+    "desc": "Gizlilik politikalarımız veya uygulamalarımız hakkında sorularınız mı var? Bizimle doğrudan iletişime geçebilirsiniz.",
+    "button": "✉️ E-posta Gönderin",
+    "developer": "Geliştirici:",
+    "location": "Konum:",
+    "locationValue": "Türkiye",
+    "note": "Konu başlığında ilgili uygulamayı belirtmeyi unutmayınız."
+  }
+}
