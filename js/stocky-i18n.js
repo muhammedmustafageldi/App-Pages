@@ -1,7 +1,7 @@
 // Stocky Privacy Policy & Terms of Service Translations
 const stockyTranslations = {
     tr: {
-        privacyHtml: `<p><strong>Son Güncelleme:</strong> 5 Mart 2026</p>
+        privacyHtml: `<p><strong>Son Güncelleme:</strong> 5 Mart 2026 | <strong>Versiyon:</strong> 1.1</p>
 <p>Stocky (&quot;biz&quot;, &quot;bizim&quot; veya &quot;uygulama&quot;) olarak gizliliğinize saygı duyuyor ve kişisel verilerinizi korumayı taahhüt ediyoruz. Bu Gizlilik Politikası, Stocky stok takip uygulamasını kullandığınızda hangi bilgilerin toplandığını, nasıl kullanıldığını ve korunduğunu açıklamaktadır.</p>
 <hr>
 <h2>1. Toplanan Bilgiler</h2>
@@ -425,7 +425,7 @@ const stockyTranslations = {
         termsTitle: "Stocky Kullanıcı Sözleşmesi"
     },
     en: {
-        privacyHtml: `<p><strong>Last Updated:</strong> March 5, 2026</p>
+        privacyHtml: `<p><strong>Last Updated:</strong> March 5, 2026 | <strong>Version:</strong> 1.1</p>
 <p>Stocky (&quot;we&quot;, &quot;our&quot;, or &quot;the app&quot;) respects your privacy and is committed to protecting your personal data. This Privacy Policy explains what information is collected when you use the Stocky inventory management application, how it is used, and how it is protected.</p>
 <hr>
 <h2>1. Information We Collect</h2>
@@ -854,7 +854,7 @@ function applyStockyTranslations() {
     if (!window.i18n) return;
     const lang = i18n.getLang();
     const t = stockyTranslations[lang] || stockyTranslations.tr;
-    
+
     const privacyContent = document.getElementById('privacyContentContainer');
     if (privacyContent) {
         privacyContent.innerHTML = t.privacyHtml;
@@ -862,7 +862,7 @@ function applyStockyTranslations() {
         const h1 = document.querySelector('article h1');
         if (h1) h1.textContent = t.privacyTitle;
     }
-    
+
     const termsContent = document.getElementById('termsContentContainer');
     if (termsContent) {
         termsContent.innerHTML = t.termsHtml;
@@ -879,17 +879,17 @@ function applyStockyTranslations() {
     // Re-init TOC to update headings correctly
     if (typeof initializeTOC === 'function') {
         const tocSidebar = document.querySelector('.toc-sidebar');
-        if(tocSidebar) {
-           const existingBtn = tocSidebar.querySelector('.download-btn-sidebar');
-           tocSidebar.innerHTML = '';
-           if(existingBtn) {
-               if(lang === 'en') {
-                   existingBtn.querySelector('span:last-child').textContent = 'Download Stocky';
-               } else {
-                   existingBtn.querySelector('span:last-child').textContent = "Stocky'yi İndir";
-               }
-               tocSidebar.appendChild(existingBtn);
-           }
+        if (tocSidebar) {
+            const existingBtn = tocSidebar.querySelector('.download-btn-sidebar');
+            tocSidebar.innerHTML = '';
+            if (existingBtn) {
+                if (lang === 'en') {
+                    existingBtn.querySelector('span:last-child').textContent = 'Download Stocky';
+                } else {
+                    existingBtn.querySelector('span:last-child').textContent = "Stocky'yi İndir";
+                }
+                tocSidebar.appendChild(existingBtn);
+            }
         }
         initializeTOC();
     }
