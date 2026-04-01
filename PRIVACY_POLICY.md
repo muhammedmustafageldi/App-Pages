@@ -16,7 +16,7 @@ Uygulamayı kullanmak için bir hesap oluşturmanız gerekmektedir. Bu süreçte
 
 ### 1.2 İş Verileri
 Uygulama içinde girdiğiniz tüm iş verileri sunucularımızda saklanır:
-- **Ürün bilgileri:** Ürün adı, barkod, stok miktarı, alış/satış fiyatları, vergi oranları, birim, ürün açıklamaları
+- **Ürün bilgileri:** Ürün adı, barkod, stok miktarı, alış/satış fiyatları, vergi oranları, birim, depo konumu, ürün açıklamaları
 - **Müşteri bilgileri:** Ad, telefon, e-posta, adres, bakiye, notlar
 - **Tedarikçi bilgileri:** Firma adı, iletişim bilgileri, vergi numarası, IBAN, banka bilgileri, adres, notlar
 - **İşlem kayıtları:** Satış, alış, iade, tahsilat ve tediye işlemleri; ürün kalemleri, indirimler, ödeme yöntemi ve tarih bilgileri

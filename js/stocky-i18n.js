@@ -15,7 +15,7 @@ const stockyTranslations = {
 <h3>1.2 İş Verileri</h3>
 <p>Uygulama içinde girdiğiniz tüm iş verileri sunucularımızda saklanır:</p>
 <ul>
-<li><strong>Ürün bilgileri:</strong> Ürün adı, barkod, stok miktarı, alış/satış fiyatları, vergi oranları, birim, ürün açıklamaları</li>
+<li><strong>Ürün bilgileri:</strong> Ürün adı, barkod, stok miktarı, alış/satış fiyatları, vergi oranları, birim, depo konumu, ürün açıklamaları</li>
 <li><strong>Müşteri bilgileri:</strong> Ad, telefon, e-posta, adres, bakiye, notlar</li>
 <li><strong>Tedarikçi bilgileri:</strong> Firma adı, iletişim bilgileri, vergi numarası, IBAN, banka bilgileri, adres, notlar</li>
 <li><strong>İşlem kayıtları:</strong> Satış, alış, iade, tahsilat ve tediye işlemleri; ürün kalemleri, indirimler, ödeme yöntemi ve tarih bilgileri</li>
@@ -439,7 +439,7 @@ const stockyTranslations = {
 <h3>1.2 Business Data</h3>
 <p>All business data you enter within the app is stored on our servers:</p>
 <ul>
-<li><strong>Product information:</strong> Product name, barcode, stock quantity, purchase/sale prices, tax rates, unit, product descriptions</li>
+<li><strong>Product information:</strong> Product name, barcode, stock quantity, purchase/sale prices, tax rates, unit, storage location, product descriptions</li>
 <li><strong>Customer information:</strong> Name, phone, email, address, balance, notes</li>
 <li><strong>Supplier information:</strong> Company name, contact details, tax number, IBAN, bank details, address, notes</li>
 <li><strong>Transaction records:</strong> Sales, purchases, returns, collections, and payment transactions; product items, discounts, payment method, and date information</li>

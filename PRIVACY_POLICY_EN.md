@@ -16,7 +16,7 @@ You need to create an account to use the application. The following information 
 
 ### 1.2 Business Data
 All business data you enter within the app is stored on our servers:
-- **Product information:** Product name, barcode, stock quantity, purchase/sale prices, tax rates, unit, product descriptions
+- **Product information:** Product name, barcode, stock quantity, purchase/sale prices, tax rates, unit, storage location, product descriptions
 - **Customer information:** Name, phone, email, address, balance, notes
 - **Supplier information:** Company name, contact details, tax number, IBAN, bank details, address, notes
 - **Transaction records:** Sales, purchases, returns, collections, and payment transactions; product items, discounts, payment method, and date information
