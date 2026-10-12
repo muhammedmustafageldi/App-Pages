@@ -254,10 +254,13 @@ function applyQuitifyTranslations(language) {
     document.querySelector('article h1').textContent = document.title;
     document.querySelector('.back-link').textContent = t.back;
     document.getElementById('quitifyFooter').textContent = t.footer;
-    const selector = document.getElementById('policyLanguage');
-    selector.value = lang;
-    selector.setAttribute('aria-label', { tr: 'Politika dili', en: 'Policy language', de: 'Sprache der Erklärung' }[lang]);
-    document.getElementById('langToggle')?.remove();
+    const languageButton = document.getElementById('langToggle');
+    const nextLanguage = { tr: 'en', en: 'de', de: 'tr' }[lang];
+    const languageLabels = { tr: "Türkçe'ye geç", en: 'Switch to English', de: 'Auf Deutsch wechseln' };
+    languageButton.dataset.nextLanguage = nextLanguage;
+    languageButton.textContent = { tr: '🇹🇷', en: '🇬🇧', de: '🇩🇪' }[nextLanguage];
+    languageButton.title = languageLabels[nextLanguage];
+    languageButton.setAttribute('aria-label', languageLabels[nextLanguage]);
     const contact = document.querySelector('.header-nav a[href^="mailto"]');
     if (contact) {
         contact.textContent = { tr: 'İletişim', en: 'Contact', de: 'Kontakt' }[lang];
@@ -284,12 +287,13 @@ function applyQuitifyTranslations(language) {
 let quitifyLanguage = new URLSearchParams(location.search).get('lang');
 window.addEventListener('langChanged', event => {
     if (!event.detail?.initial) quitifyLanguage = event.detail?.lang;
-    applyQuitifyTranslations(quitifyLanguage || window.i18n?.getLang() || 'tr');
+    // Apply after the shared site's language handlers so explicit ?lang=de stays consistent.
+    queueMicrotask(() => applyQuitifyTranslations(quitifyLanguage || window.i18n?.getLang() || 'tr'));
 });
 document.addEventListener('DOMContentLoaded', () => {
     applyQuitifyTranslations(quitifyLanguage || window.i18n?.getLang() || 'tr');
-    document.getElementById('policyLanguage').addEventListener('change', event => {
-        quitifyLanguage = event.target.value;
+    document.getElementById('langToggle').addEventListener('click', event => {
+        quitifyLanguage = event.currentTarget.dataset.nextLanguage;
         const url = new URL(location.href);
         url.searchParams.set('lang', quitifyLanguage);
         history.replaceState(null, '', url);

@@ -6,39 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stocky - Gizlilik Politikası</title>
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/policy.css">
     <link rel="icon" type="image/png" sizes="32x32" href="app_logo/stocky_logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
-        .markdown-body h2 {
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-            color: var(--text-primary);
-        }
-
-        .markdown-body h3 {
-            margin-top: 1.5rem;
-            margin-bottom: 0.5rem;
-            color: var(--text-primary);
-        }
-
-        .markdown-body p,
-        .markdown-body ul,
-        .markdown-body ol {
-            margin-bottom: 1rem;
-            line-height: 1.6;
-        }
-
-        .markdown-body ul,
-        .markdown-body ol {
-            padding-left: 2rem;
-        }
-
-        .markdown-body ul li {
-            margin-bottom: 0.5rem;
-        }
-
         .markdown-body table {
             width: 100%;
             border-collapse: collapse;
@@ -58,12 +31,12 @@
             font-weight: 600;
         }
 
-        .markdown-body a {
+        .markdown-body a:not(.back-link) {
             color: var(--primary-color);
             text-decoration: none;
         }
 
-        .markdown-body a:hover {
+        .markdown-body a:not(.back-link):hover {
             text-decoration: underline;
         }
 
@@ -88,7 +61,7 @@
     </style>
 </head>
 
-<body>
+<body class="policy-page">
     <header class="site-header">
         <div class="container header-inner">
             <a href="index.html" class="brand-logo">
@@ -104,26 +77,22 @@
         <div class="container policy-layout">
             <aside class="toc-sidebar">
                 <a href="https://play.google.com/store/apps/details?id=com.swanky.stocky" target="_blank"
-                    class="download-btn-sidebar"
-                    style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; background: var(--primary-color); color: white; padding: 0.75rem; border-radius: var(--radius-md); text-decoration: none; margin-bottom: 1.5rem; font-weight: 600; text-align: center; transition: all 0.2s;">
-                    <span style="font-size: 1.2rem;">📲</span> <span>Stocky'yi İndir</span>
+                    class="download-btn-sidebar">
+                    <span>Stocky'yi İndir</span>
                 </a>
             </aside>
             <article class="content-area markdown-body">
-                <a href="index.html" class="back-link" data-i18n="stocky.backLink"
-                    style="color: var(--text-secondary); text-decoration: none; display: inline-block; margin-bottom: 2rem; font-weight: 500;">←
+                <a href="index.html" class="back-link" data-i18n="stocky.backLink">←
                     Ana Sayfaya Dön</a>
-                <h1
-                    style="font-size: 2.5rem; margin-bottom: 0.5rem; color: var(--text-primary); letter-spacing: -0.02em;">
+                <h1>
                     Stocky Gizlilik Politikası</h1>
                 <div id="privacyContentContainer">Yükleniyor... / Loading...</div>
             </article>
         </div>
     </div>
 
-    <footer class="site-footer" style="padding: 2rem 0; border-top: 1px solid var(--border-color); margin-top: 4rem;">
-        <div class="container footer-inner"
-            style="text-align: center; color: var(--text-tertiary); font-size: 0.95rem;">
+    <footer class="site-footer">
+        <div class="container footer-inner">
             <p>© <span class="current-year">2026</span> Stocky. Swanky Software ürünüdür.</p>
         </div>
     </footer>

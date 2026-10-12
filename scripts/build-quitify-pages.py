@@ -41,22 +41,25 @@ for deletion in (False, True):
     <meta name="description" content="Quitify gizlilik, bulut yedekleme, reklamlar ve hesap/veri silme bilgileri.">
     <link rel="canonical" href="{BASE}{filename}">
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/policy.css">
     <link rel="icon" type="image/png" href="app_logo/quitify_logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>.policy-date {{ color: var(--text-tertiary); margin-bottom: 2rem; }} .policy-language {{ background: var(--bg-surface); color: var(--text-primary); border: 1px solid var(--border-color); border-radius: 8px; padding: .4rem; max-width: 110px; }} .content-area {{ overflow-wrap: anywhere; }}</style>
 </head>
-<body data-quitify-page="{'deletion' if deletion else 'privacy'}">
+<body class="policy-page" data-quitify-page="{'deletion' if deletion else 'privacy'}">
     <header class="site-header">
         <div class="container header-inner">
             <a href="index.html" class="brand-logo"><img src="other_icons/swanky_logo.png?v=3" alt="Logo" width="32" height="32" style="border-radius:6px">Swanky Software</a>
-            <nav class="header-nav"><select id="policyLanguage" class="policy-language" aria-label="Politika dili"><option value="tr">Türkçe</option><option value="en">English</option><option value="de">Deutsch</option></select></nav>
+            <nav class="header-nav">
+                <a href="mailto:swankydata9@gmail.com" class="nav-link">İletişim</a>
+                <button id="langToggle" class="lang-toggle" type="button" title="Switch to English" aria-label="Switch to English">🇬🇧</button>
+            </nav>
         </div>
     </header>
     <main class="page-wrapper">
         <div class="container policy-layout">
-            <aside class="toc-sidebar"><a href="https://play.google.com/store/apps/details?id=com.swanky.quitify" class="download-btn-sidebar" style="display:block;padding:.75rem;border-radius:8px;background:var(--primary-color);color:var(--text-on-primary);text-align:center;text-decoration:none;margin-bottom:1.5rem;font-weight:600">{escape(t['download'])}</a></aside>
+            <aside class="toc-sidebar"><a href="https://play.google.com/store/apps/details?id=com.swanky.quitify" class="download-btn-sidebar">{escape(t['download'])}</a></aside>
             <article class="content-area">
                 <a href="index.html" class="back-link">{escape(t['back'])}</a>
                 <h1>{escape(title)}</h1>
@@ -87,10 +90,13 @@ function applyQuitifyTranslations(language) {
     document.querySelector('article h1').textContent = document.title;
     document.querySelector('.back-link').textContent = t.back;
     document.getElementById('quitifyFooter').textContent = t.footer;
-    const selector = document.getElementById('policyLanguage');
-    selector.value = lang;
-    selector.setAttribute('aria-label', { tr: 'Politika dili', en: 'Policy language', de: 'Sprache der Erklärung' }[lang]);
-    document.getElementById('langToggle')?.remove();
+    const languageButton = document.getElementById('langToggle');
+    const nextLanguage = { tr: 'en', en: 'de', de: 'tr' }[lang];
+    const languageLabels = { tr: "Türkçe'ye geç", en: 'Switch to English', de: 'Auf Deutsch wechseln' };
+    languageButton.dataset.nextLanguage = nextLanguage;
+    languageButton.textContent = { tr: '🇹🇷', en: '🇬🇧', de: '🇩🇪' }[nextLanguage];
+    languageButton.title = languageLabels[nextLanguage];
+    languageButton.setAttribute('aria-label', languageLabels[nextLanguage]);
     const contact = document.querySelector('.header-nav a[href^="mailto"]');
     if (contact) {
         contact.textContent = { tr: 'İletişim', en: 'Contact', de: 'Kontakt' }[lang];
@@ -117,12 +123,13 @@ function applyQuitifyTranslations(language) {
 let quitifyLanguage = new URLSearchParams(location.search).get('lang');
 window.addEventListener('langChanged', event => {
     if (!event.detail?.initial) quitifyLanguage = event.detail?.lang;
-    applyQuitifyTranslations(quitifyLanguage || window.i18n?.getLang() || 'tr');
+    // Apply after the shared site's language handlers so explicit ?lang=de stays consistent.
+    queueMicrotask(() => applyQuitifyTranslations(quitifyLanguage || window.i18n?.getLang() || 'tr'));
 });
 document.addEventListener('DOMContentLoaded', () => {
     applyQuitifyTranslations(quitifyLanguage || window.i18n?.getLang() || 'tr');
-    document.getElementById('policyLanguage').addEventListener('change', event => {
-        quitifyLanguage = event.target.value;
+    document.getElementById('langToggle').addEventListener('click', event => {
+        quitifyLanguage = event.currentTarget.dataset.nextLanguage;
         const url = new URL(location.href);
         url.searchParams.set('lang', quitifyLanguage);
         history.replaceState(null, '', url);
