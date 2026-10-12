@@ -1,327 +1,298 @@
 const quitifyTranslations = {
-    tr: {
-        backLink: "← Ana Sayfaya Dön",
-        appTitle: "Quitify Gizlilik Politikası",
-        contentHtml: `
-                <p style="color: var(--text-tertiary); margin-bottom: 2rem;">
-                    <strong>Son Güncelleme:</strong> 24 Temmuz 2025 | <strong>Versiyon:</strong> 1.0
-                </p>
-
-                <h2>Giriş</h2>
-                <p>Quitify, kullanıcıların sigara bırakma yolculuklarında onlara yardımcı olmak için geliştirilmiş bir uygulamadır. Kullanıcılarımızın gizliliğini ciddiyetle ele alıyor ve kişisel verilerini korumak için gerekli tüm önlemleri alıyoruz. Bu Gizlilik Politikası, Quitify aracılığıyla toplanan verilerin nasıl işlendiğini açıklamaktadır.</p>
-
-                <div class="highlight-box">
-                    <h3>📱 Uygulama Bilgileri</h3>
-                    <p><strong>Geliştirici:</strong> Muhammed Mustafa Geldi<br>
-                        <strong>İletişim:</strong> <a href="mailto:swankydata9@gmail.com">swankydata9@gmail.com</a><br>
-                        <strong>Konum:</strong> Türkiye
-                    </p>
-                </div>
-
-                <h2>1. Toplanan Bilgiler</h2>
-                <p>Quitify uygulamasını kullanırken şu veriler toplanabilir:</p>
-
-                <h3>1.1 Kişisel Bilgiler</h3>
-                <ul>
-                    <li>Kullanıcının adı</li>
-                    <li>Sigara bırakma tarihi</li>
-                    <li>Günlük içilen sigara sayısı</li>
-                    <li>Bir paketteki sigara sayısı</li>
-                    <li>Paket fiyatı ve para birimi</li>
-                    <li>Sigara içme süresi</li>
-                </ul>
-
-                <h3>1.2 Teknik Bilgiler</h3>
-                <ul>
-                    <li>Cihaz türü ve işletim sistemi</li>
-                    <li>IP adresi</li>
-                    <li>Oturum detayları</li>
-                </ul>
-
-                <h3>1.3 Yedekleme Bilgileri</h3>
-                <ul>
-                    <li>Firebase aracılığıyla çevrimiçi yedekleme</li>
-                    <li>Room veritabanı dosyaları</li>
-                    <li>Belirli aralıklarla (3 gün, 1 hafta, 1 ay) Firebase Firestore'a yüklenen veriler</li>
-                </ul>
-
-                <h3>1.4 Reklam Verisi</h3>
-                <ul>
-                    <li>Google AdMob aracılığıyla kişiselleştirilmemiş reklamlar</li>
-                </ul>
-
-                <div class="section-divider"></div>
-
-                <h2>2. Bilgilerin Kullanımı</h2>
-                <p>Toplanan veriler aşağıdaki amaçlarla kullanılır:</p>
-                <ul>
-                    <li>Kullanıcının sigara bırakma sürecindeki ilerlemesini izlemek</li>
-                    <li>İlerleme göstergeleri ve istatistikler sunmak</li>
-                    <li>Veri yedekleme ve geri yükleme işlemleri</li>
-                    <li>Google AdMob ile reklamları uygulamada göstermek</li>
-                </ul>
-
-                <h2>3. Üçüncü Taraflarla Paylaşım</h2>
-                <p>Quitify, kullanıcıların kişisel bilgilerini üçüncü şahıslarla satmaz veya paylaşmaz. Veriler yalnızca Firebase Firestore'a yedekleme ve geri yükleme amaçlarıyla yüklenir ve kullanıcıya özeldir.</p>
-
-                <h2>4. Veri Saklama</h2>
-                <p>Verileriniz yalnızca gerekli olduğu sürece saklanır. Yedekleme verileri Firebase üzerinden kullanıcının talebiyle silinebilir. Yedekleme dışındaki veriler yerel olarak saklanır ve dışarıya paylaşılmaz.</p>
-
-                <div class="section-divider"></div>
-
-                <h2>5. Veri Güvenliği</h2>
-                <div class="highlight-box">
-                    <h3>🔒 Güvenlik Önlemleri</h3>
-                    <p>Verilerinizin güvenliği için aşağıdaki önlemleri alıyoruz:</p>
-                    <ul>
-                        <li>Firebase Firestore güvenlik kuralları</li>
-                        <li>Şifrelenmiş veri aktarımı</li>
-                        <li>Yerel veri şifreleme</li>
-                        <li>Düzenli güvenlik güncellemeleri</li>
-                    </ul>
-                </div>
-
-                <h2>6. Çocukların Gizliliği</h2>
-                <p>Quitify, 13 yaş altı çocuklar için uygun değildir ve onlardan herhangi bir kişisel bilgi toplanmaz.</p>
-
-                <div class="section-divider"></div>
-
-                <h2>7. Kullanıcı Hakları</h2>
-                <div class="highlight-box">
-                    <h3>👤 Haklarınız</h3>
-                    <ul>
-                        <li><strong>Erişim Hakkı:</strong> Kişisel verilerinize erişim sağlama</li>
-                        <li><strong>Düzeltme Hakkı:</strong> Yanlış verileri düzeltme</li>
-                        <li><strong>Silme Hakkı:</strong> Kişisel verilerinizi silme</li>
-                    </ul>
-                    <p><strong>İletişim:</strong> <a href="mailto:swankydata9@gmail.com">swankydata9@gmail.com</a></p>
-                    <p><strong>İşlem Süresi:</strong> 30 gün içinde</p>
-                </div>
-
-                <h2>8. Üçüncü Taraf Servisler</h2>
-
-                <h3>8.1 Google AdMob</h3>
-                <ul>
-                    <li>Kişiselleştirilmemiş reklamlar</li>
-                    <li>Kullanıcılar Google ayarları ile reklamları yönetebilir</li>
-                    <li><a href="https://policies.google.com/privacy" target="_blank">Google Gizlilik Politikası ↗</a></li>
-                </ul>
-
-                <h3>8.2 Firebase Firestore</h3>
-                <ul>
-                    <li>Veri yedekleme ve geri yükleme hizmetleri</li>
-                    <li><a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Gizlilik Politikası ↗</a></li>
-                </ul>
-
-                <h2>9. İnternet İzinleri</h2>
-                <p>Quitify, yalnızca Firebase Firestore yedeklemeleri ve Google AdMob reklamları için internet erişimi gerektirir. Başka hiçbir izin talep edilmez.</p>
-
-                <h2>10. Politika Güncellemeleri</h2>
-                <p>Bu Gizlilik Politikası zaman zaman güncellenebilir. Güncellemeler, uygulama içinde ve web sitemizde duyurulacaktır. Uygulamayı kullanmaya devam etmek, değişiklikleri kabul ettiğiniz anlamına gelir.</p>
-
-                <div class="section-divider"></div>
-
-                <h2>11. İletişim</h2>
-                <div class="highlight-box">
-                    <h3>📧 Bizimle İletişime Geçin</h3>
-                    <p><strong>E-posta:</strong> <a href="mailto:swankydata9@gmail.com?subject=Quitify - Gizlilik Politikası">swankydata9@gmail.com</a></p>
-                    <p><strong>Konu:</strong> Quitify - Gizlilik Politikası</p>
-                    <p>Sorularınızı 24-48 saat içinde yanıtlamaya çalışıyoruz.</p>
-                </div>
-
-                <h2>12. Yasal Uyumluluk</h2>
-                <ul>
-                    <li><strong>KVKK</strong> (Türkiye - Kişisel Verilerin Korunması Kanunu)</li>
-                    <li><strong>GDPR</strong> (Avrupa Birliği - Genel Veri Koruma Tüzüğü)</li>
-                    <li><strong>CCPA</strong> (ABD - California Tüketici Gizliliği Yasası)</li>
-                </ul>
-`
-    },
-    en: {
-        backLink: "← Back to Home",
-        appTitle: "Quitify Privacy Policy",
-        contentHtml: `
-                <p style="color: var(--text-tertiary); margin-bottom: 2rem;">
-                    <strong>Last Updated:</strong> July 24, 2025 | <strong>Version:</strong> 1.0
-                </p>
-
-                <h2>Introduction</h2>
-                <p>Quitify is an application developed to assist users on their journey to quit smoking. We take the privacy of our users seriously and take all necessary precautions to protect their personal data. This Privacy Policy explains how data collected continuously through Quitify is processed.</p>
-
-                <div class="highlight-box">
-                    <h3>📱 App Information</h3>
-                    <p><strong>Developer:</strong> Muhammed Mustafa Geldi<br>
-                        <strong>Contact:</strong> <a href="mailto:swankydata9@gmail.com">swankydata9@gmail.com</a><br>
-                        <strong>Location:</strong> Turkey
-                    </p>
-                </div>
-
-                <h2>1. Information Collected</h2>
-                <p>The following data may be collected while using the Quitify application:</p>
-
-                <h3>1.1 Personal Information</h3>
-                <ul>
-                    <li>User's name</li>
-                    <li>Date of smoking cessation</li>
-                    <li>Number of cigarettes smoked daily</li>
-                    <li>Number of cigarettes in a pack</li>
-                    <li>Pack price and currency</li>
-                    <li>Duration of smoking</li>
-                </ul>
-
-                <h3>1.2 Technical Information</h3>
-                <ul>
-                    <li>Device type and operating system</li>
-                    <li>IP address</li>
-                    <li>Session details</li>
-                </ul>
-
-                <h3>1.3 Backup Information</h3>
-                <ul>
-                    <li>Online backup via Firebase</li>
-                    <li>Room database files</li>
-                    <li>Data uploaded to Firebase Firestore at targeted intervals (3 days, 1 week, 1 month)</li>
-                </ul>
-
-                <h3>1.4 Advertising Data</h3>
-                <ul>
-                    <li>Non-personalized ads via Google AdMob</li>
-                </ul>
-
-                <div class="section-divider"></div>
-
-                <h2>2. Use of Information</h2>
-                <p>Collected data is used for the following purposes:</p>
-                <ul>
-                    <li>Monitoring the user's progress in quitting smoking</li>
-                    <li>Providing progress indicators and statistics</li>
-                    <li>Data backup and restoration processes</li>
-                    <li>Displaying ads in the app with Google AdMob</li>
-                </ul>
-
-                <h2>3. Sharing with Third Parties</h2>
-                <p>Quitify does not sell or share users' personal information with third parties. Data is only uploaded to Firebase Firestore for backup and restoration purposes and is private to the user.</p>
-
-                <h2>4. Data Retention</h2>
-                <p>Your data is kept only as long as necessary. Backup data can be deleted upon user request via Firebase. Data other than backups is stored locally and is not shared externally.</p>
-
-                <div class="section-divider"></div>
-
-                <h2>5. Data Security</h2>
-                <div class="highlight-box">
-                    <h3>🔒 Security Measures</h3>
-                    <p>We take the following measures to ensure the security of your data:</p>
-                    <ul>
-                        <li>Firebase Firestore security rules</li>
-                        <li>Encrypted data transfer</li>
-                        <li>Local data encryption</li>
-                        <li>Regular security updates</li>
-                    </ul>
-                </div>
-
-                <h2>6. Children's Privacy</h2>
-                <p>Quitify is not intended for children under 13, and no personal information is collected from them.</p>
-
-                <div class="section-divider"></div>
-
-                <h2>7. User Rights</h2>
-                <div class="highlight-box">
-                    <h3>👤 Your Rights</h3>
-                    <ul>
-                        <li><strong>Right of Access:</strong> To access your personal data</li>
-                        <li><strong>Right of Rectification:</strong> To correct incorrect data</li>
-                        <li><strong>Right to Erasure:</strong> To delete your personal data</li>
-                    </ul>
-                    <p><strong>Contact:</strong> <a href="mailto:swankydata9@gmail.com">swankydata9@gmail.com</a></p>
-                    <p><strong>Processing Time:</strong> Within 30 days</p>
-                </div>
-
-                <h2>8. Third Party Services</h2>
-
-                <h3>8.1 Google AdMob</h3>
-                <ul>
-                    <li>Non-personalized ads</li>
-                    <li>Users can manage ads through Google settings</li>
-                    <li><a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy ↗</a></li>
-                </ul>
-
-                <h3>8.2 Firebase Firestore</h3>
-                <ul>
-                    <li>Data backup and restoration services</li>
-                    <li><a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy ↗</a></li>
-                </ul>
-
-                <h2>9. Internet Permissions</h2>
-                <p>Quitify requires internet access strictly for Firebase Firestore backups and Google AdMob ads. No other permissions are required.</p>
-
-                <h2>10. Policy Updates</h2>
-                <p>This Privacy Policy may be updated from time to time. Updates will be announced within the app and on our website. Continued use of the app implies acceptance of the changes.</p>
-
-                <div class="section-divider"></div>
-
-                <h2>11. Contact</h2>
-                <div class="highlight-box">
-                    <h3>📧 Contact Us</h3>
-                    <p><strong>Email:</strong> <a href="mailto:swankydata9@gmail.com?subject=Quitify - Privacy Policy">swankydata9@gmail.com</a></p>
-                    <p><strong>Subject:</strong> Quitify - Privacy Policy</p>
-                    <p>We strive to answer your questions within 24-48 hours.</p>
-                </div>
-
-                <h2>12. Legal Compliance</h2>
-                <ul>
-                    <li><strong>KVKK</strong> (Turkey - Personal Data Protection Law)</li>
-                    <li><strong>GDPR</strong> (European Union - General Data Protection Regulation)</li>
-                    <li><strong>CCPA</strong> (USA - California Consumer Privacy Act)</li>
-                </ul>
-`
-    }
+  "tr": {
+    "title": "Quitify Gizlilik Politikası",
+    "date": "Son güncelleme: 13 Ekim 2026",
+    "back": "← Ana Sayfaya Dön",
+    "download": "Quitify’ı İndir",
+    "online": "Güncel politikayı webde aç",
+    "deleteTitle": "Quitify Hesap ve Veri Silme",
+    "deleteLink": "Hesap ve veri silme talebi",
+    "footer": "Quitify — Swanky Software",
+    "sections": [
+      [
+        "Uygulama ve sorumlu geliştirici",
+        "Quitify (com.swanky.quitify), sigarayı bırakma sürecini ve sigaraya harcanmayan parayı takip etmeye yardımcı olur. Geliştirici Muhammed Mustafa Geldi’dir (Swanky Software, Türkiye). Gizlilik soruları ve talepler için <a href=\"mailto:swankydata9@gmail.com\">swankydata9@gmail.com</a> adresine ulaşabilirsiniz. Bu politika mevcut sürümleri ve 1.8.0 ile gelen yedekleme değişikliğini açıklar."
+      ],
+      [
+        "Cihazınızda tuttuğunuz bilgiler",
+        "Adınız veya takma adınız; sigarayı bırakma tarihi; günlük tüketim, paket başına sigara sayısı ve sigara kullanım süresi; paket fiyatı ve para birimi; ilerleme ve başarılar; bırakma nedenleri ve notlar; birikimler, satın alma hedefleri ve harcama kayıtları cihazınızdaki uygulama veritabanında saklanır. Dil, para birimi, yedekleme tercihleri ve widget ayarları da cihazda tutulur. Bu bilgiler takip, hesaplama, kişiselleştirme ve widget özelliklerini sağlar. Bir bulut hesabı açmadan uygulamanın temel özelliklerini kullanabilirsiniz."
+      ],
+      [
+        "İsteğe bağlı hesap ve kimlik doğrulama",
+        "Bulut özellikleri için e-posta ve şifreyle hesap oluşturabilir veya Google ile giriş yapabilirsiniz. Firebase Authentication e-posta adresinizi, hesap kimliğinizi ve giriş bilgilerinizi işler. Google ile girişte sağlanan ad ve profil görseli de hesap ekranında kullanılabilir. Şifre işlemleri Firebase Authentication tarafından yürütülür. Kimlik doğrulama hizmeti kötüye kullanımı önlemek için IP adresi ve teknik istek bilgileri de işler. Hesap bilgileri giriş, şifre sıfırlama, hesap yönetimi ve hesabınıza ait yedeği bulmak için kullanılır."
+      ],
+      [
+        "Bulut yedekleme ve eski sürümler",
+        "<strong>1.8.0 ve sonraki sürümlerde</strong> yedek verileri, hesabınıza bağlı Firebase Firestore dokümanında saklanır. Yedek; profil ve sigara kullanım bilgilerini, bırakma tarihini, neden ve notları, başarıları, birikimi, hedef ve harcama kayıtlarını ve seçilen para birimini içerir. Yedek biçimi ve oluşturulma zamanı da kaydedilir. Hesap açma ve yedekleme isteğe bağlıdır; hesapta oturum açılması ve kurulumun tamamlanması yedekleme akışını başlatabilir. Ayarlar’dan dönemsel yedeklemeyi 3, 7 veya 30 gün olarak seçebilir veya kapatabilirsiniz. Oturumu kapatmak planlanan bulut yedeklerini durdurur; mevcut bulut verisini silmez.<br><br><strong>1.7.1 ve önceki sürümlerde</strong> veritabanı dosyaları Firebase Storage’a yükleniyor, dosya konumu Firestore’da tutuluyordu. Yeni sürüm bu eski Storage yedeklerini indirmez. Daha önce oluşturulmuş bulut kayıtları için de silme talebinde bulunabilirsiniz. Quitify, profilinizdeki sağlık veya finansal kayıtları reklam hedeflemek için reklam SDK’sına göndermez."
+      ],
+      [
+        "Dosya yedekleri ve Android yedeklemesi",
+        "Yerel yedekleme, sistem dosya seçicisiyle sizin seçtiğiniz klasöre bir yedek dosyası yazar. 1.8.0’dan itibaren bu dosya quitify-backup.json biçimindedir; eski sürümlerin yerel veritabanı yedekleri de içe aktarılabilir. Dosya, bulut yedeğinde açıklanan kişisel kayıtları içerir ve Quitify tarafından ayrıca şifrelenmez. Klasörü ve dosyayı kiminle paylaştığınız önemlidir. Bir bulut dosya sağlayıcısı seçerseniz dosyanın eşitlenmesi o sağlayıcının ayarlarına ve politikasına bağlıdır.<br><br>Android’in otomatik yedekleme ve cihazlar arası aktarım özellikleri, cihazınızdaki sistem ayarlarına bağlı olarak uygulama veritabanını ve tercihleri yedekleyebilir. Bu özellikler uygulamanın Firebase bulut yedeğinden ayrıdır ve Android veya cihaz sağlayıcısı tarafından yönetilir."
+      ],
+      [
+        "Reklamlar ve kullanım analizi",
+        "Quitify, Google AdMob ve Google Analytics for Firebase kullanır. Bu hizmetler reklam veya uygulama/kurulum kimlikleri, IP adresi ve buradan çıkarılan yaklaşık konum, cihaz ve uygulama sürümü bilgileri, uygulama/oturum ve reklam etkileşimleri ile tanılama verilerini otomatik olarak işleyebilir. Bu veriler reklam gösterimi ve ölçümü, kullanım ve performans analizi, sahtekarlığı önleme ve güvenlik için kullanılır. AdMob bu teknik verileri Google ve reklam iş ortaklarıyla paylaşabilir.<br><br>Cihazınızdaki veya Google hesabınızdaki reklam ayarları, reklam kimliğini ve kişiselleştirmeyi etkileyebilir. Bu ayarlar tüm teknik veri işlemesini durdurmayabilir. Uygulamada tüm reklam ve analiz toplamayı kapatan ayrı bir seçenek bulunmaz. Uygulama hassas konum, kişiler, SMS, kamera veya mikrofon erişimi istemez."
+      ],
+      [
+        "Hizmet sağlayıcılar ve paylaşım",
+        "Firebase Authentication ve Firestore, hesap ve yedekleme özelliklerini sağlar. Eski sürümlerin yedekleri Firebase Storage’da bulunabilir. Google’ın reklam ve analiz hizmetleri yukarıdaki teknik verileri işler. Gizlilik ve destek talebi gönderirseniz e-posta adresiniz ve mesajınız talebin yanıtlanması ve kimliğinizin doğrulanması için kullanılır. Quitify’a girdiğiniz kişisel kayıtları satmayız. Google hizmetlerinin işlemesi hakkında <a href=\"https://policies.google.com/privacy\">Google Gizlilik Politikası</a> ve <a href=\"https://firebase.google.com/support/privacy\">Firebase gizlilik bilgilerini</a> inceleyebilirsiniz."
+      ],
+      [
+        "Saklama ve silme",
+        "Yerel kayıtlar siz kaldırana, uygulama verilerini temizleyene veya cihazdan uygulamayı kaldırana kadar cihazda kalır. Dışa aktardığınız dosyalar ayrı kalabilir ve sizin tarafınızdan silinmelidir. Bulut hesabı ve yedekler, siz silme talep edene kadar hesap ve geri yükleme özelliklerini sağlamak için tutulur. Oturumu kapatmak, dönemsel yedeği kapatmak veya uygulamayı kaldırmak bulut hesabını ve yedeğini kendiliğinden silmez.<br><br><a href=\"quitify-delete-account.html\">Hesap ve veri silme sayfasından</a> hesabın ve ilişkili bulut kayıtlarının ya da hesabı koruyarak bulut yedeğinin silinmesini isteyebilirsiniz. Talebi doğruladıktan sonra en geç 30 gün içinde tamamlamayı hedefliyoruz. Silme talebiyle ilişkili asgari yazışmalar, işlemi doğrulamak ve uygulanabilir yasal yükümlülükleri karşılamak için tutulabilir; bu yazışmalar sigara kullanım veya birikim yedeğini içermez. Google’ın reklam, analiz ve güvenlik verileri kendi saklama uygulamalarına tabidir."
+      ],
+      [
+        "Güvenlik",
+        "Google ve Firebase hizmetlerine gönderilen bilgiler güvenli bağlantılar üzerinden aktarım sırasında şifrelenir. Cihazdaki uygulama kayıtları Android’in uygulama alanında saklanır; yerel veritabanı ve dışa aktarılan yedek için Quitify’a ait ek şifreleme katmanı bulunmaz. Cihazınızı, hesabınızı ve yedek dosyalarınızı korumanız gerekir. Hiçbir saklama veya aktarım yönteminin mutlak güvenliğini garanti edemeyiz."
+      ],
+      [
+        "İzinler ve arka plan çalışması",
+        "İnternet erişimi hesap, bulut yedeği, reklam ve analiz hizmetleri için kullanılır. Reklam kimliği izni reklam SDK’sı tarafından kullanılabilir. Cihazın açılmasını izleme ve pil optimizasyonu istisnası, widget ve arka plan işlemlerinin çalışmasını destekler; pil optimizasyonu istisnası kullanıcı tercihine bağlıdır. Dosya erişimi, sistem seçicisinde seçtiğiniz klasörün erişim izniyle yapılır."
+      ],
+      [
+        "Haklarınız ve çocuklar",
+        "Kişisel bilgilerinize erişim, düzeltme veya silme taleplerinizi <a href=\"mailto:swankydata9@gmail.com\">swankydata9@gmail.com</a> adresine iletebilirsiniz. Bulut özelliklerini kullanmamayı seçebilir ve hesabınızı silmeyi talep edebilirsiniz. Uygulanabilir mevzuat kapsamında yetkili veri koruma makamına başvuru haklarınız saklıdır. Quitify 13 yaş altı çocuklara yönelik değildir; bu çocukların kişisel bilgilerini bilerek toplamayız."
+      ],
+      [
+        "Bu web sayfası ve güncellemeler",
+        "Bu sayfa GitHub Pages üzerinde barındırılır. GitHub, ziyaret sırasında IP adresi gibi teknik bilgileri güvenlik amacıyla işleyebilir. Web sayfasındaki Google Fonts isteği de tarayıcıdan Google’a teknik bağlantı bilgileri iletir. Dil ve tema tercihi tarayıcıda saklanır. Uygulama veya veri işleme yöntemleri değişirse politika güncellenir; yukarıdaki tarih son düzenlemeyi gösterir. Güncel politika <a href=\"https://muhammedmustafageldi.github.io/App-Pages/quitify-privacy-policy.html\">App-Pages’teki bu adreste</a> yayımlanır."
+      ]
+    ],
+    "deletion": [
+      [
+        "Silme talebini nasıl gönderirsiniz?",
+        "Quitify hesabınızın ve ilişkili verilerin silinmesini istemek için <a href=\"mailto:swankydata9@gmail.com?subject=Quitify%20-%20Hesap%20Silme%20Talebi\">swankydata9@gmail.com adresine e-posta gönderin</a>. Konu: <strong>Quitify — Hesap Silme Talebi</strong>. Hesabınızda kullandığınız e-posta adresini ve hesabın tamamen silinmesini istediğinizi belirtin. Google ile giriş yaptıysanız ilgili Google hesabının e-posta adresini kullanın. Uygulamayı yeniden yüklemeniz gerekmez. Şifrenizi, giriş kodunuzu veya yedek dosyanızı göndermeyin. Gerekirse hesap sahipliğini doğrulamak için sizinle iletişime geçeriz."
+      ],
+      [
+        "Hangi veriler silinir?",
+        "Quitify’ın Firebase Authentication hesabı ve ilişkili Firestore yedeği silinir. Yedek kapsamındaki ad, sigara kullanım ve bırakma bilgileri, notlar, başarılar, birikim, hedefler ve harcama kayıtları bu silmeye dahildir. Eski sürümlerden kalan hesabınıza bağlı Firebase Storage yedeği ve Firestore konum kaydı da talebin kapsamındadır. Bu işlem Google hesabınızı silmez."
+      ],
+      [
+        "Hesabı koruyarak verileri silme",
+        "Yalnızca bulut yedeğinizin silinmesini istiyorsanız aynı adrese <strong>Quitify — Bulut Yedeği Silme Talebi</strong> konusuyla yazın ve hesabın açık kalmasını istediğinizi belirtin. Oturumu kapatın veya bulut yedeklemeyi kapatın; aksi halde uygulama cihazdaki kayıtlarla yeni bir yedek oluşturabilir."
+      ],
+      [
+        "Süre ve cihazdaki kopyalar",
+        "Talebin size ait olduğunu doğruladıktan sonra işlemi en geç 30 gün içinde tamamlamayı hedefliyoruz. İşlemi doğrulayan asgari destek yazışmaları ve yasal olarak gerekli kayıtlar tutulabilir; uygulama profiliniz ve yedeğiniz hesap silme sonrasında saklanmaz. Google’ın reklam, analiz ve güvenlik kayıtları kendi politikalarına tabidir.<br><br>Cihazınızda bulunan kayıtları Android uygulama ayarlarından Quitify’ın verilerini temizleyerek kaldırabilirsiniz. Dışa aktarılan dosyaları ve sizin seçtiğiniz sağlayıcıdaki kopyaları ayrıca silin. Android sistem yedeklerini cihazınızın yedekleme ayarlarından yönetin. Oturumu kapatmak veya uygulamayı kaldırmak tek başına bulut silme talebi oluşturmaz."
+      ]
+    ],
+    "contentHtml": "<p class=\"policy-date\">Son güncelleme: 13 Ekim 2026</p>\n<p class=\"highlight-box\"><a href=\"quitify-delete-account.html\">Hesap ve veri silme talebi</a></p>\n<h2 id=\"section-1\">1. Uygulama ve sorumlu geliştirici</h2>\n<p>Quitify (com.swanky.quitify), sigarayı bırakma sürecini ve sigaraya harcanmayan parayı takip etmeye yardımcı olur. Geliştirici Muhammed Mustafa Geldi’dir (Swanky Software, Türkiye). Gizlilik soruları ve talepler için <a href=\"mailto:swankydata9@gmail.com\">swankydata9@gmail.com</a> adresine ulaşabilirsiniz. Bu politika mevcut sürümleri ve 1.8.0 ile gelen yedekleme değişikliğini açıklar.</p>\n<h2 id=\"section-2\">2. Cihazınızda tuttuğunuz bilgiler</h2>\n<p>Adınız veya takma adınız; sigarayı bırakma tarihi; günlük tüketim, paket başına sigara sayısı ve sigara kullanım süresi; paket fiyatı ve para birimi; ilerleme ve başarılar; bırakma nedenleri ve notlar; birikimler, satın alma hedefleri ve harcama kayıtları cihazınızdaki uygulama veritabanında saklanır. Dil, para birimi, yedekleme tercihleri ve widget ayarları da cihazda tutulur. Bu bilgiler takip, hesaplama, kişiselleştirme ve widget özelliklerini sağlar. Bir bulut hesabı açmadan uygulamanın temel özelliklerini kullanabilirsiniz.</p>\n<h2 id=\"section-3\">3. İsteğe bağlı hesap ve kimlik doğrulama</h2>\n<p>Bulut özellikleri için e-posta ve şifreyle hesap oluşturabilir veya Google ile giriş yapabilirsiniz. Firebase Authentication e-posta adresinizi, hesap kimliğinizi ve giriş bilgilerinizi işler. Google ile girişte sağlanan ad ve profil görseli de hesap ekranında kullanılabilir. Şifre işlemleri Firebase Authentication tarafından yürütülür. Kimlik doğrulama hizmeti kötüye kullanımı önlemek için IP adresi ve teknik istek bilgileri de işler. Hesap bilgileri giriş, şifre sıfırlama, hesap yönetimi ve hesabınıza ait yedeği bulmak için kullanılır.</p>\n<h2 id=\"section-4\">4. Bulut yedekleme ve eski sürümler</h2>\n<p><strong>1.8.0 ve sonraki sürümlerde</strong> yedek verileri, hesabınıza bağlı Firebase Firestore dokümanında saklanır. Yedek; profil ve sigara kullanım bilgilerini, bırakma tarihini, neden ve notları, başarıları, birikimi, hedef ve harcama kayıtlarını ve seçilen para birimini içerir. Yedek biçimi ve oluşturulma zamanı da kaydedilir. Hesap açma ve yedekleme isteğe bağlıdır; hesapta oturum açılması ve kurulumun tamamlanması yedekleme akışını başlatabilir. Ayarlar’dan dönemsel yedeklemeyi 3, 7 veya 30 gün olarak seçebilir veya kapatabilirsiniz. Oturumu kapatmak planlanan bulut yedeklerini durdurur; mevcut bulut verisini silmez.<br><br><strong>1.7.1 ve önceki sürümlerde</strong> veritabanı dosyaları Firebase Storage’a yükleniyor, dosya konumu Firestore’da tutuluyordu. Yeni sürüm bu eski Storage yedeklerini indirmez. Daha önce oluşturulmuş bulut kayıtları için de silme talebinde bulunabilirsiniz. Quitify, profilinizdeki sağlık veya finansal kayıtları reklam hedeflemek için reklam SDK’sına göndermez.</p>\n<h2 id=\"section-5\">5. Dosya yedekleri ve Android yedeklemesi</h2>\n<p>Yerel yedekleme, sistem dosya seçicisiyle sizin seçtiğiniz klasöre bir yedek dosyası yazar. 1.8.0’dan itibaren bu dosya quitify-backup.json biçimindedir; eski sürümlerin yerel veritabanı yedekleri de içe aktarılabilir. Dosya, bulut yedeğinde açıklanan kişisel kayıtları içerir ve Quitify tarafından ayrıca şifrelenmez. Klasörü ve dosyayı kiminle paylaştığınız önemlidir. Bir bulut dosya sağlayıcısı seçerseniz dosyanın eşitlenmesi o sağlayıcının ayarlarına ve politikasına bağlıdır.<br><br>Android’in otomatik yedekleme ve cihazlar arası aktarım özellikleri, cihazınızdaki sistem ayarlarına bağlı olarak uygulama veritabanını ve tercihleri yedekleyebilir. Bu özellikler uygulamanın Firebase bulut yedeğinden ayrıdır ve Android veya cihaz sağlayıcısı tarafından yönetilir.</p>\n<h2 id=\"section-6\">6. Reklamlar ve kullanım analizi</h2>\n<p>Quitify, Google AdMob ve Google Analytics for Firebase kullanır. Bu hizmetler reklam veya uygulama/kurulum kimlikleri, IP adresi ve buradan çıkarılan yaklaşık konum, cihaz ve uygulama sürümü bilgileri, uygulama/oturum ve reklam etkileşimleri ile tanılama verilerini otomatik olarak işleyebilir. Bu veriler reklam gösterimi ve ölçümü, kullanım ve performans analizi, sahtekarlığı önleme ve güvenlik için kullanılır. AdMob bu teknik verileri Google ve reklam iş ortaklarıyla paylaşabilir.<br><br>Cihazınızdaki veya Google hesabınızdaki reklam ayarları, reklam kimliğini ve kişiselleştirmeyi etkileyebilir. Bu ayarlar tüm teknik veri işlemesini durdurmayabilir. Uygulamada tüm reklam ve analiz toplamayı kapatan ayrı bir seçenek bulunmaz. Uygulama hassas konum, kişiler, SMS, kamera veya mikrofon erişimi istemez.</p>\n<h2 id=\"section-7\">7. Hizmet sağlayıcılar ve paylaşım</h2>\n<p>Firebase Authentication ve Firestore, hesap ve yedekleme özelliklerini sağlar. Eski sürümlerin yedekleri Firebase Storage’da bulunabilir. Google’ın reklam ve analiz hizmetleri yukarıdaki teknik verileri işler. Gizlilik ve destek talebi gönderirseniz e-posta adresiniz ve mesajınız talebin yanıtlanması ve kimliğinizin doğrulanması için kullanılır. Quitify’a girdiğiniz kişisel kayıtları satmayız. Google hizmetlerinin işlemesi hakkında <a href=\"https://policies.google.com/privacy\">Google Gizlilik Politikası</a> ve <a href=\"https://firebase.google.com/support/privacy\">Firebase gizlilik bilgilerini</a> inceleyebilirsiniz.</p>\n<h2 id=\"section-8\">8. Saklama ve silme</h2>\n<p>Yerel kayıtlar siz kaldırana, uygulama verilerini temizleyene veya cihazdan uygulamayı kaldırana kadar cihazda kalır. Dışa aktardığınız dosyalar ayrı kalabilir ve sizin tarafınızdan silinmelidir. Bulut hesabı ve yedekler, siz silme talep edene kadar hesap ve geri yükleme özelliklerini sağlamak için tutulur. Oturumu kapatmak, dönemsel yedeği kapatmak veya uygulamayı kaldırmak bulut hesabını ve yedeğini kendiliğinden silmez.<br><br><a href=\"quitify-delete-account.html\">Hesap ve veri silme sayfasından</a> hesabın ve ilişkili bulut kayıtlarının ya da hesabı koruyarak bulut yedeğinin silinmesini isteyebilirsiniz. Talebi doğruladıktan sonra en geç 30 gün içinde tamamlamayı hedefliyoruz. Silme talebiyle ilişkili asgari yazışmalar, işlemi doğrulamak ve uygulanabilir yasal yükümlülükleri karşılamak için tutulabilir; bu yazışmalar sigara kullanım veya birikim yedeğini içermez. Google’ın reklam, analiz ve güvenlik verileri kendi saklama uygulamalarına tabidir.</p>\n<h2 id=\"section-9\">9. Güvenlik</h2>\n<p>Google ve Firebase hizmetlerine gönderilen bilgiler güvenli bağlantılar üzerinden aktarım sırasında şifrelenir. Cihazdaki uygulama kayıtları Android’in uygulama alanında saklanır; yerel veritabanı ve dışa aktarılan yedek için Quitify’a ait ek şifreleme katmanı bulunmaz. Cihazınızı, hesabınızı ve yedek dosyalarınızı korumanız gerekir. Hiçbir saklama veya aktarım yönteminin mutlak güvenliğini garanti edemeyiz.</p>\n<h2 id=\"section-10\">10. İzinler ve arka plan çalışması</h2>\n<p>İnternet erişimi hesap, bulut yedeği, reklam ve analiz hizmetleri için kullanılır. Reklam kimliği izni reklam SDK’sı tarafından kullanılabilir. Cihazın açılmasını izleme ve pil optimizasyonu istisnası, widget ve arka plan işlemlerinin çalışmasını destekler; pil optimizasyonu istisnası kullanıcı tercihine bağlıdır. Dosya erişimi, sistem seçicisinde seçtiğiniz klasörün erişim izniyle yapılır.</p>\n<h2 id=\"section-11\">11. Haklarınız ve çocuklar</h2>\n<p>Kişisel bilgilerinize erişim, düzeltme veya silme taleplerinizi <a href=\"mailto:swankydata9@gmail.com\">swankydata9@gmail.com</a> adresine iletebilirsiniz. Bulut özelliklerini kullanmamayı seçebilir ve hesabınızı silmeyi talep edebilirsiniz. Uygulanabilir mevzuat kapsamında yetkili veri koruma makamına başvuru haklarınız saklıdır. Quitify 13 yaş altı çocuklara yönelik değildir; bu çocukların kişisel bilgilerini bilerek toplamayız.</p>\n<h2 id=\"section-12\">12. Bu web sayfası ve güncellemeler</h2>\n<p>Bu sayfa GitHub Pages üzerinde barındırılır. GitHub, ziyaret sırasında IP adresi gibi teknik bilgileri güvenlik amacıyla işleyebilir. Web sayfasındaki Google Fonts isteği de tarayıcıdan Google’a teknik bağlantı bilgileri iletir. Dil ve tema tercihi tarayıcıda saklanır. Uygulama veya veri işleme yöntemleri değişirse politika güncellenir; yukarıdaki tarih son düzenlemeyi gösterir. Güncel politika <a href=\"https://muhammedmustafageldi.github.io/App-Pages/quitify-privacy-policy.html\">App-Pages’teki bu adreste</a> yayımlanır.</p>",
+    "deletionHtml": "<p class=\"policy-date\">Son güncelleme: 13 Ekim 2026</p>\n<h2 id=\"section-1\">1. Silme talebini nasıl gönderirsiniz?</h2>\n<p>Quitify hesabınızın ve ilişkili verilerin silinmesini istemek için <a href=\"mailto:swankydata9@gmail.com?subject=Quitify%20-%20Hesap%20Silme%20Talebi\">swankydata9@gmail.com adresine e-posta gönderin</a>. Konu: <strong>Quitify — Hesap Silme Talebi</strong>. Hesabınızda kullandığınız e-posta adresini ve hesabın tamamen silinmesini istediğinizi belirtin. Google ile giriş yaptıysanız ilgili Google hesabının e-posta adresini kullanın. Uygulamayı yeniden yüklemeniz gerekmez. Şifrenizi, giriş kodunuzu veya yedek dosyanızı göndermeyin. Gerekirse hesap sahipliğini doğrulamak için sizinle iletişime geçeriz.</p>\n<h2 id=\"section-2\">2. Hangi veriler silinir?</h2>\n<p>Quitify’ın Firebase Authentication hesabı ve ilişkili Firestore yedeği silinir. Yedek kapsamındaki ad, sigara kullanım ve bırakma bilgileri, notlar, başarılar, birikim, hedefler ve harcama kayıtları bu silmeye dahildir. Eski sürümlerden kalan hesabınıza bağlı Firebase Storage yedeği ve Firestore konum kaydı da talebin kapsamındadır. Bu işlem Google hesabınızı silmez.</p>\n<h2 id=\"data-deletion\">3. Hesabı koruyarak verileri silme</h2>\n<p>Yalnızca bulut yedeğinizin silinmesini istiyorsanız aynı adrese <strong>Quitify — Bulut Yedeği Silme Talebi</strong> konusuyla yazın ve hesabın açık kalmasını istediğinizi belirtin. Oturumu kapatın veya bulut yedeklemeyi kapatın; aksi halde uygulama cihazdaki kayıtlarla yeni bir yedek oluşturabilir.</p>\n<h2 id=\"section-4\">4. Süre ve cihazdaki kopyalar</h2>\n<p>Talebin size ait olduğunu doğruladıktan sonra işlemi en geç 30 gün içinde tamamlamayı hedefliyoruz. İşlemi doğrulayan asgari destek yazışmaları ve yasal olarak gerekli kayıtlar tutulabilir; uygulama profiliniz ve yedeğiniz hesap silme sonrasında saklanmaz. Google’ın reklam, analiz ve güvenlik kayıtları kendi politikalarına tabidir.<br><br>Cihazınızda bulunan kayıtları Android uygulama ayarlarından Quitify’ın verilerini temizleyerek kaldırabilirsiniz. Dışa aktarılan dosyaları ve sizin seçtiğiniz sağlayıcıdaki kopyaları ayrıca silin. Android sistem yedeklerini cihazınızın yedekleme ayarlarından yönetin. Oturumu kapatmak veya uygulamayı kaldırmak tek başına bulut silme talebi oluşturmaz.</p>\n<p><a href=\"quitify-privacy-policy.html\">Quitify Gizlilik Politikası</a></p>"
+  },
+  "en": {
+    "title": "Quitify Privacy Policy",
+    "date": "Last updated: 13 October 2026",
+    "back": "← Back to Home",
+    "download": "Download Quitify",
+    "online": "Open the current policy online",
+    "deleteTitle": "Quitify Account and Data Deletion",
+    "deleteLink": "Request account or data deletion",
+    "footer": "Quitify — Swanky Software",
+    "sections": [
+      [
+        "App and responsible developer",
+        "Quitify (com.swanky.quitify) helps you track your smoking cessation journey and money not spent on cigarettes. The developer is Muhammed Mustafa Geldi (Swanky Software, Türkiye). Contact <a href=\"mailto:swankydata9@gmail.com\">swankydata9@gmail.com</a> for privacy questions and requests. This policy covers existing versions and the backup change introduced with version 1.8.0."
+      ],
+      [
+        "Information you keep on your device",
+        "Your name or nickname; quit date; daily consumption, cigarettes per pack and smoking duration; pack price and currency; progress and achievements; reasons and notes; savings, purchase goals and spending records are stored in the app database on your device. Language, currency, backup preferences and widget settings are also stored locally. These records provide tracking, calculations, personalization and widget features. You can use the core app without creating a cloud account."
+      ],
+      [
+        "Optional accounts and authentication",
+        "You can register with an email address and password or sign in with Google for cloud features. Firebase Authentication processes your email address, account identifier and authentication information. The name and profile image provided by Google may also be used on your account screen. Password operations are handled by Firebase Authentication. The authentication service also processes IP addresses and technical request information to prevent abuse. Account information is used for sign-in, password reset, account management and locating your account’s backup."
+      ],
+      [
+        "Cloud backups and earlier versions",
+        "<strong>In version 1.8.0 and later</strong>, backup data is stored in a Firebase Firestore document associated with your account. A backup includes profile and smoking information, quit date, reasons and notes, achievements, savings, goals, spending records and selected currency. Backup format and creation time are also recorded. Accounts and backups are optional; signing in and completing setup can start the backup flow. In Settings you can choose periodic backups every 3, 7 or 30 days or turn them off. Signing out stops scheduled cloud backups; it does not erase existing cloud data.<br><br><strong>Version 1.7.1 and earlier</strong> uploaded database files to Firebase Storage and kept their location in Firestore. The new version does not download those older Storage backups. You can also request deletion of earlier cloud records. Quitify does not send the health or financial records in your profile to its advertising SDK for ad targeting."
+      ],
+      [
+        "File backups and Android backup",
+        "Local backup writes a backup file to the folder you choose using the system file picker. From version 1.8.0 this is quitify-backup.json; local database backups made by earlier versions can also be imported. The file contains the personal records described for cloud backup and is not additionally encrypted by Quitify. Consider who can access the folder and file. If you choose a cloud file provider, synchronization depends on that provider’s settings and policy.<br><br>Android’s automatic backup and device transfer features can back up the app database and preferences depending on your device’s system settings. These features are separate from the app’s Firebase backup and are managed by Android or your device provider."
+      ],
+      [
+        "Advertising and usage analytics",
+        "Quitify uses Google AdMob and Google Analytics for Firebase. These services can automatically process advertising or app/installation identifiers, IP addresses and approximate location derived from them, device and app version information, app/session and advertising interactions, and diagnostic data. These data are used for advertising and measurement, usage and performance analytics, fraud prevention and security. AdMob can share these technical data with Google and advertising partners.<br><br>Advertising settings on your device or Google account can affect advertising identifiers and personalization. They may not stop all technical data processing. The app does not provide a separate switch that disables all advertising and analytics collection. It does not request access to precise location, contacts, SMS, camera or microphone."
+      ],
+      [
+        "Service providers and sharing",
+        "Firebase Authentication and Firestore provide account and backup features. Earlier version backups may be held in Firebase Storage. Google advertising and analytics services process the technical data described above. If you send a privacy or support request, your email address and message are used to respond and verify your identity. We do not sell the personal records you enter in Quitify. See <a href=\"https://policies.google.com/privacy\">Google’s Privacy Policy</a> and <a href=\"https://firebase.google.com/support/privacy\">Firebase privacy information</a> for information about Google’s processing."
+      ],
+      [
+        "Retention and deletion",
+        "Local records stay on your device until you remove them, clear the app’s data or uninstall it from the device. Exported files can remain separately and must be deleted by you. Cloud accounts and backups are retained for account and restore features until you request deletion. Signing out, disabling periodic backups or uninstalling the app does not automatically delete a cloud account or backup.<br><br>You can request deletion of your account and associated cloud records, or deletion of the cloud backup while keeping the account, on the <a href=\"quitify-delete-account.html\">account and data deletion page</a>. We aim to complete the request within 30 days after verifying it. Minimal correspondence about the request may be retained to document its handling and meet applicable legal obligations; it does not include your smoking or savings backup. Google’s advertising, analytics and security data follow its own retention practices."
+      ],
+      [
+        "Security",
+        "Information sent to Google and Firebase services is encrypted in transit over secure connections. App records on your device are kept in Android’s app storage; Quitify does not apply an additional encryption layer to the local database or exported backup files. Protect your device, account and backup files. No storage or transmission method can be guaranteed completely secure."
+      ],
+      [
+        "Permissions and background work",
+        "Internet access is used for accounts, cloud backups, advertising and analytics. The advertising ID permission may be used by the advertising SDK. Boot monitoring and an exemption from battery optimization support widget and background work; the battery exemption is a user choice. File access uses the permission for the folder you select in the system picker."
+      ],
+      [
+        "Your rights and children",
+        "Send requests to access, correct or delete your personal information to <a href=\"mailto:swankydata9@gmail.com\">swankydata9@gmail.com</a>. You may choose not to use cloud features and request account deletion. Your rights to contact the relevant data protection authority under applicable law are unaffected. Quitify is not intended for children under 13; we do not knowingly collect their personal information."
+      ],
+      [
+        "This website and policy updates",
+        "This page is hosted on GitHub Pages. GitHub may process technical information such as visitor IP addresses for security. Google Fonts requests on this website also transmit technical connection information from your browser to Google. Language and theme preferences are stored in your browser. We update this policy when the app or its data practices change; the date above identifies the latest revision. The current policy is published at <a href=\"https://muhammedmustafageldi.github.io/App-Pages/quitify-privacy-policy.html\">this App-Pages address</a>."
+      ]
+    ],
+    "deletion": [
+      [
+        "How to submit a deletion request",
+        "To request deletion of your Quitify account and associated data, <a href=\"mailto:swankydata9@gmail.com?subject=Quitify%20-%20Account%20Deletion%20Request\">email swankydata9@gmail.com</a>. Subject: <strong>Quitify — Account Deletion Request</strong>. Include the email address used for your account and state that you want the entire account deleted. For Google sign-in, use the email address of the relevant Google account. You do not need to reinstall the app. Do not send your password, sign-in codes or backup file. We may contact you to verify account ownership."
+      ],
+      [
+        "What is deleted?",
+        "Your Quitify Firebase Authentication account and associated Firestore backup are deleted. This includes the backed-up name, smoking and quit information, notes, achievements, savings, goals and spending records. Any older Firebase Storage backup and Firestore location record associated with your account are also in scope. Your Google account is not deleted."
+      ],
+      [
+        "Delete data while keeping your account",
+        "For deletion of only the cloud backup, email the same address with the subject <strong>Quitify — Cloud Backup Deletion Request</strong> and state that you want to keep your account. Sign out or disable cloud backups; otherwise the app may create a new backup from the records on your device."
+      ],
+      [
+        "Timing and copies on your device",
+        "We aim to complete deletion within 30 days after verifying that the request is yours. Minimal support correspondence documenting the request and legally required records may be retained; your app profile and backup are not retained after account deletion. Google’s advertising, analytics and security records follow its own policies.<br><br>Remove local records by clearing Quitify’s data in Android app settings. Separately delete exported files and copies held by your chosen file provider. Manage Android system backups in your device’s backup settings. Signing out or uninstalling the app alone does not submit a cloud deletion request."
+      ]
+    ],
+    "contentHtml": "<p class=\"policy-date\">Last updated: 13 October 2026</p>\n<p class=\"highlight-box\"><a href=\"quitify-delete-account.html\">Request account or data deletion</a></p>\n<h2 id=\"section-1\">1. App and responsible developer</h2>\n<p>Quitify (com.swanky.quitify) helps you track your smoking cessation journey and money not spent on cigarettes. The developer is Muhammed Mustafa Geldi (Swanky Software, Türkiye). Contact <a href=\"mailto:swankydata9@gmail.com\">swankydata9@gmail.com</a> for privacy questions and requests. This policy covers existing versions and the backup change introduced with version 1.8.0.</p>\n<h2 id=\"section-2\">2. Information you keep on your device</h2>\n<p>Your name or nickname; quit date; daily consumption, cigarettes per pack and smoking duration; pack price and currency; progress and achievements; reasons and notes; savings, purchase goals and spending records are stored in the app database on your device. Language, currency, backup preferences and widget settings are also stored locally. These records provide tracking, calculations, personalization and widget features. You can use the core app without creating a cloud account.</p>\n<h2 id=\"section-3\">3. Optional accounts and authentication</h2>\n<p>You can register with an email address and password or sign in with Google for cloud features. Firebase Authentication processes your email address, account identifier and authentication information. The name and profile image provided by Google may also be used on your account screen. Password operations are handled by Firebase Authentication. The authentication service also processes IP addresses and technical request information to prevent abuse. Account information is used for sign-in, password reset, account management and locating your account’s backup.</p>\n<h2 id=\"section-4\">4. Cloud backups and earlier versions</h2>\n<p><strong>In version 1.8.0 and later</strong>, backup data is stored in a Firebase Firestore document associated with your account. A backup includes profile and smoking information, quit date, reasons and notes, achievements, savings, goals, spending records and selected currency. Backup format and creation time are also recorded. Accounts and backups are optional; signing in and completing setup can start the backup flow. In Settings you can choose periodic backups every 3, 7 or 30 days or turn them off. Signing out stops scheduled cloud backups; it does not erase existing cloud data.<br><br><strong>Version 1.7.1 and earlier</strong> uploaded database files to Firebase Storage and kept their location in Firestore. The new version does not download those older Storage backups. You can also request deletion of earlier cloud records. Quitify does not send the health or financial records in your profile to its advertising SDK for ad targeting.</p>\n<h2 id=\"section-5\">5. File backups and Android backup</h2>\n<p>Local backup writes a backup file to the folder you choose using the system file picker. From version 1.8.0 this is quitify-backup.json; local database backups made by earlier versions can also be imported. The file contains the personal records described for cloud backup and is not additionally encrypted by Quitify. Consider who can access the folder and file. If you choose a cloud file provider, synchronization depends on that provider’s settings and policy.<br><br>Android’s automatic backup and device transfer features can back up the app database and preferences depending on your device’s system settings. These features are separate from the app’s Firebase backup and are managed by Android or your device provider.</p>\n<h2 id=\"section-6\">6. Advertising and usage analytics</h2>\n<p>Quitify uses Google AdMob and Google Analytics for Firebase. These services can automatically process advertising or app/installation identifiers, IP addresses and approximate location derived from them, device and app version information, app/session and advertising interactions, and diagnostic data. These data are used for advertising and measurement, usage and performance analytics, fraud prevention and security. AdMob can share these technical data with Google and advertising partners.<br><br>Advertising settings on your device or Google account can affect advertising identifiers and personalization. They may not stop all technical data processing. The app does not provide a separate switch that disables all advertising and analytics collection. It does not request access to precise location, contacts, SMS, camera or microphone.</p>\n<h2 id=\"section-7\">7. Service providers and sharing</h2>\n<p>Firebase Authentication and Firestore provide account and backup features. Earlier version backups may be held in Firebase Storage. Google advertising and analytics services process the technical data described above. If you send a privacy or support request, your email address and message are used to respond and verify your identity. We do not sell the personal records you enter in Quitify. See <a href=\"https://policies.google.com/privacy\">Google’s Privacy Policy</a> and <a href=\"https://firebase.google.com/support/privacy\">Firebase privacy information</a> for information about Google’s processing.</p>\n<h2 id=\"section-8\">8. Retention and deletion</h2>\n<p>Local records stay on your device until you remove them, clear the app’s data or uninstall it from the device. Exported files can remain separately and must be deleted by you. Cloud accounts and backups are retained for account and restore features until you request deletion. Signing out, disabling periodic backups or uninstalling the app does not automatically delete a cloud account or backup.<br><br>You can request deletion of your account and associated cloud records, or deletion of the cloud backup while keeping the account, on the <a href=\"quitify-delete-account.html\">account and data deletion page</a>. We aim to complete the request within 30 days after verifying it. Minimal correspondence about the request may be retained to document its handling and meet applicable legal obligations; it does not include your smoking or savings backup. Google’s advertising, analytics and security data follow its own retention practices.</p>\n<h2 id=\"section-9\">9. Security</h2>\n<p>Information sent to Google and Firebase services is encrypted in transit over secure connections. App records on your device are kept in Android’s app storage; Quitify does not apply an additional encryption layer to the local database or exported backup files. Protect your device, account and backup files. No storage or transmission method can be guaranteed completely secure.</p>\n<h2 id=\"section-10\">10. Permissions and background work</h2>\n<p>Internet access is used for accounts, cloud backups, advertising and analytics. The advertising ID permission may be used by the advertising SDK. Boot monitoring and an exemption from battery optimization support widget and background work; the battery exemption is a user choice. File access uses the permission for the folder you select in the system picker.</p>\n<h2 id=\"section-11\">11. Your rights and children</h2>\n<p>Send requests to access, correct or delete your personal information to <a href=\"mailto:swankydata9@gmail.com\">swankydata9@gmail.com</a>. You may choose not to use cloud features and request account deletion. Your rights to contact the relevant data protection authority under applicable law are unaffected. Quitify is not intended for children under 13; we do not knowingly collect their personal information.</p>\n<h2 id=\"section-12\">12. This website and policy updates</h2>\n<p>This page is hosted on GitHub Pages. GitHub may process technical information such as visitor IP addresses for security. Google Fonts requests on this website also transmit technical connection information from your browser to Google. Language and theme preferences are stored in your browser. We update this policy when the app or its data practices change; the date above identifies the latest revision. The current policy is published at <a href=\"https://muhammedmustafageldi.github.io/App-Pages/quitify-privacy-policy.html\">this App-Pages address</a>.</p>",
+    "deletionHtml": "<p class=\"policy-date\">Last updated: 13 October 2026</p>\n<h2 id=\"section-1\">1. How to submit a deletion request</h2>\n<p>To request deletion of your Quitify account and associated data, <a href=\"mailto:swankydata9@gmail.com?subject=Quitify%20-%20Account%20Deletion%20Request\">email swankydata9@gmail.com</a>. Subject: <strong>Quitify — Account Deletion Request</strong>. Include the email address used for your account and state that you want the entire account deleted. For Google sign-in, use the email address of the relevant Google account. You do not need to reinstall the app. Do not send your password, sign-in codes or backup file. We may contact you to verify account ownership.</p>\n<h2 id=\"section-2\">2. What is deleted?</h2>\n<p>Your Quitify Firebase Authentication account and associated Firestore backup are deleted. This includes the backed-up name, smoking and quit information, notes, achievements, savings, goals and spending records. Any older Firebase Storage backup and Firestore location record associated with your account are also in scope. Your Google account is not deleted.</p>\n<h2 id=\"data-deletion\">3. Delete data while keeping your account</h2>\n<p>For deletion of only the cloud backup, email the same address with the subject <strong>Quitify — Cloud Backup Deletion Request</strong> and state that you want to keep your account. Sign out or disable cloud backups; otherwise the app may create a new backup from the records on your device.</p>\n<h2 id=\"section-4\">4. Timing and copies on your device</h2>\n<p>We aim to complete deletion within 30 days after verifying that the request is yours. Minimal support correspondence documenting the request and legally required records may be retained; your app profile and backup are not retained after account deletion. Google’s advertising, analytics and security records follow its own policies.<br><br>Remove local records by clearing Quitify’s data in Android app settings. Separately delete exported files and copies held by your chosen file provider. Manage Android system backups in your device’s backup settings. Signing out or uninstalling the app alone does not submit a cloud deletion request.</p>\n<p><a href=\"quitify-privacy-policy.html\">Quitify Privacy Policy</a></p>"
+  },
+  "de": {
+    "title": "Quitify Datenschutzerklärung",
+    "date": "Zuletzt aktualisiert: 13. Oktober 2026",
+    "back": "← Zur Startseite",
+    "download": "Quitify herunterladen",
+    "online": "Aktuelle Erklärung online öffnen",
+    "deleteTitle": "Quitify Konto- und Datenlöschung",
+    "deleteLink": "Konto- oder Datenlöschung beantragen",
+    "footer": "Quitify — Swanky Software",
+    "sections": [
+      [
+        "App und verantwortlicher Entwickler",
+        "Quitify (com.swanky.quitify) hilft Ihnen, Ihren Rauchstopp und das nicht für Zigaretten ausgegebene Geld zu verfolgen. Entwickler ist Muhammed Mustafa Geldi (Swanky Software, Türkiye). Bei Datenschutzfragen und Anfragen erreichen Sie uns unter <a href=\"mailto:swankydata9@gmail.com\">swankydata9@gmail.com</a>. Diese Erklärung beschreibt bestehende Versionen und die mit Version 1.8.0 eingeführte Änderung der Sicherung."
+      ],
+      [
+        "Informationen auf Ihrem Gerät",
+        "Ihr Name oder Spitzname; Rauchstoppdatum; täglicher Konsum, Zigaretten pro Packung und Rauchdauer; Packungspreis und Währung; Fortschritt und Erfolge; Gründe und Notizen; Ersparnisse, Kaufziele und Ausgaben werden in der App-Datenbank auf Ihrem Gerät gespeichert. Sprache, Währung, Sicherungs- und Widget-Einstellungen werden ebenfalls lokal gespeichert. Diese Daten ermöglichen Fortschrittsanzeige, Berechnungen, Personalisierung und Widgets. Die grundlegenden Funktionen sind ohne Cloud-Konto nutzbar."
+      ],
+      [
+        "Optionale Konten und Anmeldung",
+        "Für Cloud-Funktionen können Sie sich mit E-Mail-Adresse und Passwort registrieren oder mit Google anmelden. Firebase Authentication verarbeitet E-Mail-Adresse, Konto-ID und Anmeldeinformationen. Der von Google bereitgestellte Name und das Profilbild können im Kontobereich verwendet werden. Passwortvorgänge werden von Firebase Authentication bearbeitet. Der Anmeldedienst verarbeitet auch IP-Adressen und technische Anfrageinformationen zur Verhinderung von Missbrauch. Kontoinformationen dienen Anmeldung, Passwortzurücksetzung, Kontoverwaltung und dem Auffinden Ihrer Sicherung."
+      ],
+      [
+        "Cloud-Sicherungen und frühere Versionen",
+        "<strong>Ab Version 1.8.0</strong> werden Sicherungsdaten in einem Ihrem Konto zugeordneten Firebase-Firestore-Dokument gespeichert. Eine Sicherung enthält Profil- und Rauchinformationen, Rauchstoppdatum, Gründe und Notizen, Erfolge, Ersparnisse, Ziele, Ausgaben und die gewählte Währung. Sicherungsformat und Erstellungszeit werden ebenfalls erfasst. Konto und Sicherung sind optional; Anmeldung und Abschluss der Einrichtung können den Sicherungsvorgang starten. In den Einstellungen können Sie regelmäßige Sicherungen alle 3, 7 oder 30 Tage wählen oder deaktivieren. Abmelden beendet geplante Cloud-Sicherungen, löscht aber keine vorhandenen Cloud-Daten.<br><br><strong>Version 1.7.1 und früher</strong> luden Datenbankdateien in Firebase Storage hoch und speicherten deren Speicherort in Firestore. Die neue Version lädt diese älteren Storage-Sicherungen nicht herunter. Auch für frühere Cloud-Daten können Sie eine Löschung beantragen. Quitify übermittelt die Gesundheits- oder Finanzdaten Ihres Profils nicht zur Werbeausrichtung an sein Werbe-SDK."
+      ],
+      [
+        "Dateisicherungen und Android-Sicherung",
+        "Die lokale Sicherung schreibt eine Datei in einen Ordner, den Sie über die Systemdateiauswahl wählen. Ab Version 1.8.0 heißt sie quitify-backup.json; lokale Datenbanksicherungen früherer Versionen können ebenfalls importiert werden. Sie enthält die für Cloud-Sicherungen beschriebenen persönlichen Daten und wird von Quitify nicht zusätzlich verschlüsselt. Beachten Sie, wer auf Ordner und Datei zugreifen kann. Bei einem Cloud-Dateianbieter hängt die Synchronisierung von dessen Einstellungen und Datenschutzregeln ab.<br><br>Androids automatische Sicherung und Geräteübertragung können je nach Systemeinstellungen App-Datenbank und Einstellungen sichern. Diese Funktionen sind von der Firebase-Sicherung getrennt und werden von Android oder Ihrem Geräteanbieter verwaltet."
+      ],
+      [
+        "Werbung und Nutzungsanalyse",
+        "Quitify nutzt Google AdMob und Google Analytics for Firebase. Diese Dienste können automatisch Werbe- oder App-/Installationskennungen, IP-Adressen und daraus abgeleitete ungefähre Standorte, Geräte- und App-Versionsinformationen, App-/Sitzungs- und Werbeinteraktionen sowie Diagnosedaten verarbeiten. Sie dienen Werbung und deren Messung, Nutzungs- und Leistungsanalyse, Betrugsprävention und Sicherheit. AdMob kann diese technischen Daten mit Google und Werbepartnern teilen.<br><br>Werbeeinstellungen auf Ihrem Gerät oder in Ihrem Google-Konto können Werbekennungen und Personalisierung beeinflussen. Sie beenden möglicherweise nicht jede Verarbeitung technischer Daten. Die App bietet keinen separaten Schalter zum Abschalten sämtlicher Werbe- und Analysedatenerfassung. Sie fordert keinen Zugriff auf genauen Standort, Kontakte, SMS, Kamera oder Mikrofon an."
+      ],
+      [
+        "Dienstleister und Weitergabe",
+        "Firebase Authentication und Firestore stellen Konto- und Sicherungsfunktionen bereit. Sicherungen älterer Versionen können in Firebase Storage liegen. Googles Werbe- und Analysedienste verarbeiten die oben beschriebenen technischen Daten. Bei einer Datenschutz- oder Supportanfrage werden E-Mail-Adresse und Nachricht zur Antwort und Identitätsprüfung genutzt. Wir verkaufen keine persönlichen Aufzeichnungen, die Sie in Quitify eingeben. Informationen über Googles Verarbeitung finden Sie in <a href=\"https://policies.google.com/privacy\">Googles Datenschutzerklärung</a> und den <a href=\"https://firebase.google.com/support/privacy\">Firebase-Datenschutzinformationen</a>."
+      ],
+      [
+        "Aufbewahrung und Löschung",
+        "Lokale Aufzeichnungen bleiben auf dem Gerät, bis Sie sie entfernen, App-Daten löschen oder die App vom Gerät deinstallieren. Exportierte Dateien können separat bestehen bleiben und müssen von Ihnen gelöscht werden. Cloud-Konten und Sicherungen werden bis zu Ihrer Löschanfrage für Konto- und Wiederherstellungsfunktionen gespeichert. Abmelden, Abschalten regelmäßiger Sicherungen oder Deinstallieren löscht Cloud-Konto und Sicherung nicht automatisch.<br><br>Auf der <a href=\"quitify-delete-account.html\">Seite zur Konto- und Datenlöschung</a> können Sie Ihr Konto samt zugehöriger Cloud-Daten oder nur die Cloud-Sicherung löschen lassen. Wir streben die Bearbeitung innerhalb von 30 Tagen nach Prüfung der Anfrage an. Minimale Korrespondenz zur Dokumentation und Erfüllung anwendbarer gesetzlicher Pflichten kann aufbewahrt werden; sie enthält nicht Ihre Rauch- oder Sparsicherung. Googles Werbe-, Analyse- und Sicherheitsdaten folgen dessen eigenen Aufbewahrungsregeln."
+      ],
+      [
+        "Sicherheit",
+        "Informationen an Google- und Firebase-Dienste werden bei der Übertragung über sichere Verbindungen verschlüsselt. Lokale Aufzeichnungen liegen im Android-App-Speicher; Quitify wendet keine zusätzliche Verschlüsselung auf lokale Datenbank oder exportierte Sicherungen an. Schützen Sie Gerät, Konto und Sicherungsdateien. Absolute Sicherheit kann für keine Speicherung oder Übertragung garantiert werden."
+      ],
+      [
+        "Berechtigungen und Hintergrundarbeit",
+        "Internetzugriff dient Konten, Cloud-Sicherungen, Werbung und Analyse. Die Werbe-ID-Berechtigung kann vom Werbe-SDK genutzt werden. Überwachung des Gerätestarts und eine Ausnahme von der Akkuoptimierung unterstützen Widget- und Hintergrundarbeit; die Ausnahme ist eine Nutzerentscheidung. Dateizugriff erfolgt über die Berechtigung für den in der Systemauswahl gewählten Ordner."
+      ],
+      [
+        "Ihre Rechte und Kinder",
+        "Anfragen zu Auskunft, Berichtigung oder Löschung Ihrer persönlichen Daten senden Sie an <a href=\"mailto:swankydata9@gmail.com\">swankydata9@gmail.com</a>. Sie können Cloud-Funktionen vermeiden und Kontolöschung beantragen. Ihre Rechte zur Beschwerde bei einer zuständigen Datenschutzbehörde nach anwendbarem Recht bleiben unberührt. Quitify richtet sich nicht an Kinder unter 13; wir erfassen deren personenbezogene Daten nicht wissentlich."
+      ],
+      [
+        "Diese Website und Aktualisierungen",
+        "Diese Seite wird auf GitHub Pages gehostet. GitHub kann technische Informationen wie Besucher-IP-Adressen für Sicherheitszwecke verarbeiten. Google-Fonts-Anfragen dieser Website übermitteln ebenfalls technische Verbindungsinformationen vom Browser an Google. Sprach- und Designpräferenzen werden im Browser gespeichert. Bei Änderungen der App oder ihrer Datenverarbeitung aktualisieren wir die Erklärung; das Datum oben zeigt die letzte Überarbeitung. Die aktuelle Erklärung wird unter <a href=\"https://muhammedmustafageldi.github.io/App-Pages/quitify-privacy-policy.html\">dieser App-Pages-Adresse</a> veröffentlicht."
+      ]
+    ],
+    "deletion": [
+      [
+        "So beantragen Sie die Löschung",
+        "Zur Löschung Ihres Quitify-Kontos und zugehöriger Daten <a href=\"mailto:swankydata9@gmail.com?subject=Quitify%20-%20Account%20Deletion%20Request\">schreiben Sie an swankydata9@gmail.com</a>. Betreff: <strong>Quitify — Kontolöschung</strong>. Geben Sie die E-Mail-Adresse Ihres App-Kontos an und erklären Sie, dass das gesamte Konto gelöscht werden soll. Bei Google-Anmeldung verwenden Sie die E-Mail-Adresse des betreffenden Google-Kontos. Eine erneute Installation ist nicht nötig. Senden Sie weder Passwort noch Anmeldecodes oder Sicherungsdatei. Zur Prüfung der Kontoinhaberschaft können wir Sie kontaktieren."
+      ],
+      [
+        "Welche Daten werden gelöscht?",
+        "Das Quitify-Konto in Firebase Authentication und die zugehörige Firestore-Sicherung werden gelöscht. Dazu gehören gesicherter Name, Rauch- und Rauchstoppinformationen, Notizen, Erfolge, Ersparnisse, Ziele und Ausgaben. Auch ältere Firebase-Storage-Sicherungen und Firestore-Speicherortangaben Ihres Kontos fallen darunter. Ihr Google-Konto wird nicht gelöscht."
+      ],
+      [
+        "Daten löschen und Konto behalten",
+        "Für die Löschung nur der Cloud-Sicherung schreiben Sie mit dem Betreff <strong>Quitify — Cloud-Sicherung löschen</strong> an dieselbe Adresse und erklären Sie, dass Ihr Konto bestehen bleiben soll. Melden Sie sich ab oder deaktivieren Sie Cloud-Sicherungen; sonst kann die App aus lokalen Aufzeichnungen eine neue Sicherung erstellen."
+      ],
+      [
+        "Dauer und Kopien auf Ihrem Gerät",
+        "Wir streben die Löschung innerhalb von 30 Tagen nach Prüfung Ihrer Anfrage an. Minimale Supportkorrespondenz zur Dokumentation und gesetzlich erforderliche Aufzeichnungen können bestehen bleiben; App-Profil und Sicherung werden nach Kontolöschung nicht aufbewahrt. Googles Werbe-, Analyse- und Sicherheitsaufzeichnungen folgen dessen eigenen Regeln.<br><br>Lokale Aufzeichnungen entfernen Sie durch Löschen der Quitify-App-Daten in Androids Einstellungen. Exportierte Dateien und Kopien bei Ihrem Dateianbieter müssen separat gelöscht werden. Android-Systemkopien verwalten Sie in den Sicherungseinstellungen des Geräts. Abmelden oder Deinstallieren allein stellt keine Cloud-Löschanfrage."
+      ]
+    ],
+    "contentHtml": "<p class=\"policy-date\">Zuletzt aktualisiert: 13. Oktober 2026</p>\n<p class=\"highlight-box\"><a href=\"quitify-delete-account.html\">Konto- oder Datenlöschung beantragen</a></p>\n<h2 id=\"section-1\">1. App und verantwortlicher Entwickler</h2>\n<p>Quitify (com.swanky.quitify) hilft Ihnen, Ihren Rauchstopp und das nicht für Zigaretten ausgegebene Geld zu verfolgen. Entwickler ist Muhammed Mustafa Geldi (Swanky Software, Türkiye). Bei Datenschutzfragen und Anfragen erreichen Sie uns unter <a href=\"mailto:swankydata9@gmail.com\">swankydata9@gmail.com</a>. Diese Erklärung beschreibt bestehende Versionen und die mit Version 1.8.0 eingeführte Änderung der Sicherung.</p>\n<h2 id=\"section-2\">2. Informationen auf Ihrem Gerät</h2>\n<p>Ihr Name oder Spitzname; Rauchstoppdatum; täglicher Konsum, Zigaretten pro Packung und Rauchdauer; Packungspreis und Währung; Fortschritt und Erfolge; Gründe und Notizen; Ersparnisse, Kaufziele und Ausgaben werden in der App-Datenbank auf Ihrem Gerät gespeichert. Sprache, Währung, Sicherungs- und Widget-Einstellungen werden ebenfalls lokal gespeichert. Diese Daten ermöglichen Fortschrittsanzeige, Berechnungen, Personalisierung und Widgets. Die grundlegenden Funktionen sind ohne Cloud-Konto nutzbar.</p>\n<h2 id=\"section-3\">3. Optionale Konten und Anmeldung</h2>\n<p>Für Cloud-Funktionen können Sie sich mit E-Mail-Adresse und Passwort registrieren oder mit Google anmelden. Firebase Authentication verarbeitet E-Mail-Adresse, Konto-ID und Anmeldeinformationen. Der von Google bereitgestellte Name und das Profilbild können im Kontobereich verwendet werden. Passwortvorgänge werden von Firebase Authentication bearbeitet. Der Anmeldedienst verarbeitet auch IP-Adressen und technische Anfrageinformationen zur Verhinderung von Missbrauch. Kontoinformationen dienen Anmeldung, Passwortzurücksetzung, Kontoverwaltung und dem Auffinden Ihrer Sicherung.</p>\n<h2 id=\"section-4\">4. Cloud-Sicherungen und frühere Versionen</h2>\n<p><strong>Ab Version 1.8.0</strong> werden Sicherungsdaten in einem Ihrem Konto zugeordneten Firebase-Firestore-Dokument gespeichert. Eine Sicherung enthält Profil- und Rauchinformationen, Rauchstoppdatum, Gründe und Notizen, Erfolge, Ersparnisse, Ziele, Ausgaben und die gewählte Währung. Sicherungsformat und Erstellungszeit werden ebenfalls erfasst. Konto und Sicherung sind optional; Anmeldung und Abschluss der Einrichtung können den Sicherungsvorgang starten. In den Einstellungen können Sie regelmäßige Sicherungen alle 3, 7 oder 30 Tage wählen oder deaktivieren. Abmelden beendet geplante Cloud-Sicherungen, löscht aber keine vorhandenen Cloud-Daten.<br><br><strong>Version 1.7.1 und früher</strong> luden Datenbankdateien in Firebase Storage hoch und speicherten deren Speicherort in Firestore. Die neue Version lädt diese älteren Storage-Sicherungen nicht herunter. Auch für frühere Cloud-Daten können Sie eine Löschung beantragen. Quitify übermittelt die Gesundheits- oder Finanzdaten Ihres Profils nicht zur Werbeausrichtung an sein Werbe-SDK.</p>\n<h2 id=\"section-5\">5. Dateisicherungen und Android-Sicherung</h2>\n<p>Die lokale Sicherung schreibt eine Datei in einen Ordner, den Sie über die Systemdateiauswahl wählen. Ab Version 1.8.0 heißt sie quitify-backup.json; lokale Datenbanksicherungen früherer Versionen können ebenfalls importiert werden. Sie enthält die für Cloud-Sicherungen beschriebenen persönlichen Daten und wird von Quitify nicht zusätzlich verschlüsselt. Beachten Sie, wer auf Ordner und Datei zugreifen kann. Bei einem Cloud-Dateianbieter hängt die Synchronisierung von dessen Einstellungen und Datenschutzregeln ab.<br><br>Androids automatische Sicherung und Geräteübertragung können je nach Systemeinstellungen App-Datenbank und Einstellungen sichern. Diese Funktionen sind von der Firebase-Sicherung getrennt und werden von Android oder Ihrem Geräteanbieter verwaltet.</p>\n<h2 id=\"section-6\">6. Werbung und Nutzungsanalyse</h2>\n<p>Quitify nutzt Google AdMob und Google Analytics for Firebase. Diese Dienste können automatisch Werbe- oder App-/Installationskennungen, IP-Adressen und daraus abgeleitete ungefähre Standorte, Geräte- und App-Versionsinformationen, App-/Sitzungs- und Werbeinteraktionen sowie Diagnosedaten verarbeiten. Sie dienen Werbung und deren Messung, Nutzungs- und Leistungsanalyse, Betrugsprävention und Sicherheit. AdMob kann diese technischen Daten mit Google und Werbepartnern teilen.<br><br>Werbeeinstellungen auf Ihrem Gerät oder in Ihrem Google-Konto können Werbekennungen und Personalisierung beeinflussen. Sie beenden möglicherweise nicht jede Verarbeitung technischer Daten. Die App bietet keinen separaten Schalter zum Abschalten sämtlicher Werbe- und Analysedatenerfassung. Sie fordert keinen Zugriff auf genauen Standort, Kontakte, SMS, Kamera oder Mikrofon an.</p>\n<h2 id=\"section-7\">7. Dienstleister und Weitergabe</h2>\n<p>Firebase Authentication und Firestore stellen Konto- und Sicherungsfunktionen bereit. Sicherungen älterer Versionen können in Firebase Storage liegen. Googles Werbe- und Analysedienste verarbeiten die oben beschriebenen technischen Daten. Bei einer Datenschutz- oder Supportanfrage werden E-Mail-Adresse und Nachricht zur Antwort und Identitätsprüfung genutzt. Wir verkaufen keine persönlichen Aufzeichnungen, die Sie in Quitify eingeben. Informationen über Googles Verarbeitung finden Sie in <a href=\"https://policies.google.com/privacy\">Googles Datenschutzerklärung</a> und den <a href=\"https://firebase.google.com/support/privacy\">Firebase-Datenschutzinformationen</a>.</p>\n<h2 id=\"section-8\">8. Aufbewahrung und Löschung</h2>\n<p>Lokale Aufzeichnungen bleiben auf dem Gerät, bis Sie sie entfernen, App-Daten löschen oder die App vom Gerät deinstallieren. Exportierte Dateien können separat bestehen bleiben und müssen von Ihnen gelöscht werden. Cloud-Konten und Sicherungen werden bis zu Ihrer Löschanfrage für Konto- und Wiederherstellungsfunktionen gespeichert. Abmelden, Abschalten regelmäßiger Sicherungen oder Deinstallieren löscht Cloud-Konto und Sicherung nicht automatisch.<br><br>Auf der <a href=\"quitify-delete-account.html\">Seite zur Konto- und Datenlöschung</a> können Sie Ihr Konto samt zugehöriger Cloud-Daten oder nur die Cloud-Sicherung löschen lassen. Wir streben die Bearbeitung innerhalb von 30 Tagen nach Prüfung der Anfrage an. Minimale Korrespondenz zur Dokumentation und Erfüllung anwendbarer gesetzlicher Pflichten kann aufbewahrt werden; sie enthält nicht Ihre Rauch- oder Sparsicherung. Googles Werbe-, Analyse- und Sicherheitsdaten folgen dessen eigenen Aufbewahrungsregeln.</p>\n<h2 id=\"section-9\">9. Sicherheit</h2>\n<p>Informationen an Google- und Firebase-Dienste werden bei der Übertragung über sichere Verbindungen verschlüsselt. Lokale Aufzeichnungen liegen im Android-App-Speicher; Quitify wendet keine zusätzliche Verschlüsselung auf lokale Datenbank oder exportierte Sicherungen an. Schützen Sie Gerät, Konto und Sicherungsdateien. Absolute Sicherheit kann für keine Speicherung oder Übertragung garantiert werden.</p>\n<h2 id=\"section-10\">10. Berechtigungen und Hintergrundarbeit</h2>\n<p>Internetzugriff dient Konten, Cloud-Sicherungen, Werbung und Analyse. Die Werbe-ID-Berechtigung kann vom Werbe-SDK genutzt werden. Überwachung des Gerätestarts und eine Ausnahme von der Akkuoptimierung unterstützen Widget- und Hintergrundarbeit; die Ausnahme ist eine Nutzerentscheidung. Dateizugriff erfolgt über die Berechtigung für den in der Systemauswahl gewählten Ordner.</p>\n<h2 id=\"section-11\">11. Ihre Rechte und Kinder</h2>\n<p>Anfragen zu Auskunft, Berichtigung oder Löschung Ihrer persönlichen Daten senden Sie an <a href=\"mailto:swankydata9@gmail.com\">swankydata9@gmail.com</a>. Sie können Cloud-Funktionen vermeiden und Kontolöschung beantragen. Ihre Rechte zur Beschwerde bei einer zuständigen Datenschutzbehörde nach anwendbarem Recht bleiben unberührt. Quitify richtet sich nicht an Kinder unter 13; wir erfassen deren personenbezogene Daten nicht wissentlich.</p>\n<h2 id=\"section-12\">12. Diese Website und Aktualisierungen</h2>\n<p>Diese Seite wird auf GitHub Pages gehostet. GitHub kann technische Informationen wie Besucher-IP-Adressen für Sicherheitszwecke verarbeiten. Google-Fonts-Anfragen dieser Website übermitteln ebenfalls technische Verbindungsinformationen vom Browser an Google. Sprach- und Designpräferenzen werden im Browser gespeichert. Bei Änderungen der App oder ihrer Datenverarbeitung aktualisieren wir die Erklärung; das Datum oben zeigt die letzte Überarbeitung. Die aktuelle Erklärung wird unter <a href=\"https://muhammedmustafageldi.github.io/App-Pages/quitify-privacy-policy.html\">dieser App-Pages-Adresse</a> veröffentlicht.</p>",
+    "deletionHtml": "<p class=\"policy-date\">Zuletzt aktualisiert: 13. Oktober 2026</p>\n<h2 id=\"section-1\">1. So beantragen Sie die Löschung</h2>\n<p>Zur Löschung Ihres Quitify-Kontos und zugehöriger Daten <a href=\"mailto:swankydata9@gmail.com?subject=Quitify%20-%20Account%20Deletion%20Request\">schreiben Sie an swankydata9@gmail.com</a>. Betreff: <strong>Quitify — Kontolöschung</strong>. Geben Sie die E-Mail-Adresse Ihres App-Kontos an und erklären Sie, dass das gesamte Konto gelöscht werden soll. Bei Google-Anmeldung verwenden Sie die E-Mail-Adresse des betreffenden Google-Kontos. Eine erneute Installation ist nicht nötig. Senden Sie weder Passwort noch Anmeldecodes oder Sicherungsdatei. Zur Prüfung der Kontoinhaberschaft können wir Sie kontaktieren.</p>\n<h2 id=\"section-2\">2. Welche Daten werden gelöscht?</h2>\n<p>Das Quitify-Konto in Firebase Authentication und die zugehörige Firestore-Sicherung werden gelöscht. Dazu gehören gesicherter Name, Rauch- und Rauchstoppinformationen, Notizen, Erfolge, Ersparnisse, Ziele und Ausgaben. Auch ältere Firebase-Storage-Sicherungen und Firestore-Speicherortangaben Ihres Kontos fallen darunter. Ihr Google-Konto wird nicht gelöscht.</p>\n<h2 id=\"data-deletion\">3. Daten löschen und Konto behalten</h2>\n<p>Für die Löschung nur der Cloud-Sicherung schreiben Sie mit dem Betreff <strong>Quitify — Cloud-Sicherung löschen</strong> an dieselbe Adresse und erklären Sie, dass Ihr Konto bestehen bleiben soll. Melden Sie sich ab oder deaktivieren Sie Cloud-Sicherungen; sonst kann die App aus lokalen Aufzeichnungen eine neue Sicherung erstellen.</p>\n<h2 id=\"section-4\">4. Dauer und Kopien auf Ihrem Gerät</h2>\n<p>Wir streben die Löschung innerhalb von 30 Tagen nach Prüfung Ihrer Anfrage an. Minimale Supportkorrespondenz zur Dokumentation und gesetzlich erforderliche Aufzeichnungen können bestehen bleiben; App-Profil und Sicherung werden nach Kontolöschung nicht aufbewahrt. Googles Werbe-, Analyse- und Sicherheitsaufzeichnungen folgen dessen eigenen Regeln.<br><br>Lokale Aufzeichnungen entfernen Sie durch Löschen der Quitify-App-Daten in Androids Einstellungen. Exportierte Dateien und Kopien bei Ihrem Dateianbieter müssen separat gelöscht werden. Android-Systemkopien verwalten Sie in den Sicherungseinstellungen des Geräts. Abmelden oder Deinstallieren allein stellt keine Cloud-Löschanfrage.</p>\n<p><a href=\"quitify-privacy-policy.html\">Quitify Datenschutzerklärung</a></p>"
+  }
 };
 
-function applyQuitifyTranslations() {
-    if (!window.i18n) return;
-    const lang = i18n.getLang();
-    const t = quitifyTranslations[lang] || quitifyTranslations.tr;
-
-    const contentArea = document.getElementById('quitifyContentContainer');
-    if (contentArea) {
-        contentArea.innerHTML = t.contentHtml;
-        document.title = t.appTitle;
-        const h1 = document.querySelector('article h1');
-        if (h1) h1.textContent = t.appTitle;
+// Generated from content/quitify-policy.json by scripts/build-quitify-pages.py.
+function applyQuitifyTranslations(language) {
+    const lang = Object.hasOwn(quitifyTranslations, language) ? language : 'en';
+    const t = quitifyTranslations[lang];
+    const deletion = document.body.dataset.quitifyPage === 'deletion';
+    const container = document.getElementById('quitifyContentContainer');
+    if (!container) return;
+    container.innerHTML = deletion ? t.deletionHtml : t.contentHtml;
+    document.title = deletion ? t.deleteTitle : t.title;
+    document.documentElement.lang = lang;
+    document.querySelector('article h1').textContent = document.title;
+    document.querySelector('.back-link').textContent = t.back;
+    document.getElementById('quitifyFooter').textContent = t.footer;
+    const selector = document.getElementById('policyLanguage');
+    selector.value = lang;
+    selector.setAttribute('aria-label', { tr: 'Politika dili', en: 'Policy language', de: 'Sprache der Erklärung' }[lang]);
+    document.getElementById('langToggle')?.remove();
+    const contact = document.querySelector('.header-nav a[href^="mailto"]');
+    if (contact) {
+        contact.textContent = { tr: 'İletişim', en: 'Contact', de: 'Kontakt' }[lang];
+        contact.href = 'mailto:swankydata9@gmail.com';
+        contact.removeAttribute('data-i18n');
     }
-
-    const backLink = document.querySelector('.back-link');
-    if (backLink) backLink.textContent = t.backLink;
-
-    if (typeof initializeTOC === 'function') {
-        const tocSidebar = document.querySelector('.toc-sidebar');
-        if (tocSidebar) {
-            const existingBtn = tocSidebar.querySelector('.download-btn-sidebar');
-            tocSidebar.innerHTML = '';
-            if (existingBtn) {
-                if (lang === 'en') {
-                    existingBtn.querySelector('span:last-child').textContent = 'Download Quitify';
-                } else {
-                    existingBtn.querySelector('span:last-child').textContent = "Quitify'ı İndir";
-                }
-                tocSidebar.appendChild(existingBtn);
-            }
-        }
-        initializeTOC();
-    }
+    container.querySelectorAll('a[href^="quitify-"]').forEach(link => {
+        const url = new URL(link.getAttribute('href'), location.href);
+        url.searchParams.set('lang', lang);
+        link.href = url.href;
+    });
+    const sidebar = document.querySelector('.toc-sidebar');
+    const download = sidebar.querySelector('.download-btn-sidebar');
+    download.textContent = t.download;
+    sidebar.replaceChildren(download);
+    if (typeof initializeTOC === 'function') initializeTOC();
+    sidebar.querySelector('.toc-header')?.removeAttribute('data-i18n');
+    const tocTitle = { tr: 'İçindekiler', en: 'Contents', de: 'Inhalt' }[lang];
+    const heading = sidebar.querySelector('.toc-header');
+    if (heading) heading.textContent = tocTitle;
+    const mobileToc = document.querySelector('.mobile-toc-toggle');
+    if (mobileToc) { mobileToc.textContent = tocTitle; mobileToc.removeAttribute('data-i18n'); }
 }
-
-window.addEventListener('langChanged', applyQuitifyTranslations);
-
+let quitifyLanguage = new URLSearchParams(location.search).get('lang');
+window.addEventListener('langChanged', event => {
+    if (!event.detail?.initial) quitifyLanguage = event.detail?.lang;
+    applyQuitifyTranslations(quitifyLanguage || window.i18n?.getLang() || 'tr');
+});
 document.addEventListener('DOMContentLoaded', () => {
-    const checkI18n = setInterval(() => {
-        if (window.i18n && window.i18n.translations) {
-            clearInterval(checkI18n);
-            applyQuitifyTranslations();
-        }
-    }, 50);
-    setTimeout(() => {
-        clearInterval(checkI18n);
-        applyQuitifyTranslations();
-    }, 1000);
+    applyQuitifyTranslations(quitifyLanguage || window.i18n?.getLang() || 'tr');
+    document.getElementById('policyLanguage').addEventListener('change', event => {
+        quitifyLanguage = event.target.value;
+        const url = new URL(location.href);
+        url.searchParams.set('lang', quitifyLanguage);
+        history.replaceState(null, '', url);
+        applyQuitifyTranslations(quitifyLanguage);
+    });
 });

@@ -19,6 +19,7 @@ const i18n = {
         this.applyTranslations();
         this.updateLangButton();
         document.documentElement.lang = this.currentLang;
+        window.dispatchEvent(new CustomEvent('langChanged', { detail: { lang: this.currentLang, initial: true } }));
     },
     
     async loadTranslations(lang) {
