@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build Quitify web pages and optional offline Android policies from one content source.
+"""Build Quitify legal pages and optional offline Android documents from shared sources.
 
 Run: python3 scripts/build-quitify-pages.py --app-assets /path/to/Quitify/app/src/main/assets
 """
@@ -11,34 +11,45 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 BASE = 'https://muhammedmustafageldi.github.io/App-Pages/'
 texts = json.loads((ROOT / 'content/quitify-policy.json').read_text(encoding='utf-8'))
+terms_texts = json.loads((ROOT / 'content/quitify-terms.json').read_text(encoding='utf-8'))
 
-def content(t, deletion=False):
-    sections = t['deletion'] if deletion else t['sections']
+def content(t, page='privacy', navigation=None):
+    navigation = navigation or t
+    sections = t['deletion'] if page == 'deletion' else t['sections']
     parts = [f'<p class="policy-date">{escape(t["date"])}</p>']
-    if not deletion:
-        parts.append(f'<p class="highlight-box"><a href="quitify-delete-account.html">{escape(t["deleteLink"])}</a></p>')
+    if page != 'deletion':
+        related_page = 'privacy-policy' if page == 'terms' else 'terms-of-service'
+        related_title = navigation['title'] if page == 'terms' else navigation['termsTitle']
+        parts.append(f'<p class="highlight-box"><a href="quitify-{related_page}.html">{escape(related_title)}</a> · <a href="quitify-delete-account.html">{escape(navigation["deleteLink"])}</a></p>')
     for i, (heading, body) in enumerate(sections, 1):
-        anchor = 'data-deletion' if deletion and i == 3 else f'section-{i}'
+        anchor = 'data-deletion' if page == 'deletion' and i == 3 else f'section-{i}'
         parts.append(f'<h2 id="{anchor}">{i}. {escape(heading)}</h2>\n<p>{body}</p>')
-    if deletion:
-        parts.append(f'<p><a href="quitify-privacy-policy.html">{escape(t["title"])}</a></p>')
+    if page == 'deletion':
+        parts.append(f'<p><a href="quitify-privacy-policy.html">{escape(t["title"])}</a> · <a href="quitify-terms-of-service.html">{escape(t["termsTitle"])}</a></p>')
     return '\n'.join(parts)
 
-for t in texts.values():
+for lang, t in texts.items():
+    t['termsTitle'] = terms_texts[lang]['title']
+    t['termsOnline'] = terms_texts[lang]['online']
     t['contentHtml'] = content(t)
-    t['deletionHtml'] = content(t, True)
+    t['deletionHtml'] = content(t, 'deletion')
+    t['termsHtml'] = content(terms_texts[lang], 'terms', navigation=t)
 
-for deletion in (False, True):
+pages = {
+    'privacy': ('quitify-privacy-policy.html', 'title', 'contentHtml'),
+    'deletion': ('quitify-delete-account.html', 'deleteTitle', 'deletionHtml'),
+    'terms': ('quitify-terms-of-service.html', 'termsTitle', 'termsHtml'),
+}
+for page_kind, (filename, title_key, content_key) in pages.items():
     t = texts['tr']
-    title = t['deleteTitle'] if deletion else t['title']
-    filename = 'quitify-delete-account.html' if deletion else 'quitify-privacy-policy.html'
+    title = t[title_key]
     page = f'''<!DOCTYPE html>
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{escape(title)}</title>
-    <meta name="description" content="Quitify gizlilik, bulut yedekleme, reklamlar ve hesap/veri silme bilgileri.">
+    <meta name="description" content="Quitify kullanım koşulları, gizlilik, bulut yedekleme ve hesap/veri silme bilgileri.">
     <link rel="canonical" href="{BASE}{filename}">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/policy.css">
@@ -47,7 +58,7 @@ for deletion in (False, True):
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-<body class="policy-page" data-quitify-page="{'deletion' if deletion else 'privacy'}">
+<body class="policy-page" data-quitify-page="{page_kind}">
     <header class="site-header">
         <div class="container header-inner">
             <a href="index.html" class="brand-logo"><img src="other_icons/swanky_logo.png?v=3" alt="Logo" width="32" height="32" style="border-radius:6px">Swanky Software</a>
@@ -63,7 +74,7 @@ for deletion in (False, True):
             <article class="content-area">
                 <a href="index.html" class="back-link">{escape(t['back'])}</a>
                 <h1>{escape(title)}</h1>
-                <div id="quitifyContentContainer">{t['deletionHtml'] if deletion else t['contentHtml']}</div>
+                <div id="quitifyContentContainer">{t[content_key]}</div>
             </article>
         </div>
     </main>
@@ -77,15 +88,17 @@ for deletion in (False, True):
     (ROOT / filename).write_text(page, encoding='utf-8')
 
 controller = r'''
-// Generated from content/quitify-policy.json by scripts/build-quitify-pages.py.
+// Generated from content/quitify-policy.json and content/quitify-terms.json.
 function applyQuitifyTranslations(language) {
     const lang = Object.hasOwn(quitifyTranslations, language) ? language : 'en';
     const t = quitifyTranslations[lang];
-    const deletion = document.body.dataset.quitifyPage === 'deletion';
+    const page = document.body.dataset.quitifyPage;
+    const titleKey = { privacy: 'title', deletion: 'deleteTitle', terms: 'termsTitle' }[page];
+    const contentKey = { privacy: 'contentHtml', deletion: 'deletionHtml', terms: 'termsHtml' }[page];
     const container = document.getElementById('quitifyContentContainer');
     if (!container) return;
-    container.innerHTML = deletion ? t.deletionHtml : t.contentHtml;
-    document.title = deletion ? t.deleteTitle : t.title;
+    container.innerHTML = t[contentKey];
+    document.title = t[titleKey];
     document.documentElement.lang = lang;
     document.querySelector('article h1').textContent = document.title;
     document.querySelector('.back-link').textContent = t.back;
@@ -144,11 +157,14 @@ parser.add_argument('--app-assets', type=Path)
 args = parser.parse_args()
 if args.app_assets:
     for lang, t in texts.items():
-        url = f'{BASE}quitify-privacy-policy.html?lang={lang}'
-        body = f'<p><a href="{url}">{escape(t["online"])}</a></p>\n'+t['contentHtml']
-        body = body.replace('href="quitify-delete-account.html"', f'href="{BASE}quitify-delete-account.html?lang={lang}"')
-        page = f'''<!DOCTYPE html>
-<html lang="{lang}"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{escape(t['title'])}</title><style>body{{margin:16px;font-family:sans-serif;line-height:1.6;overflow-wrap:anywhere}}h1{{font-size:1.6rem}}h2{{font-size:1.2rem;margin-top:1.6rem}}a{{color:#805000}}.highlight-box{{padding:12px;background:#fff1d6}}</style></head><body><h1>{escape(t['title'])}</h1>{body}</body></html>
+        for page_kind, asset_prefix, online_key in (('privacy', 'privacy_policy', 'online'), ('terms', 'terms_of_service', 'termsOnline')):
+            filename, title_key, content_key = pages[page_kind]
+            url = f'{BASE}{filename}?lang={lang}'
+            body = f'<p><a href="{url}">{escape(t[online_key])}</a></p>\n'+t[content_key]
+            for related_filename, _, _ in pages.values():
+                body = body.replace(f'href="{related_filename}"', f'href="{BASE}{related_filename}?lang={lang}"')
+            page = f'''<!DOCTYPE html>
+<html lang="{lang}"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{escape(t[title_key])}</title><style>body{{margin:16px;font-family:sans-serif;line-height:1.6;overflow-wrap:anywhere}}h1{{font-size:1.6rem}}h2{{font-size:1.2rem;margin-top:1.6rem}}a{{color:#805000}}.highlight-box{{padding:12px;background:#fff1d6}}</style></head><body><h1>{escape(t[title_key])}</h1>{body}</body></html>
 '''
-        (args.app_assets / f'privacy_policy_{lang}.html').write_text(page, encoding='utf-8')
-print('Built privacy/deletion pages, web translations'+(' and Android offline policies.' if args.app_assets else '.'))
+            (args.app_assets / f'{asset_prefix}_{lang}.html').write_text(page, encoding='utf-8')
+print('Built privacy/terms/deletion pages, web translations'+(' and Android offline documents.' if args.app_assets else '.'))

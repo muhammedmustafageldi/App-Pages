@@ -1,0 +1,167 @@
+{
+  "tr": {
+    "title": "Quitify Kullanıcı Sözleşmesi",
+    "date": "Yürürlük ve son güncelleme: 13 Ekim 2026",
+    "online": "Güncel sözleşmeyi webde aç",
+    "sections": [
+      [
+        "Taraflar ve kapsam",
+        "Bu sözleşme, Muhammed Mustafa Geldi (Swanky Software, Türkiye) tarafından sunulan Quitify (com.swanky.quitify) uygulamasının kullanım koşullarını açıklar. Quitify; sigarayı bırakma sürecini, ilerlemeyi, hedefleri ve sigaraya harcanmayan parayı takip etmeye yardımcı olur. Hesap oluşturma ekranında bu sözleşmeye erişebilirsiniz; hesap oluşturarak sözleşmeyi kabul edersiniz. Koşulları kabul etmiyorsanız hesap oluşturmayın ve uygulamayı kullanmayı bırakın. Quitify 13 yaş altı çocuklara yönelik değildir. Bulunduğunuz yerde sözleşme yapabilmek için veli veya yasal temsilci onayı gerekiyorsa bu onayı almanız gerekir."
+      ],
+      [
+        "Sağlık bilgileri ve sınırları",
+        "Quitify kişisel takip ve motivasyon aracıdır; tıbbi cihaz değildir, hastalık teşhis etmez, tedavi etmez veya hastalıkların önlenmesini garanti etmez. Sağlık iyileşmesi göstergeleri genel bilgilere ve girdiğiniz tarihlere dayanır; vücudunuzun durumunu ölçmez ve kişisel tıbbi değerlendirme sayılmaz. Sigarayı bırakma, belirtiler, ilaçlar, teşhis veya tedavi hakkında doktorunuza ya da yetkili bir sağlık uzmanına danışın. Uygulama bilgileri nedeniyle profesyonel sağlık desteğini ertelemeyin. Sigarayı bırakma sonucu veya belirli bir sağlık iyileşmesi vaat edilmez."
+      ],
+      [
+        "Birikim ve hesaplamalar",
+        "Birikim, harcama ve hedef tutarları; girdiğiniz tüketim, fiyat, tarih ve para birimine göre hesaplanan veya sizin kaydettiğiniz bilgilerdir. Yanlış veya eksik girişler, cihaz tarihi ve yuvarlama sonuçları etkileyebilir. Quitify banka hesabı veya cüzdan değildir; para saklamaz, transfer etmez ve yatırım ya da finansal danışmanlık sunmaz. Bir hedefi satın alındı olarak işaretlemek yalnızca uygulamadaki kaydı değiştirir; gerçek bir satın alma veya ödeme gerçekleştirmez."
+      ],
+      [
+        "Hesap, güvenlik ve ücretler",
+        "Temel takip özellikleri için bulut hesabı zorunlu değildir. Bulut özellikleri için e-posta ve şifreyle veya Google ile giriş yapabilirsiniz. Hesabınız için erişiminiz olan ve doğru bir e-posta kullanın; şifrenizi ve giriş kodlarınızı paylaşmayın. Yetkisiz erişimden şüphelenirseniz şifrenizi değiştirin ve destek adresine bildirin. Başkasının kimliğiyle hesap oluşturmayın. Mevcut sürüm ücretsizdir ve reklam içerir; uygulama içi abonelik veya ücretli satın alma sunmaz. İnternet veya operatör ücretleri kendi hizmet sağlayıcınızın koşullarına bağlıdır. Gelecekte ücretli bir özellik eklenirse ücret ve koşullar satın alma öncesinde ayrıca açıklanır; bu sözleşme tek başına bir ödeme yetkisi vermez."
+      ],
+      [
+        "Kayıtlar, yedekleme ve geri yükleme",
+        "Kişisel kayıtlarınızı doğru girmek ve önemli kayıtların güncel bir kopyasını saklamak size aittir. Bulut yedekleme isteğe bağlıdır; oturum açma ve kurulumun tamamlanması yedekleme akışını başlatabilir. 1.8.0 ve sonraki sürümlerde yedek hesabınıza bağlı Firebase Firestore dokümanında tutulur. Önceki sürümler Firebase Storage kullanıyordu; yeni sürüm bu eski bulut yedeklerini indirmez. Yerel dosya yedekleme ve içe aktarma da kullanılabilir. Geri yükleme seçtiğiniz yedekteki kayıtlarla cihazdaki kayıtları değiştirebilir; işlemi onaylamadan önce gösterilen açıklamayı inceleyin. Son yedekten sonra yaptığınız değişiklikler yedekte bulunmayabilir. Yedek dosyaları kişisel bilgiler içerir ve Quitify tarafından ayrıca şifrelenmez. Yedekleme; bağlantı, oturum, cihaz, dosya erişimi, boyut sınırları veya hizmet hataları nedeniyle başarısız olabilir; kesintisiz yedekleme veya her durumda kurtarma garantisi verilmez. Bu açıklamalar kanuni haklarınızı veya sorumluluklarımızı kaldırmaz."
+      ],
+      [
+        "Gizlilik ve kayıtlarınız üzerindeki haklar",
+        "Uygulamaya girdiğiniz kayıtlar üzerindeki haklarınız sizde kalır. Kayıtlar hesap, takip, yedekleme ve geri yükleme gibi açıkladığımız işlevleri sağlamak için işlenir; bu sözleşme kayıtlarınızın satılmasına izin vermez. Hesap, yedek, reklam ve analiz verilerinin işlenmesi <a href=\"quitify-privacy-policy.html\">Gizlilik Politikası</a> içinde açıklanır. Sözleşmenin kabulü, hukuken ayrı onay gerektiren veri işleme faaliyetleri için kendiliğinden onay sayılmaz."
+      ],
+      [
+        "Kullanım izni ve kötüye kullanım",
+        "Quitify'ı bu koşullara uygun kişisel kullanımınız için kullanabilirsiniz. Başkasının hesabına veya verilerine izinsiz erişmeyin; kimlik doğrulama ve erişim korumalarını aşmaya, hizmeti bozacak otomatik istekler göndermeye veya zararlı içerik yüklemeye çalışmayın. Uygulamanın adı, logosu ve geliştiriciye ait içeriği izinsiz başka bir ürün gibi sunmayın. Üçüncü taraf ve açık kaynak bileşenlerin hakları kendi lisanslarına tabidir. Kanunen izin verilen kullanım, inceleme ve diğer haklarınız saklıdır."
+      ],
+      [
+        "Reklamlar ve üçüncü taraf hizmetleri",
+        "Quitify hesap ve yedekleme için Firebase, reklam için Google AdMob ve kullanım analizi için Google Analytics for Firebase hizmetlerini kullanır. Bu sağlayıcıların kesintileri, değişiklikleri veya cihazınızın ayarları bazı özellikleri etkileyebilir. Üçüncü taraf sayfalara ve reklamlara geçişte ilgili sağlayıcının koşulları uygulanır. Bir reklamın gösterilmesi, reklamı yapılan ürün veya hizmet için Quitify'ın tavsiyesi veya garantisi anlamına gelmez. Sağlayıcılar hakkındaki veri işleme ayrıntıları Gizlilik Politikası'nda bulunur."
+      ],
+      [
+        "Hizmet değişiklikleri ve erişimin sınırlandırılması",
+        "Güvenlik, uyumluluk ve bakım için uygulama güncellenebilir; bazı özellikler değişebilir veya geçici olarak kullanılamayabilir. Sürekli erişim veya tüm cihazlarla uyumluluk garanti edilmez. Önemli bir hizmet değişikliği veya sona erme durumunda makul ölçüde önceden bilgi vermeyi ve mümkün olduğunda kayıtlarınızı dışa aktarmanız için fırsat sunmayı amaçlarız. Kötüye kullanım, ciddi güvenlik riski veya yasal zorunluluk varsa bulut erişimi gerekli ve ölçülü biçimde sınırlandırılabilir. Uygun olduğunda neden ve itiraz için iletişim yolu bildirilir; acil güvenlik veya yasal gereklilikler önceden bildirim yapılmasını engelleyebilir."
+      ],
+      [
+        "Kullanmayı bırakma ve hesap silme",
+        "Uygulamayı kullanmayı bırakabilir ve cihazınızdan kaldırabilirsiniz. Oturumu kapatmak, dönemsel yedeği kapatmak veya uygulamayı kaldırmak bulut hesabını ve yedeğini kendiliğinden silmez. Hesabınızın ve ilişkili bulut verilerinin ya da hesabı koruyarak yalnızca yedeğin silinmesini <a href=\"quitify-delete-account.html\">Hesap ve Veri Silme</a> sayfasındaki adımlarla isteyebilirsiniz. Talebi doğruladıktan sonra işlemi en geç 30 gün içinde tamamlamayı hedefliyoruz. Cihazdaki kayıtlar, dışa aktardığınız dosyalar ve sistem yedekleri ayrıca yönetilmelidir. Silme işlemi tamamlandıktan sonra ilgili bulut yedeğiyle geri yükleme yapılamaz."
+      ],
+      [
+        "Kanuni haklar ve uyuşmazlıklar",
+        "Uygulamayı makul özenle sunmayı amaçlarız; karşılaştığınız hataları destek adresine bildirebilirsiniz. Bu sözleşme zorunlu tüketici haklarınızı, kişisel verilerin korunmasına ilişkin haklarınızı veya kanunen sınırlandırılamayan sorumluluklarımızı kaldırmaz. Kasıt, ağır ihmal veya kanunen sorumlu olduğumuz bedensel zararlar için genel bir sorumluluk muafiyeti öngörülmez. Bir hüküm uygulanamazsa diğer hükümler, uygulanabilir hukukun izin verdiği ölçüde geçerli kalır. Şikâyetinizi önce bize iletebilirsiniz; bu, yetkili tüketici mercilerine veya mahkemelere başvurmanızın zorunlu ön koşulu değildir. Bulunduğunuz yerde geçerli zorunlu korumalar ve başvuru hakları saklıdır."
+      ],
+      [
+        "Güncellemeler ve iletişim",
+        "Bu sözleşmenin ilk sürümü 13 Ekim 2026 tarihlidir. Güncel metin App-Pages'teki bu adreste yayımlanır; değişikliklerde tarih güncellenir. Önemli değişiklikler uygulama veya güncelleme duyuruları üzerinden açıklanır; gerektiğinde ayrıca kabul istenir. Yeni koşullar geçmişe dönük uygulanmaz ve mevzuatın gerektirdiği bilgilendirme veya onay süreçlerini değiştirmez. Sözleşme, destek veya şikâyet soruları için geliştirici Muhammed Mustafa Geldi'ye (Swanky Software, Türkiye) <a href=\"mailto:swankydata9@gmail.com?subject=Quitify%20-%20Kullanici%20Sozlesmesi\">swankydata9@gmail.com</a> adresinden ulaşabilirsiniz. Şifre veya giriş kodu göndermeyin."
+      ]
+    ]
+  },
+  "en": {
+    "title": "Quitify Terms of Service",
+    "date": "Effective and last updated: 13 October 2026",
+    "online": "Open the current terms online",
+    "sections": [
+      [
+        "Provider and scope",
+        "These terms explain the conditions for using Quitify (com.swanky.quitify), provided by Muhammed Mustafa Geldi (Swanky Software, Türkiye). Quitify helps track your smoking cessation journey, progress, goals and money not spent on cigarettes. These terms are available on the account creation screen; by creating an account, you agree to them. If you do not agree, do not create an account and stop using the app. Quitify is not intended for children under 13. If your local law requires a parent or legal representative's consent to enter into these terms, you must obtain that consent."
+      ],
+      [
+        "Health information and limitations",
+        "Quitify is a personal tracking and motivation tool, not a medical device. It does not diagnose or treat medical conditions or guarantee disease prevention. Health improvement indicators use general information and the dates you enter; they do not measure your body or provide an individual medical assessment. Consult a doctor or qualified healthcare professional about quitting smoking, symptoms, medication, diagnosis or treatment. Do not delay professional care because of app information. The app does not promise successful smoking cessation or a particular health improvement."
+      ],
+      [
+        "Savings and calculations",
+        "Savings, spending and goal amounts are calculated from your consumption, prices, dates and currency, or are records you enter yourself. Incorrect or incomplete inputs, device dates and rounding can affect the results. Quitify is not a bank account or wallet: it does not hold or transfer money or provide investment or financial advice. Marking a goal as purchased only changes the app record; it does not make a real purchase or payment."
+      ],
+      [
+        "Accounts, security and charges",
+        "A cloud account is optional for core tracking features. You can use email and password or Google sign-in for cloud features. Use an accurate email address you can access, and do not share passwords or sign-in codes. If you suspect unauthorized access, change your password and contact support. Do not impersonate another person when creating an account. The current version is free and includes advertising; it does not offer in-app subscriptions or paid purchases. Internet and carrier charges depend on your own provider's terms. If a paid feature is introduced later, its price and conditions will be disclosed separately before purchase; these terms alone do not authorize a charge."
+      ],
+      [
+        "Records, backups and restoration",
+        "You are responsible for entering accurate records and keeping a current copy of important records. Cloud backup is optional; signing in and completing setup can start the backup flow. In version 1.8.0 and later, backups are kept in a Firebase Firestore document associated with your account. Earlier versions used Firebase Storage; the new version does not download those older cloud backups. Local file backup and import are also available. Restoration can replace device records with the records in your chosen backup; read the explanation shown before confirming. Changes made after the latest backup may not be included. Backup files contain personal information and are not additionally encrypted by Quitify. Backups can fail because of connectivity, account sessions, device conditions, file access, size limits or service errors; uninterrupted backup and recovery in every situation are not guaranteed. These explanations do not remove your statutory rights or our legal responsibilities."
+      ],
+      [
+        "Privacy and rights to your records",
+        "You retain your rights to records you enter into the app. Records are processed to provide the disclosed account, tracking, backup and restoration functions; these terms do not permit their sale. The <a href=\"quitify-privacy-policy.html\">Privacy Policy</a> explains the processing of account, backup, advertising and analytics data. Accepting these terms does not automatically constitute consent to processing that legally requires separate consent."
+      ],
+      [
+        "Permission to use the app and misuse",
+        "You may use Quitify for personal use in accordance with these terms. Do not access another person's account or data without permission, bypass authentication or access protections, send automated requests that disrupt the service, or upload harmful content. Do not present the app's name, logo or developer-owned content as another product without permission. Third-party and open-source components remain subject to their respective licences. Uses, inspection and other rights permitted by law are preserved."
+      ],
+      [
+        "Advertising and third-party services",
+        "Quitify uses Firebase for accounts and backups, Google AdMob for advertising, and Google Analytics for Firebase for usage analytics. Provider outages, changes or your device settings may affect some features. When you visit third-party pages or advertisements, the relevant provider's terms apply. Showing an advertisement does not constitute a Quitify recommendation or guarantee of the advertised product or service. Data processing details about these providers are in the Privacy Policy."
+      ],
+      [
+        "Service changes and access restrictions",
+        "The app may be updated for security, compatibility and maintenance; features may change or become temporarily unavailable. Continuous access and compatibility with every device are not guaranteed. For a significant service change or closure, we aim to give reasonable advance notice and, where possible, an opportunity to export your records. Cloud access may be restricted when necessary and proportionate to address misuse, serious security risks or legal requirements. Where appropriate, we explain the reason and provide a contact route to challenge the restriction; urgent security or legal requirements may prevent advance notice."
+      ],
+      [
+        "Stopping use and deleting your account",
+        "You can stop using the app and uninstall it. Signing out, disabling periodic backups or uninstalling does not automatically delete your cloud account or backup. Request deletion of your account and associated cloud data, or only the backup while keeping the account, using the <a href=\"quitify-delete-account.html\">Account and Data Deletion</a> page. We aim to complete the process within 30 days after verifying your request. Device records, exported files and system backups must be managed separately. Once deletion is completed, the affected cloud backup cannot be used for restoration."
+      ],
+      [
+        "Statutory rights and disputes",
+        "We aim to provide the app with reasonable care; report errors to support. These terms do not remove mandatory consumer rights, data protection rights or liabilities that cannot legally be limited. They do not provide a blanket exclusion for intentional misconduct, gross negligence or personal injury for which we are legally responsible. If a provision is unenforceable, the remaining provisions continue to apply to the extent allowed by applicable law. You can first contact us with a complaint, but this is not a mandatory condition for approaching competent consumer bodies or courts. Mandatory protections and remedies applicable where you live remain available."
+      ],
+      [
+        "Updates and contact",
+        "The first version of these terms is dated 13 October 2026. The current text is published at this App-Pages address and its date is updated when revised. Significant changes are explained through the app or update announcements; separate acceptance is requested where needed. New terms do not apply retroactively or replace legally required notice or consent procedures. Contact the developer, Muhammed Mustafa Geldi (Swanky Software, Türkiye), at <a href=\"mailto:swankydata9@gmail.com?subject=Quitify%20-%20Terms%20of%20Service\">swankydata9@gmail.com</a> for terms, support or complaints. Do not send passwords or sign-in codes."
+      ]
+    ]
+  },
+  "de": {
+    "title": "Quitify Nutzungsbedingungen",
+    "date": "Gültig und zuletzt aktualisiert: 13. Oktober 2026",
+    "online": "Aktuelle Nutzungsbedingungen online öffnen",
+    "sections": [
+      [
+        "Anbieter und Geltungsbereich",
+        "Diese Bedingungen erläutern die Nutzung von Quitify (com.swanky.quitify), angeboten von Muhammed Mustafa Geldi (Swanky Software, Türkiye). Quitify unterstützt die Aufzeichnung Ihres Rauchstopps, Ihrer Fortschritte, Ziele und nicht für Zigaretten ausgegebenen Beträge. Die Bedingungen sind auf dem Bildschirm zur Kontoerstellung zugänglich; mit der Erstellung eines Kontos stimmen Sie ihnen zu. Wenn Sie nicht zustimmen, erstellen Sie kein Konto und beenden Sie die Nutzung. Quitify richtet sich nicht an Kinder unter 13 Jahren. Wenn das für Sie geltende Recht die Zustimmung eines Elternteils oder gesetzlichen Vertreters für diesen Vertrag verlangt, müssen Sie diese einholen."
+      ],
+      [
+        "Gesundheitsinformationen und Grenzen",
+        "Quitify ist ein Werkzeug zur persönlichen Aufzeichnung und Motivation, kein Medizinprodukt. Die App diagnostiziert oder behandelt keine Erkrankungen und garantiert keine Krankheitsprävention. Anzeigen zur gesundheitlichen Verbesserung beruhen auf allgemeinen Informationen und Ihren Datumsangaben; sie messen Ihren Körper nicht und sind keine persönliche medizinische Beurteilung. Wenden Sie sich bei Fragen zu Rauchstopp, Beschwerden, Medikamenten, Diagnose oder Behandlung an einen Arzt oder eine qualifizierte medizinische Fachperson. Schieben Sie fachliche Hilfe wegen der App-Informationen nicht auf. Ein erfolgreicher Rauchstopp oder eine bestimmte gesundheitliche Verbesserung wird nicht zugesichert."
+      ],
+      [
+        "Ersparnisse und Berechnungen",
+        "Ersparnisse, Ausgaben und Zielbeträge werden aus Ihren Verbrauchs-, Preis-, Datums- und Währungsangaben berechnet oder von Ihnen selbst erfasst. Falsche oder unvollständige Eingaben, das Gerätedatum und Rundungen können die Ergebnisse beeinflussen. Quitify ist kein Bankkonto oder Zahlungs-Wallet, verwahrt oder überweist kein Geld und bietet keine Anlage- oder Finanzberatung. Wenn Sie ein Ziel als gekauft markieren, ändert sich nur der Datensatz in der App; es erfolgt kein tatsächlicher Kauf und keine Zahlung."
+      ],
+      [
+        "Konten, Sicherheit und Kosten",
+        "Für die grundlegenden Aufzeichnungsfunktionen ist kein Cloud-Konto erforderlich. Für Cloud-Funktionen können Sie sich mit E-Mail und Passwort oder über Google anmelden. Verwenden Sie eine zutreffende E-Mail-Adresse, auf die Sie zugreifen können, und teilen Sie keine Passwörter oder Anmeldecodes. Ändern Sie bei vermutetem unbefugtem Zugriff Ihr Passwort und kontaktieren Sie den Support. Erstellen Sie kein Konto unter der Identität einer anderen Person. Die aktuelle Version ist kostenlos und enthält Werbung; sie bietet keine In-App-Abonnements oder kostenpflichtigen Käufe. Internet- und Mobilfunkkosten richten sich nach Ihrem Anbieter. Falls später kostenpflichtige Funktionen hinzukommen, werden Preis und Bedingungen vor einem Kauf gesondert erklärt; diese Bedingungen allein ermächtigen nicht zu einer Zahlung."
+      ],
+      [
+        "Aufzeichnungen, Sicherungen und Wiederherstellung",
+        "Sie sind für korrekte Eingaben und eine aktuelle Kopie wichtiger Aufzeichnungen verantwortlich. Cloud-Sicherungen sind optional; Anmeldung und abgeschlossene Einrichtung können den Sicherungsablauf starten. Ab Version 1.8.0 liegen Sicherungen in einem Ihrem Konto zugeordneten Firebase-Firestore-Dokument. Ältere Versionen nutzten Firebase Storage; die neue Version lädt diese älteren Cloud-Sicherungen nicht herunter. Lokale Dateisicherung und Import stehen ebenfalls zur Verfügung. Eine Wiederherstellung kann Geräteaufzeichnungen durch die Daten der gewählten Sicherung ersetzen; lesen Sie die Hinweise vor der Bestätigung. Änderungen nach der letzten Sicherung sind möglicherweise nicht enthalten. Sicherungsdateien enthalten persönliche Daten und werden von Quitify nicht zusätzlich verschlüsselt. Verbindungen, Anmeldesitzungen, Gerätezustand, Dateizugriff, Größenbeschränkungen oder Dienstfehler können eine Sicherung verhindern; lückenlose Sicherung und Wiederherstellung in jeder Situation werden nicht garantiert. Diese Erläuterungen lassen gesetzliche Rechte und unsere gesetzlichen Pflichten unberührt."
+      ],
+      [
+        "Datenschutz und Rechte an Ihren Aufzeichnungen",
+        "Ihre Rechte an den von Ihnen eingegebenen Aufzeichnungen bleiben bei Ihnen. Daten werden für die erläuterten Konto-, Aufzeichnungs-, Sicherungs- und Wiederherstellungsfunktionen verarbeitet; diese Bedingungen erlauben keinen Verkauf Ihrer Aufzeichnungen. Die <a href=\"quitify-privacy-policy.html\">Datenschutzerklärung</a> erläutert die Verarbeitung von Konto-, Sicherungs-, Werbe- und Analysedaten. Die Zustimmung zu diesen Bedingungen ist nicht automatisch eine Einwilligung in Verarbeitungen, für die rechtlich eine gesonderte Einwilligung erforderlich ist."
+      ],
+      [
+        "Nutzungserlaubnis und Missbrauch",
+        "Sie dürfen Quitify für persönliche Zwecke gemäß diesen Bedingungen verwenden. Greifen Sie nicht ohne Erlaubnis auf fremde Konten oder Daten zu, umgehen Sie keine Anmelde- oder Zugriffsschutzmaßnahmen, senden Sie keine den Dienst störenden automatisierten Anfragen und laden Sie keine schädlichen Inhalte hoch. Stellen Sie den App-Namen, das Logo oder entwicklereigene Inhalte nicht ohne Erlaubnis als anderes Produkt dar. Rechte an Drittanbieter- und Open-Source-Komponenten richten sich nach deren Lizenzen. Gesetzlich erlaubte Nutzungen, Untersuchungen und sonstige Rechte bleiben unberührt."
+      ],
+      [
+        "Werbung und Drittanbieterdienste",
+        "Quitify nutzt Firebase für Konten und Sicherungen, Google AdMob für Werbung und Google Analytics for Firebase für Nutzungsanalysen. Ausfälle oder Änderungen dieser Anbieter sowie Geräteeinstellungen können Funktionen beeinflussen. Auf Seiten und in Anzeigen Dritter gelten die Bedingungen des jeweiligen Anbieters. Eine angezeigte Werbung ist keine Empfehlung oder Garantie von Quitify für das beworbene Produkt oder den Dienst. Einzelheiten zur Datenverarbeitung finden Sie in der Datenschutzerklärung."
+      ],
+      [
+        "Dienständerungen und Zugriffsbeschränkungen",
+        "Die App kann für Sicherheit, Kompatibilität und Wartung aktualisiert werden; Funktionen können sich ändern oder vorübergehend ausfallen. Ständiger Zugriff und Kompatibilität mit jedem Gerät werden nicht garantiert. Bei wesentlichen Dienständerungen oder einer Einstellung streben wir eine angemessene vorherige Mitteilung und, soweit möglich, Gelegenheit zum Export Ihrer Aufzeichnungen an. Cloud-Zugriff kann bei Missbrauch, ernsten Sicherheitsrisiken oder gesetzlichen Anforderungen erforderlich und verhältnismäßig eingeschränkt werden. Soweit angemessen, teilen wir den Grund und einen Kontakt zur Überprüfung der Einschränkung mit; dringende Sicherheits- oder gesetzliche Gründe können eine vorherige Mitteilung verhindern."
+      ],
+      [
+        "Nutzung beenden und Konto löschen",
+        "Sie können die Nutzung beenden und die App deinstallieren. Abmelden, Abschalten regelmäßiger Sicherungen oder Deinstallieren löscht Cloud-Konto und Sicherung nicht automatisch. Über die Seite <a href=\"quitify-delete-account.html\">Konto- und Datenlöschung</a> können Sie die Löschung Ihres Kontos mit zugehörigen Cloud-Daten oder nur der Sicherung bei fortbestehendem Konto anfordern. Nach Prüfung der Anfrage streben wir die Erledigung innerhalb von 30 Tagen an. Geräteaufzeichnungen, exportierte Dateien und Systemsicherungen müssen separat verwaltet werden. Nach abgeschlossener Löschung kann die betreffende Cloud-Sicherung nicht mehr zur Wiederherstellung verwendet werden."
+      ],
+      [
+        "Gesetzliche Rechte und Streitigkeiten",
+        "Wir streben eine Bereitstellung der App mit angemessener Sorgfalt an; melden Sie Fehler dem Support. Diese Bedingungen beschränken weder zwingende Verbraucher- und Datenschutzrechte noch Haftung, die gesetzlich nicht beschränkt werden darf. Sie sehen keinen pauschalen Haftungsausschluss für Vorsatz, grobe Fahrlässigkeit oder Personenschäden vor, für die wir gesetzlich verantwortlich sind. Ist eine Bestimmung unwirksam, gelten die übrigen im gesetzlich zulässigen Umfang weiter. Sie können sich mit Beschwerden zuerst an uns wenden; dies ist keine zwingende Voraussetzung für die Anrufung zuständiger Verbraucherstellen oder Gerichte. Zwingende Schutzvorschriften und Rechtsbehelfe Ihres Wohnorts bleiben erhalten."
+      ],
+      [
+        "Aktualisierungen und Kontakt",
+        "Die erste Fassung dieser Bedingungen ist vom 13. Oktober 2026. Der aktuelle Text wird an dieser App-Pages-Adresse veröffentlicht; bei Änderungen wird das Datum aktualisiert. Wesentliche Änderungen werden über die App oder Aktualisierungshinweise erläutert; wenn erforderlich, wird eine gesonderte Zustimmung eingeholt. Neue Bedingungen gelten nicht rückwirkend und ersetzen keine gesetzlich vorgeschriebenen Informations- oder Einwilligungsverfahren. Bei Fragen zu Bedingungen, Support oder Beschwerden erreichen Sie den Entwickler Muhammed Mustafa Geldi (Swanky Software, Türkiye) unter <a href=\"mailto:swankydata9@gmail.com?subject=Quitify%20-%20Nutzungsbedingungen\">swankydata9@gmail.com</a>. Senden Sie keine Passwörter oder Anmeldecodes."
+      ]
+    ]
+  }
+}
