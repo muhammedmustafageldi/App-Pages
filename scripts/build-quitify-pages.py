@@ -63,7 +63,7 @@ for page_kind, (filename, title_key, content_key) in pages.items():
         <div class="container header-inner">
             <a href="index.html" class="brand-logo"><img src="other_icons/swanky_logo.png?v=3" alt="Logo" width="32" height="32" style="border-radius:6px">Swanky Software</a>
             <nav class="header-nav">
-                <a href="mailto:swankydata9@gmail.com" class="nav-link">İletişim</a>
+                <a href="mailto:swankysoftware@gmail.com" class="nav-link">İletişim</a>
                 <button id="langToggle" class="lang-toggle" type="button" title="Switch to English" aria-label="Switch to English">🇬🇧</button>
             </nav>
         </div>
@@ -113,7 +113,7 @@ function applyQuitifyTranslations(language) {
     const contact = document.querySelector('.header-nav a[href^="mailto"]');
     if (contact) {
         contact.textContent = { tr: 'İletişim', en: 'Contact', de: 'Kontakt' }[lang];
-        contact.href = 'mailto:swankydata9@gmail.com';
+        contact.href = 'mailto:swankysoftware@gmail.com';
         contact.removeAttribute('data-i18n');
     }
     container.querySelectorAll('a[href^="quitify-"]').forEach(link => {

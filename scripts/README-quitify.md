@@ -28,7 +28,7 @@ Reference checks used for the health disclaimer and the treatment of consumer ri
 
 ## Handling deletion requests
 
-Use the existing Quitify support address `swankydata9@gmail.com`. Verify ownership without requesting passwords, sign-in codes or complete backup files. The published target is 30 days after verification.
+Use the shared Swanky Software support address `swankysoftware@gmail.com`. Verify ownership without requesting passwords, sign-in codes or complete backup files. The published target is 30 days after verification.
 
 For full account deletion, prevent further writes from the account and remove the Firebase Authentication account, the user's `Users/{uid}` Firestore document, and any legacy `Backups/{uid}` Firebase Storage objects if they still exist. Do not delete a user's Google account. For backup-only deletion, preserve Authentication and remove the user's backup records, including legacy records. Ask the user to sign out or disable backups so that the app does not recreate them.
 

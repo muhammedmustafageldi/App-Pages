@@ -11,7 +11,7 @@
     "sections": [
       [
         "Uygulama ve sorumlu geliştirici",
-        "Quitify (com.swanky.quitify), sigarayı bırakma sürecini ve sigaraya harcanmayan parayı takip etmeye yardımcı olur. Geliştirici Muhammed Mustafa Geldi’dir (Swanky Software, Türkiye). Gizlilik soruları ve talepler için <a href=\"mailto:swankydata9@gmail.com\">swankydata9@gmail.com</a> adresine ulaşabilirsiniz. Bu politika mevcut sürümleri ve 1.8.0 ile gelen yedekleme değişikliğini açıklar."
+        "Quitify, sigarayı bırakma sürecini ve sigaraya harcanmayan parayı takip etmeye yardımcı olur. Geliştirici Muhammed Mustafa Geldi’dir (Swanky Software, Türkiye). Gizlilik soruları ve talepler için <a href=\"mailto:swankysoftware@gmail.com\">swankysoftware@gmail.com</a> adresine ulaşabilirsiniz."
       ],
       [
         "Cihazınızda tuttuğunuz bilgiler",
@@ -51,17 +51,17 @@
       ],
       [
         "Haklarınız ve çocuklar",
-        "Kişisel bilgilerinize erişim, düzeltme veya silme taleplerinizi <a href=\"mailto:swankydata9@gmail.com\">swankydata9@gmail.com</a> adresine iletebilirsiniz. Bulut özelliklerini kullanmamayı seçebilir ve hesabınızı silmeyi talep edebilirsiniz. Uygulanabilir mevzuat kapsamında yetkili veri koruma makamına başvuru haklarınız saklıdır. Quitify 13 yaş altı çocuklara yönelik değildir; bu çocukların kişisel bilgilerini bilerek toplamayız."
+        "Kişisel bilgilerinize erişim, düzeltme veya silme taleplerinizi <a href=\"mailto:swankysoftware@gmail.com\">swankysoftware@gmail.com</a> adresine iletebilirsiniz. Bulut özelliklerini kullanmamayı seçebilir ve hesabınızı silmeyi talep edebilirsiniz. Uygulanabilir mevzuat kapsamında yetkili veri koruma makamına başvuru haklarınız saklıdır. Quitify 13 yaş altı çocuklara yönelik değildir; bu çocukların kişisel bilgilerini bilerek toplamayız."
       ],
       [
         "Bu web sayfası ve güncellemeler",
-        "Bu sayfa GitHub Pages üzerinde barındırılır. GitHub, ziyaret sırasında IP adresi gibi teknik bilgileri güvenlik amacıyla işleyebilir. Web sayfasındaki Google Fonts isteği de tarayıcıdan Google’a teknik bağlantı bilgileri iletir. Dil ve tema tercihi tarayıcıda saklanır. Uygulama veya veri işleme yöntemleri değişirse politika güncellenir; yukarıdaki tarih son düzenlemeyi gösterir. Güncel politika <a href=\"https://muhammedmustafageldi.github.io/App-Pages/quitify-privacy-policy.html\">App-Pages’teki bu adreste</a> yayımlanır."
+        "Bu web sayfasını ziyaret ettiğinizde barındırma hizmeti sağlayıcısı GitHub, IP adresi gibi teknik bilgileri güvenlik amacıyla işleyebilir. Sayfada kullanılan Google Fonts hizmeti de tarayıcınızdan Google’a teknik bağlantı bilgileri iletir. Dil ve tema tercihleriniz tarayıcınızda saklanır. Uygulama veya kişisel verilerin işlenme yöntemleri değiştiğinde bu politika güncellenir. Güncel gizlilik politikası bu sayfada yayımlanır; son güncelleme tarihi metnin başında belirtilir."
       ]
     ],
     "deletion": [
       [
         "Silme talebini nasıl gönderirsiniz?",
-        "Quitify hesabınızın ve ilişkili verilerin silinmesini istemek için <a href=\"mailto:swankydata9@gmail.com?subject=Quitify%20-%20Hesap%20Silme%20Talebi\">swankydata9@gmail.com adresine e-posta gönderin</a>. Konu: <strong>Quitify — Hesap Silme Talebi</strong>. Hesabınızda kullandığınız e-posta adresini ve hesabın tamamen silinmesini istediğinizi belirtin. Google ile giriş yaptıysanız ilgili Google hesabının e-posta adresini kullanın. Uygulamayı yeniden yüklemeniz gerekmez. Şifrenizi, giriş kodunuzu veya yedek dosyanızı göndermeyin. Gerekirse hesap sahipliğini doğrulamak için sizinle iletişime geçeriz."
+        "Quitify hesabınızın ve ilişkili verilerin silinmesini istemek için <a href=\"mailto:swankysoftware@gmail.com?subject=Quitify%20-%20Hesap%20Silme%20Talebi\">swankysoftware@gmail.com adresine e-posta gönderin</a>. Konu: <strong>Quitify — Hesap Silme Talebi</strong>. Hesabınızda kullandığınız e-posta adresini ve hesabın tamamen silinmesini istediğinizi belirtin. Google ile giriş yaptıysanız ilgili Google hesabının e-posta adresini kullanın. Uygulamayı yeniden yüklemeniz gerekmez. Şifrenizi, giriş kodunuzu veya yedek dosyanızı göndermeyin. Gerekirse hesap sahipliğini doğrulamak için sizinle iletişime geçeriz."
       ],
       [
         "Hangi veriler silinir?",
@@ -89,7 +89,7 @@
     "sections": [
       [
         "App and responsible developer",
-        "Quitify (com.swanky.quitify) helps you track your smoking cessation journey and money not spent on cigarettes. The developer is Muhammed Mustafa Geldi (Swanky Software, Türkiye). Contact <a href=\"mailto:swankydata9@gmail.com\">swankydata9@gmail.com</a> for privacy questions and requests. This policy covers existing versions and the backup change introduced with version 1.8.0."
+        "Quitify helps you track your smoking cessation journey and money not spent on cigarettes. The developer is Muhammed Mustafa Geldi (Swanky Software, Türkiye). Contact <a href=\"mailto:swankysoftware@gmail.com\">swankysoftware@gmail.com</a> for privacy questions and requests."
       ],
       [
         "Information you keep on your device",
@@ -129,17 +129,17 @@
       ],
       [
         "Your rights and children",
-        "Send requests to access, correct or delete your personal information to <a href=\"mailto:swankydata9@gmail.com\">swankydata9@gmail.com</a>. You may choose not to use cloud features and request account deletion. Your rights to contact the relevant data protection authority under applicable law are unaffected. Quitify is not intended for children under 13; we do not knowingly collect their personal information."
+        "Send requests to access, correct or delete your personal information to <a href=\"mailto:swankysoftware@gmail.com\">swankysoftware@gmail.com</a>. You may choose not to use cloud features and request account deletion. Your rights to contact the relevant data protection authority under applicable law are unaffected. Quitify is not intended for children under 13; we do not knowingly collect their personal information."
       ],
       [
         "This website and policy updates",
-        "This page is hosted on GitHub Pages. GitHub may process technical information such as visitor IP addresses for security. Google Fonts requests on this website also transmit technical connection information from your browser to Google. Language and theme preferences are stored in your browser. We update this policy when the app or its data practices change; the date above identifies the latest revision. The current policy is published at <a href=\"https://muhammedmustafageldi.github.io/App-Pages/quitify-privacy-policy.html\">this App-Pages address</a>."
+        "When you visit this website, the hosting provider GitHub may process technical information such as your IP address for security. The Google Fonts service used on the page also transmits technical connection information from your browser to Google. Language and theme preferences are stored in your browser. This policy is updated when the app or its personal data processing practices change. The current privacy policy is published on this page, with the last update date shown at the beginning."
       ]
     ],
     "deletion": [
       [
         "How to submit a deletion request",
-        "To request deletion of your Quitify account and associated data, <a href=\"mailto:swankydata9@gmail.com?subject=Quitify%20-%20Account%20Deletion%20Request\">email swankydata9@gmail.com</a>. Subject: <strong>Quitify — Account Deletion Request</strong>. Include the email address used for your account and state that you want the entire account deleted. For Google sign-in, use the email address of the relevant Google account. You do not need to reinstall the app. Do not send your password, sign-in codes or backup file. We may contact you to verify account ownership."
+        "To request deletion of your Quitify account and associated data, <a href=\"mailto:swankysoftware@gmail.com?subject=Quitify%20-%20Account%20Deletion%20Request\">email swankysoftware@gmail.com</a>. Subject: <strong>Quitify — Account Deletion Request</strong>. Include the email address used for your account and state that you want the entire account deleted. For Google sign-in, use the email address of the relevant Google account. You do not need to reinstall the app. Do not send your password, sign-in codes or backup file. We may contact you to verify account ownership."
       ],
       [
         "What is deleted?",
@@ -167,7 +167,7 @@
     "sections": [
       [
         "App und verantwortlicher Entwickler",
-        "Quitify (com.swanky.quitify) hilft Ihnen, Ihren Rauchstopp und das nicht für Zigaretten ausgegebene Geld zu verfolgen. Entwickler ist Muhammed Mustafa Geldi (Swanky Software, Türkiye). Bei Datenschutzfragen und Anfragen erreichen Sie uns unter <a href=\"mailto:swankydata9@gmail.com\">swankydata9@gmail.com</a>. Diese Erklärung beschreibt bestehende Versionen und die mit Version 1.8.0 eingeführte Änderung der Sicherung."
+        "Quitify hilft Ihnen, Ihren Rauchstopp und das nicht für Zigaretten ausgegebene Geld zu verfolgen. Entwickler ist Muhammed Mustafa Geldi (Swanky Software, Türkiye). Bei Datenschutzfragen und Anfragen erreichen Sie uns unter <a href=\"mailto:swankysoftware@gmail.com\">swankysoftware@gmail.com</a>."
       ],
       [
         "Informationen auf Ihrem Gerät",
@@ -207,17 +207,17 @@
       ],
       [
         "Ihre Rechte und Kinder",
-        "Anfragen zu Auskunft, Berichtigung oder Löschung Ihrer persönlichen Daten senden Sie an <a href=\"mailto:swankydata9@gmail.com\">swankydata9@gmail.com</a>. Sie können Cloud-Funktionen vermeiden und Kontolöschung beantragen. Ihre Rechte zur Beschwerde bei einer zuständigen Datenschutzbehörde nach anwendbarem Recht bleiben unberührt. Quitify richtet sich nicht an Kinder unter 13; wir erfassen deren personenbezogene Daten nicht wissentlich."
+        "Anfragen zu Auskunft, Berichtigung oder Löschung Ihrer persönlichen Daten senden Sie an <a href=\"mailto:swankysoftware@gmail.com\">swankysoftware@gmail.com</a>. Sie können Cloud-Funktionen vermeiden und Kontolöschung beantragen. Ihre Rechte zur Beschwerde bei einer zuständigen Datenschutzbehörde nach anwendbarem Recht bleiben unberührt. Quitify richtet sich nicht an Kinder unter 13; wir erfassen deren personenbezogene Daten nicht wissentlich."
       ],
       [
         "Diese Website und Aktualisierungen",
-        "Diese Seite wird auf GitHub Pages gehostet. GitHub kann technische Informationen wie Besucher-IP-Adressen für Sicherheitszwecke verarbeiten. Google-Fonts-Anfragen dieser Website übermitteln ebenfalls technische Verbindungsinformationen vom Browser an Google. Sprach- und Designpräferenzen werden im Browser gespeichert. Bei Änderungen der App oder ihrer Datenverarbeitung aktualisieren wir die Erklärung; das Datum oben zeigt die letzte Überarbeitung. Die aktuelle Erklärung wird unter <a href=\"https://muhammedmustafageldi.github.io/App-Pages/quitify-privacy-policy.html\">dieser App-Pages-Adresse</a> veröffentlicht."
+        "Beim Besuch dieser Website kann der Hosting-Anbieter GitHub technische Informationen wie Ihre IP-Adresse zu Sicherheitszwecken verarbeiten. Der auf der Seite verwendete Dienst Google Fonts übermittelt außerdem technische Verbindungsinformationen von Ihrem Browser an Google. Sprach- und Designpräferenzen werden in Ihrem Browser gespeichert. Diese Erklärung wird aktualisiert, wenn sich die App oder die Verarbeitung personenbezogener Daten ändert. Die aktuelle Datenschutzerklärung wird auf dieser Seite veröffentlicht; das Datum der letzten Aktualisierung steht am Anfang des Textes."
       ]
     ],
     "deletion": [
       [
         "So beantragen Sie die Löschung",
-        "Zur Löschung Ihres Quitify-Kontos und zugehöriger Daten <a href=\"mailto:swankydata9@gmail.com?subject=Quitify%20-%20Account%20Deletion%20Request\">schreiben Sie an swankydata9@gmail.com</a>. Betreff: <strong>Quitify — Kontolöschung</strong>. Geben Sie die E-Mail-Adresse Ihres App-Kontos an und erklären Sie, dass das gesamte Konto gelöscht werden soll. Bei Google-Anmeldung verwenden Sie die E-Mail-Adresse des betreffenden Google-Kontos. Eine erneute Installation ist nicht nötig. Senden Sie weder Passwort noch Anmeldecodes oder Sicherungsdatei. Zur Prüfung der Kontoinhaberschaft können wir Sie kontaktieren."
+        "Zur Löschung Ihres Quitify-Kontos und zugehöriger Daten <a href=\"mailto:swankysoftware@gmail.com?subject=Quitify%20-%20Account%20Deletion%20Request\">schreiben Sie an swankysoftware@gmail.com</a>. Betreff: <strong>Quitify — Kontolöschung</strong>. Geben Sie die E-Mail-Adresse Ihres App-Kontos an und erklären Sie, dass das gesamte Konto gelöscht werden soll. Bei Google-Anmeldung verwenden Sie die E-Mail-Adresse des betreffenden Google-Kontos. Eine erneute Installation ist nicht nötig. Senden Sie weder Passwort noch Anmeldecodes oder Sicherungsdatei. Zur Prüfung der Kontoinhaberschaft können wir Sie kontaktieren."
       ],
       [
         "Welche Daten werden gelöscht?",
