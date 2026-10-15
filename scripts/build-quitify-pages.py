@@ -16,7 +16,8 @@ terms_texts = json.loads((ROOT / 'content/quitify-terms.json').read_text(encodin
 def content(t, page='privacy', navigation=None):
     navigation = navigation or t
     sections = t['deletion'] if page == 'deletion' else t['sections']
-    parts = [f'<p class="policy-date">{escape(t["date"])}</p>']
+    date = t.get("deletionDate", t["date"]) if page == "deletion" else t["date"]
+    parts = [f'<p class="policy-date">{escape(date)}</p>']
     if page != 'deletion':
         related_page = 'privacy-policy' if page == 'terms' else 'terms-of-service'
         related_title = navigation['title'] if page == 'terms' else navigation['termsTitle']

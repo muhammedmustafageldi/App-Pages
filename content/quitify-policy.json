@@ -60,12 +60,12 @@
     ],
     "deletion": [
       [
-        "Silme talebini nasıl gönderirsiniz?",
-        "Quitify hesabınızın ve ilişkili verilerin silinmesini istemek için <a href=\"mailto:swankysoftware@gmail.com?subject=Quitify%20-%20Hesap%20Silme%20Talebi\">swankysoftware@gmail.com adresine e-posta gönderin</a>. Konu: <strong>Quitify — Hesap Silme Talebi</strong>. Hesabınızda kullandığınız e-posta adresini ve hesabın tamamen silinmesini istediğinizi belirtin. Google ile giriş yaptıysanız ilgili Google hesabının e-posta adresini kullanın. Uygulamayı yeniden yüklemeniz gerekmez. Şifrenizi, giriş kodunuzu veya yedek dosyanızı göndermeyin. Gerekirse hesap sahipliğini doğrulamak için sizinle iletişime geçeriz."
+        "Hesabınızı nasıl silebilirsiniz?",
+        "<strong>Uygulama içinden:</strong><br>1. Quitify’da silmek istediğiniz hesabınıza giriş yapın.<br>2. <strong>Ayarlar → Hesap ve yedekleme → Hesabı sil</strong> yolunu izleyin.<br>3. Açılan penceredeki açıklamayı okuyup <strong>Hesabı sil</strong> düğmesiyle onaylayın.<br>Güvenliğiniz için yeniden giriş yapmanız istenirse giriş yaptıktan sonra aynı adımları tekrarlayın. Silme işlemi geri alınamaz. Telefonda bulunan kayıtlarınız kalır; Quitify’ı hesapsız kullanmaya devam edebilirsiniz.<br><br><strong>E-posta ile:</strong> Uygulamaya erişemiyorsanız veya sürümünüzde bu seçeneği göremiyorsanız <a href=\"mailto:swankysoftware@gmail.com?subject=Quitify%20-%20Hesap%20Silme%20Talebi\">swankysoftware@gmail.com adresine e-posta gönderin</a>. Konu: <strong>Quitify — Hesap Silme Talebi</strong>. Hesabınızda kullandığınız e-posta adresini ve hesabın tamamen silinmesini istediğinizi belirtin. Google ile giriş yaptıysanız ilgili Google hesabının e-posta adresini kullanın. Uygulamayı yeniden yüklemeniz gerekmez. Şifrenizi, giriş kodunuzu veya yedek dosyanızı göndermeyin. Gerekirse hesap sahipliğini doğrulamak için sizinle iletişime geçeriz."
       ],
       [
         "Hangi veriler silinir?",
-        "Quitify’ın Firebase Authentication hesabı ve ilişkili Firestore yedeği silinir. Yedek kapsamındaki ad, sigara kullanım ve bırakma bilgileri, notlar, başarılar, birikim, hedefler ve harcama kayıtları bu silmeye dahildir. Eski sürümlerden kalan hesabınıza bağlı Firebase Storage yedeği ve Firestore konum kaydı da talebin kapsamındadır. Bu işlem Google hesabınızı silmez."
+        "Quitify hesabınız ve hesabınıza bağlı güncel bulut yedeğiniz silinir. Yedek kapsamındaki ad, sigara kullanım ve bırakma bilgileri, notlar, başarılar, birikim, hedefler ve harcama kayıtları bu silmeye dahildir. Bulut yedekleme durdurulur. Önceki sürümlerde oluşturduğunuz bulut yedekleri varsa bunların da silinmesi için e-posta yöntemini kullanabilirsiniz. Bu işlem Google hesabınızı silmez."
       ],
       [
         "Hesabı koruyarak verileri silme",
@@ -73,9 +73,10 @@
       ],
       [
         "Süre ve cihazdaki kopyalar",
-        "Talebin size ait olduğunu doğruladıktan sonra işlemi en geç 30 gün içinde tamamlamayı hedefliyoruz. İşlemi doğrulayan asgari destek yazışmaları ve yasal olarak gerekli kayıtlar tutulabilir; uygulama profiliniz ve yedeğiniz hesap silme sonrasında saklanmaz. Google’ın reklam, analiz ve güvenlik kayıtları kendi politikalarına tabidir.<br><br>Cihazınızda bulunan kayıtları Android uygulama ayarlarından Quitify’ın verilerini temizleyerek kaldırabilirsiniz. Dışa aktarılan dosyaları ve sizin seçtiğiniz sağlayıcıdaki kopyaları ayrıca silin. Android sistem yedeklerini cihazınızın yedekleme ayarlarından yönetin. Oturumu kapatmak veya uygulamayı kaldırmak tek başına bulut silme talebi oluşturmaz."
+        "Uygulama içindeki silme işlemi başarıyla tamamlandığında hesabınız ve güncel bulut yedeğiniz silinir. E-posta taleplerini, talebin size ait olduğunu doğruladıktan sonra en geç 30 gün içinde tamamlamayı hedefliyoruz. İşlemi doğrulayan asgari destek yazışmaları ve yasal olarak gerekli kayıtlar tutulabilir; silinen hesap ve yedek verilerinin bir kopyasını saklamayız. Google’ın reklam, analiz ve güvenlik kayıtları kendi politikalarına tabidir.<br><br>Hesabı silmek telefondaki kayıtları silmez. Bunları Android uygulama ayarlarından Quitify’ın verilerini temizleyerek kaldırabilirsiniz. Dışa aktarılan dosyaları ve sizin seçtiğiniz sağlayıcıdaki kopyaları ayrıca silin. Android sistem yedeklerini cihazınızın yedekleme ayarlarından yönetin. Oturumu kapatmak veya uygulamayı kaldırmak tek başına hesabınızı ya da bulut yedeklerinizi silmez."
       ]
-    ]
+    ],
+    "deletionDate": "Son güncelleme: 15 Ekim 2026"
   },
   "en": {
     "title": "Quitify Privacy Policy",
@@ -138,12 +139,12 @@
     ],
     "deletion": [
       [
-        "How to submit a deletion request",
-        "To request deletion of your Quitify account and associated data, <a href=\"mailto:swankysoftware@gmail.com?subject=Quitify%20-%20Account%20Deletion%20Request\">email swankysoftware@gmail.com</a>. Subject: <strong>Quitify — Account Deletion Request</strong>. Include the email address used for your account and state that you want the entire account deleted. For Google sign-in, use the email address of the relevant Google account. You do not need to reinstall the app. Do not send your password, sign-in codes or backup file. We may contact you to verify account ownership."
+        "How to delete your account",
+        "<strong>In the app:</strong><br>1. Sign in to the Quitify account you want to delete.<br>2. Go to <strong>Settings → Account and backup → Delete account</strong>.<br>3. Read the message and confirm with <strong>Delete account</strong>.<br>If you are asked to sign in again for security, sign in and repeat these steps. Deletion cannot be undone. The records on your phone remain, and you can keep using Quitify without an account.<br><br><strong>By email:</strong> If you cannot access the app or your version does not show this option, <a href=\"mailto:swankysoftware@gmail.com?subject=Quitify%20-%20Account%20Deletion%20Request\">email swankysoftware@gmail.com</a>. Subject: <strong>Quitify — Account Deletion Request</strong>. Include the email address used for your account and state that you want the entire account deleted. For Google sign-in, use the email address of the relevant Google account. You do not need to reinstall the app. Do not send your password, sign-in codes or backup file. We may contact you to verify account ownership."
       ],
       [
         "What is deleted?",
-        "Your Quitify Firebase Authentication account and associated Firestore backup are deleted. This includes the backed-up name, smoking and quit information, notes, achievements, savings, goals and spending records. Any older Firebase Storage backup and Firestore location record associated with your account are also in scope. Your Google account is not deleted."
+        "Your Quitify account and its current cloud backup are deleted. This includes the backed-up name, smoking and quit information, notes, achievements, savings, goals and spending records. Cloud backups stop. If you have cloud backups created by older app versions, you can use the email method to request deletion of those as well. Your Google account is not deleted."
       ],
       [
         "Delete data while keeping your account",
@@ -151,9 +152,10 @@
       ],
       [
         "Timing and copies on your device",
-        "We aim to complete deletion within 30 days after verifying that the request is yours. Minimal support correspondence documenting the request and legally required records may be retained; your app profile and backup are not retained after account deletion. Google’s advertising, analytics and security records follow its own policies.<br><br>Remove local records by clearing Quitify’s data in Android app settings. Separately delete exported files and copies held by your chosen file provider. Manage Android system backups in your device’s backup settings. Signing out or uninstalling the app alone does not submit a cloud deletion request."
+        "Once in-app deletion completes successfully, your account and current cloud backup are deleted. For email requests, we aim to complete deletion within 30 days after verifying that the request is yours. Minimal support correspondence documenting the request and legally required records may be retained; we do not keep a copy of the deleted account or backup data. Google’s advertising, analytics and security records follow its own policies.<br><br>Deleting your account does not remove the records on your phone. Remove these by clearing Quitify’s data in Android app settings. Separately delete exported files and copies held by your chosen file provider. Manage Android system backups in your device’s backup settings. Signing out or uninstalling the app alone does not delete your account or cloud backups."
       ]
-    ]
+    ],
+    "deletionDate": "Last updated: 15 October 2026"
   },
   "de": {
     "title": "Quitify Datenschutzerklärung",
@@ -216,12 +218,12 @@
     ],
     "deletion": [
       [
-        "So beantragen Sie die Löschung",
-        "Zur Löschung Ihres Quitify-Kontos und zugehöriger Daten <a href=\"mailto:swankysoftware@gmail.com?subject=Quitify%20-%20Account%20Deletion%20Request\">schreiben Sie an swankysoftware@gmail.com</a>. Betreff: <strong>Quitify — Kontolöschung</strong>. Geben Sie die E-Mail-Adresse Ihres App-Kontos an und erklären Sie, dass das gesamte Konto gelöscht werden soll. Bei Google-Anmeldung verwenden Sie die E-Mail-Adresse des betreffenden Google-Kontos. Eine erneute Installation ist nicht nötig. Senden Sie weder Passwort noch Anmeldecodes oder Sicherungsdatei. Zur Prüfung der Kontoinhaberschaft können wir Sie kontaktieren."
+        "So löschen Sie Ihr Konto",
+        "<strong>In der App:</strong><br>1. Melden Sie sich bei dem Quitify-Konto an, das Sie löschen möchten.<br>2. Öffnen Sie <strong>Einstellungen → Konto und Sicherung → Konto löschen</strong>.<br>3. Lesen Sie den Hinweis und bestätigen Sie mit <strong>Konto löschen</strong>.<br>Wenn Sie aus Sicherheitsgründen zur erneuten Anmeldung aufgefordert werden, melden Sie sich an und wiederholen Sie diese Schritte. Die Löschung kann nicht rückgängig gemacht werden. Die Aufzeichnungen auf Ihrem Telefon bleiben erhalten; Sie können Quitify ohne Konto weiter nutzen.<br><br><strong>Per E-Mail:</strong> Wenn Sie keinen Zugriff auf die App haben oder Ihre Version diese Option nicht anzeigt, <a href=\"mailto:swankysoftware@gmail.com?subject=Quitify%20-%20Account%20Deletion%20Request\">schreiben Sie an swankysoftware@gmail.com</a>. Betreff: <strong>Quitify — Kontolöschung</strong>. Geben Sie die E-Mail-Adresse Ihres App-Kontos an und erklären Sie, dass das gesamte Konto gelöscht werden soll. Bei Google-Anmeldung verwenden Sie die E-Mail-Adresse des betreffenden Google-Kontos. Eine erneute Installation ist nicht nötig. Senden Sie weder Passwort noch Anmeldecodes oder Sicherungsdatei. Zur Prüfung der Kontoinhaberschaft können wir Sie kontaktieren."
       ],
       [
         "Welche Daten werden gelöscht?",
-        "Das Quitify-Konto in Firebase Authentication und die zugehörige Firestore-Sicherung werden gelöscht. Dazu gehören gesicherter Name, Rauch- und Rauchstoppinformationen, Notizen, Erfolge, Ersparnisse, Ziele und Ausgaben. Auch ältere Firebase-Storage-Sicherungen und Firestore-Speicherortangaben Ihres Kontos fallen darunter. Ihr Google-Konto wird nicht gelöscht."
+        "Ihr Quitify-Konto und die zugehörige aktuelle Cloud-Sicherung werden gelöscht. Dazu gehören gesicherter Name, Rauch- und Rauchstoppinformationen, Notizen, Erfolge, Ersparnisse, Ziele und Ausgaben. Cloud-Sicherungen werden gestoppt. Falls Sie Cloud-Sicherungen aus älteren App-Versionen haben, können Sie deren Löschung ebenfalls per E-Mail beantragen. Ihr Google-Konto wird nicht gelöscht."
       ],
       [
         "Daten löschen und Konto behalten",
@@ -229,8 +231,9 @@
       ],
       [
         "Dauer und Kopien auf Ihrem Gerät",
-        "Wir streben die Löschung innerhalb von 30 Tagen nach Prüfung Ihrer Anfrage an. Minimale Supportkorrespondenz zur Dokumentation und gesetzlich erforderliche Aufzeichnungen können bestehen bleiben; App-Profil und Sicherung werden nach Kontolöschung nicht aufbewahrt. Googles Werbe-, Analyse- und Sicherheitsaufzeichnungen folgen dessen eigenen Regeln.<br><br>Lokale Aufzeichnungen entfernen Sie durch Löschen der Quitify-App-Daten in Androids Einstellungen. Exportierte Dateien und Kopien bei Ihrem Dateianbieter müssen separat gelöscht werden. Android-Systemkopien verwalten Sie in den Sicherungseinstellungen des Geräts. Abmelden oder Deinstallieren allein stellt keine Cloud-Löschanfrage."
+        "Sobald die Löschung in der App erfolgreich abgeschlossen ist, sind Ihr Konto und die aktuelle Cloud-Sicherung gelöscht. Bei E-Mail-Anfragen streben wir die Löschung innerhalb von 30 Tagen nach Prüfung Ihrer Anfrage an. Minimale Supportkorrespondenz zur Dokumentation und gesetzlich erforderliche Aufzeichnungen können bestehen bleiben; wir behalten keine Kopie der gelöschten Konto- oder Sicherungsdaten. Googles Werbe-, Analyse- und Sicherheitsaufzeichnungen folgen dessen eigenen Regeln.<br><br>Die Kontolöschung entfernt keine Aufzeichnungen auf Ihrem Telefon. Diese entfernen Sie durch Löschen der Quitify-App-Daten in Androids Einstellungen. Exportierte Dateien und Kopien bei Ihrem Dateianbieter müssen separat gelöscht werden. Android-Systemkopien verwalten Sie in den Sicherungseinstellungen des Geräts. Abmelden oder Deinstallieren allein löscht weder Ihr Konto noch Ihre Cloud-Sicherungen."
       ]
-    ]
+    ],
+    "deletionDate": "Zuletzt aktualisiert: 15. Oktober 2026"
   }
 }
